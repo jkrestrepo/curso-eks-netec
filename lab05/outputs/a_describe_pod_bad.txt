@@ -1,0 +1,64 @@
+Name:             probe-demo-85d6b844cc-bh6rt
+Namespace:        probes-lab
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-42-80.us-west-2.compute.internal/192.168.42.80
+Start Time:       Tue, 17 Feb 2026 11:08:48 -0500
+Labels:           app=probe-demo
+                  pod-template-hash=85d6b844cc
+Annotations:      <none>
+Status:           Running
+IP:               192.168.54.127
+IPs:
+  IP:           192.168.54.127
+Controlled By:  ReplicaSet/probe-demo-85d6b844cc
+Containers:
+  app:
+    Container ID:   containerd://902f8887cd5d7bb0ac48fa28a4f3624da19699810317a58d195f0d2ada674398
+    Image:          521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1
+    Image ID:       521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo@sha256:1cd11f0064bcb1c9ca20f5fef5fdec458ae8264c6104190db09e667c225ffaa3
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 17 Feb 2026 11:09:33 -0500
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Tue, 17 Feb 2026 11:08:52 -0500
+      Finished:     Tue, 17 Feb 2026 11:09:33 -0500
+    Ready:          True
+    Restart Count:  1
+    Liveness:       http-get http://:8080/readyz delay=3s timeout=1s period=5s #success=1 #failure=2
+    Environment:
+      STARTUP_DELAY:  40
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-794jf (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-794jf:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                From               Message
+  ----     ------     ----               ----               -------
+  Normal   Scheduled  71s                default-scheduler  Successfully assigned probes-lab/probe-demo-85d6b844cc-bh6rt to ip-192-168-42-80.us-west-2.compute.internal
+  Normal   Pulling    71s                kubelet            Pulling image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1"
+  Normal   Pulled     68s                kubelet            Successfully pulled image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1" in 3.073s (3.073s including waiting). Image size: 48119469 bytes.
+  Normal   Created    27s (x2 over 68s)  kubelet            Created container: app
+  Normal   Started    27s (x2 over 68s)  kubelet            Started container app
+  Normal   Pulled     27s                kubelet            Container image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1" already present on machine
+  Warning  Unhealthy  17s (x4 over 62s)  kubelet            Liveness probe failed: HTTP probe failed with statuscode: 503
+  Normal   Killing    17s (x2 over 57s)  kubelet            Container app failed liveness probe, will be restarted

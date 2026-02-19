@@ -1,0 +1,7 @@
+namespace    team  totalCost  cpuCost  ramCost
+kube-system  -     0.00724    0.00642  0.00082
+team-b       b     0.0013     0.00115  0.00015
+monitoring   -     0.00089    0.00025  0.00064
+team-a       a     0.00054    0.00046  0.00008
+opencost     -     0.00018    0.00011  0.00007
+team-c       c     0.00013    0.00011  0.00002

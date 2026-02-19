@@ -1,0 +1,18 @@
+23-      Started:      Tue, 17 Feb 2026 11:11:52 -0500
+24-    Ready:          True
+25:    Restart Count:  0
+26:    Liveness:       http-get http://:8080/healthz delay=3s timeout=1s period=5s #success=1 #failure=2
+27:    Readiness:      http-get http://:8080/readyz delay=1s timeout=1s period=3s #success=1 #failure=1
+28:    Startup:        http-get http://:8080/readyz delay=0s timeout=1s period=5s #success=1 #failure=12
+29-    Environment:
+30-      STARTUP_DELAY:  40
+--
+49-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+50-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+51:Events:
+52-  Type     Reason     Age                   From               Message
+53-  ----     ------     ----                  ----               -------
+--
+56-  Normal   Created    6m5s                  kubelet            Created container: app
+57-  Normal   Started    6m5s                  kubelet            Started container app
+58:  Warning  Unhealthy  5m26s (x8 over 6m1s)  kubelet            Startup probe failed: HTTP probe failed with statuscode: 503

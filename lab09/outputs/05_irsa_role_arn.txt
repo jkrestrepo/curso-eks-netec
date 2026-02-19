@@ -1,0 +1,1 @@
+IRSA_ROLE_ARN=arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9

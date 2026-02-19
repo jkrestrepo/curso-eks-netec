@@ -1,0 +1,10 @@
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                                        SELECTOR
+deployment.apps/probe-demo   1/2     2            1           17m   app          521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1   app=probe-demo
+
+NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE     SELECTOR
+service/probe-demo   ClusterIP   10.100.184.34   <none>        80/TCP    5m43s   app=probe-demo
+
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                                           NOMINATED NODE   READINESS GATES
+pod/curl                          1/1     Running   0          4m35s   192.168.46.231   ip-192-168-42-80.us-west-2.compute.internal    <none>           <none>
+pod/probe-demo-5dbff9769f-k9h9b   0/1     Running   0          5m36s   192.168.87.67    ip-192-168-80-214.us-west-2.compute.internal   <none>           <none>
+pod/probe-demo-5dbff9769f-ntqkb   1/1     Running   0          5m43s   192.168.54.127   ip-192-168-42-80.us-west-2.compute.internal    <none>           <none>

@@ -1,0 +1,6 @@
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS   IMAGES       SELECTOR    LABELS
+deployment.apps/web-a   2/2     2            2           112s   nginx        nginx:1.27   app=web-a   app=web,env=dev,team=a
+
+NAME                        READY   STATUS    RESTARTS   AGE    IP               NODE                                          NOMINATED NODE   READINESS GATES   LABELS
+pod/web-a-fcdbc5fc4-7mn5k   1/1     Running   0          112s   192.168.41.182   ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>            app=web-a,env=dev,pod-template-hash=fcdbc5fc4,team=a
+pod/web-a-fcdbc5fc4-s2l9s   1/1     Running   0          112s   192.168.81.56    ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>            app=web-a,env=dev,pod-template-hash=fcdbc5fc4,team=a

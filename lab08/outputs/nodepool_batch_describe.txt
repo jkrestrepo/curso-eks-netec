@@ -1,0 +1,76 @@
+Name:         batch
+Namespace:    
+Labels:       <none>
+Annotations:  karpenter.sh/nodepool-hash: 10391441101668041904
+              karpenter.sh/nodepool-hash-version: v3
+API Version:  karpenter.sh/v1
+Kind:         NodePool
+Metadata:
+  Creation Timestamp:  2026-02-17T20:22:09Z
+  Generation:          1
+  Resource Version:    20956
+  UID:                 3fe0ba8c-1817-4b45-9f94-f9fe26c7c54c
+Spec:
+  Disruption:
+    Budgets:
+      Nodes:               10%
+    Consolidate After:     1m
+    Consolidation Policy:  WhenEmptyOrUnderutilized
+  Template:
+    Metadata:
+      Labels:
+        Dedicated:  batch
+    Spec:
+      Expire After:  720h
+      Node Class Ref:
+        Group:  karpenter.k8s.aws
+        Kind:   EC2NodeClass
+        Name:   default
+      Requirements:
+        Key:       karpenter.sh/capacity-type
+        Operator:  In
+        Values:
+          on-demand
+      Taints:
+        Effect:  NoSchedule
+        Key:     dedicated
+        Value:   batch
+Status:
+  Conditions:
+    Last Transition Time:          2026-02-17T20:22:09Z
+    Message:                       object is awaiting reconciliation
+    Observed Generation:           1
+    Reason:                        AwaitingReconciliation
+    Status:                        Unknown
+    Type:                          NodeRegistrationHealthy
+    Last Transition Time:          2026-02-17T20:22:09Z
+    Message:                       
+    Observed Generation:           1
+    Reason:                        ValidationSucceeded
+    Status:                        True
+    Type:                          ValidationSucceeded
+    Last Transition Time:          2026-02-17T20:22:09Z
+    Message:                       
+    Observed Generation:           1
+    Reason:                        NodeClassReady
+    Status:                        True
+    Type:                          NodeClassReady
+    Last Transition Time:          2026-02-17T20:22:09Z
+    Message:                       
+    Observed Generation:           1
+    Reason:                        Ready
+    Status:                        True
+    Type:                          Ready
+  Node Class Observed Generation:  1
+  Resources:
+    Cpu:                  0
+    Ephemeral - Storage:  0
+    Memory:               0
+    Nodes:                0
+    Pods:                 0
+Events:
+  Type    Reason               Age    From       Message
+  ----    ------               ----   ----       -------
+  Normal  ValidationSucceeded  2m43s  karpenter  Status condition transitioned, Type: ValidationSucceeded, Status: Unknown -> True, Reason: ValidationSucceeded
+  Normal  NodeClassReady       2m43s  karpenter  Status condition transitioned, Type: NodeClassReady, Status: Unknown -> True, Reason: NodeClassReady
+  Normal  Ready                2m43s  karpenter  Status condition transitioned, Type: Ready, Status: Unknown -> True, Reason: Ready

@@ -1,0 +1,3 @@
+team-a            Active   34s     env=dev,kubernetes.io/metadata.name=team-a,team=a
+team-b            Active   30s     env=stage,kubernetes.io/metadata.name=team-b,team=b
+team-c            Active   26s     env=prod,kubernetes.io/metadata.name=team-c,team=c

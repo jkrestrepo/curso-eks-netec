@@ -1,0 +1,11 @@
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Beta feature enabled","flag":"EnableBetaUsages"}
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Beta feature enabled","flag":"EnableBetaRealtimeCompositions"}
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Beta feature enabled","flag":"EnableBetaCustomToManagedResourceConversion"}
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Beta feature enabled","flag":"EnableBetaDeploymentRuntimeConfigs"}
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Beta feature enabled","flag":"EnableBetaClaimSSA"}
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Package Runtime for Provider: Deployment"}
+{"level":"info","ts":"2026-02-18T16:02:47Z","logger":"crossplane","msg":"Package Runtime for Function: Deployment"}
+Warning: apiextensions.crossplane.io Usage is deprecated; migrate to protection.crossplane.io Usage or ClusterUsage
+Warning: CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2
+Warning: metadata.finalizers: "revision.pkg.crossplane.io": prefer a domain-qualified finalizer name including a path (/) to avoid accidental conflicts with other finalizer writers
+Warning: metadata.finalizers: "lock.pkg.crossplane.io": prefer a domain-qualified finalizer name including a path (/) to avoid accidental conflicts with other finalizer writers

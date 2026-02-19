@@ -1,0 +1,6 @@
+Image:
+nginx:latest
+QoS:
+BestEffort
+Restarts:
+7

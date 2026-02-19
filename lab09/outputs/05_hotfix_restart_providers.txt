@@ -1,0 +1,9 @@
+=== Restart deployment.apps/provider-aws-s3-96df8f51090d ===
+deployment.apps/provider-aws-s3-96df8f51090d restarted
+deployment "provider-aws-s3-96df8f51090d" successfully rolled out
+=== Restart deployment.apps/provider-aws-sqs-10431e79c992 ===
+deployment.apps/provider-aws-sqs-10431e79c992 restarted
+deployment "provider-aws-sqs-10431e79c992" successfully rolled out
+=== Restart deployment.apps/upbound-provider-family-aws-a22fe515ffa9 ===
+deployment.apps/upbound-provider-family-aws-a22fe515ffa9 restarted
+deployment "upbound-provider-family-aws-a22fe515ffa9" successfully rolled out

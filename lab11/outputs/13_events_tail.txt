@@ -1,0 +1,40 @@
+kube-system   15m         Normal    Started                   pod/aws-node-rxvb8                                 Started container aws-vpc-cni-init
+kube-system   15m         Normal    Pulled                    pod/aws-node-k5xzq                                 Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni:v1.20.4-eksbuild.2" in 1.893s (1.893s including waiting). Image size: 53394093 bytes.
+kube-system   15m         Normal    Pulled                    pod/kube-proxy-wv797                               Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/kube-proxy:v1.33.3-eksbuild.4" in 4.234s (4.234s including waiting). Image size: 48481292 bytes.
+kube-system   15m         Normal    Started                   pod/kube-proxy-wv797                               Started container kube-proxy
+kube-system   15m         Normal    Created                   pod/aws-node-k5xzq                                 Created container: aws-node
+kube-system   15m         Normal    Created                   pod/aws-node-rxvb8                                 Created container: aws-vpc-cni-init
+kube-system   15m         Normal    Started                   pod/aws-node-k5xzq                                 Started container aws-node
+kube-system   15m         Normal    Created                   pod/aws-node-k5xzq                                 Created container: aws-eks-nodeagent
+kube-system   15m         Normal    Pulled                    pod/aws-node-k5xzq                                 Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon/aws-network-policy-agent:v1.2.7-eksbuild.1" in 1.862s (1.862s including waiting). Image size: 35997169 bytes.
+default       15m         Normal    NodeReady                 node/ip-192-168-37-47.us-west-2.compute.internal   Node ip-192-168-37-47.us-west-2.compute.internal status is now: NodeReady
+kube-system   15m         Normal    Started                   pod/aws-node-k5xzq                                 Started container aws-eks-nodeagent
+kube-system   15m         Normal    Pulling                   pod/aws-node-rxvb8                                 Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni:v1.20.4-eksbuild.2"
+kube-system   15m         Normal    Pulling                   pod/coredns-7bf648ff5d-lfkqh                       Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/coredns:v1.12.1-eksbuild.2"
+kube-system   15m         Normal    Pulling                   pod/coredns-7bf648ff5d-5z2tk                       Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/coredns:v1.12.1-eksbuild.2"
+kube-system   15m         Normal    Pulled                    pod/coredns-7bf648ff5d-lfkqh                       Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/coredns:v1.12.1-eksbuild.2" in 1.398s (1.398s including waiting). Image size: 23508489 bytes.
+kube-system   15m         Normal    Pulled                    pod/coredns-7bf648ff5d-5z2tk                       Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/coredns:v1.12.1-eksbuild.2" in 1.38s (1.38s including waiting). Image size: 23508489 bytes.
+kube-system   15m         Normal    Started                   pod/coredns-7bf648ff5d-lfkqh                       Started container coredns
+kube-system   15m         Normal    Started                   pod/coredns-7bf648ff5d-5z2tk                       Started container coredns
+kube-system   15m         Normal    Created                   pod/coredns-7bf648ff5d-lfkqh                       Created container: coredns
+kube-system   15m         Normal    Created                   pod/coredns-7bf648ff5d-5z2tk                       Created container: coredns
+kube-system   15m         Normal    Pulled                    pod/aws-node-rxvb8                                 Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon-k8s-cni:v1.20.4-eksbuild.2" in 2.288s (2.288s including waiting). Image size: 53394093 bytes.
+kube-system   15m         Normal    Created                   pod/aws-node-rxvb8                                 Created container: aws-node
+kube-system   15m         Normal    Pulling                   pod/aws-node-rxvb8                                 Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon/aws-network-policy-agent:v1.2.7-eksbuild.1"
+kube-system   15m         Normal    Started                   pod/aws-node-rxvb8                                 Started container aws-node
+kube-system   15m         Normal    Started                   pod/aws-node-rxvb8                                 Started container aws-eks-nodeagent
+default       15m         Normal    NodeReady                 node/ip-192-168-83-71.us-west-2.compute.internal   Node ip-192-168-83-71.us-west-2.compute.internal status is now: NodeReady
+kube-system   15m         Normal    Created                   pod/aws-node-rxvb8                                 Created container: aws-eks-nodeagent
+kube-system   15m         Normal    Pulled                    pod/aws-node-rxvb8                                 Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon/aws-network-policy-agent:v1.2.7-eksbuild.1" in 2.343s (2.343s including waiting). Image size: 35997169 bytes.
+kube-system   13m         Normal    Pulling                   pod/metrics-server-7c476fcb4d-6m5lj                Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1"
+kube-system   13m         Normal    ScalingReplicaSet         deployment/metrics-server                          Scaled up replica set metrics-server-7c476fcb4d from 0 to 2
+kube-system   13m         Normal    NoPods                    poddisruptionbudget/metrics-server                 No matching pods found
+kube-system   13m         Normal    SuccessfulCreate          replicaset/metrics-server-7c476fcb4d               Created pod: metrics-server-7c476fcb4d-fj6qm
+kube-system   13m         Normal    Pulling                   pod/metrics-server-7c476fcb4d-fj6qm                Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1"
+kube-system   13m         Normal    SuccessfulCreate          replicaset/metrics-server-7c476fcb4d               Created pod: metrics-server-7c476fcb4d-6m5lj
+kube-system   13m         Normal    Created                   pod/metrics-server-7c476fcb4d-6m5lj                Created container: metrics-server
+kube-system   13m         Normal    Started                   pod/metrics-server-7c476fcb4d-fj6qm                Started container metrics-server
+kube-system   13m         Normal    Created                   pod/metrics-server-7c476fcb4d-fj6qm                Created container: metrics-server
+kube-system   13m         Normal    Pulled                    pod/metrics-server-7c476fcb4d-fj6qm                Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1" in 1.504s (1.504s including waiting). Image size: 22446631 bytes.
+kube-system   13m         Normal    Started                   pod/metrics-server-7c476fcb4d-6m5lj                Started container metrics-server
+kube-system   13m         Normal    Pulled                    pod/metrics-server-7c476fcb4d-6m5lj                Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1" in 1.228s (1.228s including waiting). Image size: 22446631 bytes.

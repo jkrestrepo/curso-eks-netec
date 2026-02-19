@@ -1,0 +1,5 @@
+total 12
+drwxr-xr-x 1 Netec 197121    0 Feb 18 14:34 ./
+drwxr-xr-x 1 Netec 197121    0 Feb 18 14:21 ../
+-rw-r--r-- 1 Netec 197121 1673 Feb 18 14:34 curl.yaml
+-rw-r--r-- 1 Netec 197121 1303 Feb 18 14:34 helloworld.yaml

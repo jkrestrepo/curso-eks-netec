@@ -1,0 +1,10 @@
+alertmanagerconfigs.monitoring.coreos.com       2026-02-18T18:46:40Z
+alertmanagers.monitoring.coreos.com             2026-02-18T18:46:40Z
+podmonitors.monitoring.coreos.com               2026-02-18T18:46:41Z
+probes.monitoring.coreos.com                    2026-02-18T18:46:41Z
+prometheusagents.monitoring.coreos.com          2026-02-18T18:46:42Z
+prometheuses.monitoring.coreos.com              2026-02-18T18:46:42Z
+prometheusrules.monitoring.coreos.com           2026-02-18T18:46:43Z
+scrapeconfigs.monitoring.coreos.com             2026-02-18T18:46:43Z
+servicemonitors.monitoring.coreos.com           2026-02-18T18:46:44Z
+thanosrulers.monitoring.coreos.com              2026-02-18T18:46:44Z

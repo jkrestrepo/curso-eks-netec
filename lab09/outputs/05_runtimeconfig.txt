@@ -1,0 +1,16 @@
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"pkg.crossplane.io/v1beta1","kind":"DeploymentRuntimeConfig","metadata":{"annotations":{},"name":"aws-irsa"},"spec":{"serviceAccountTemplate":{"metadata":{"annotations":{"eks.amazonaws.com/role-arn":"arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9"}}}}}
+  creationTimestamp: "2026-02-18T16:12:24Z"
+  generation: 1
+  name: aws-irsa
+  resourceVersion: "5317"
+  uid: b1f307eb-3ef6-4443-98ac-f930d1b7fd26
+spec:
+  serviceAccountTemplate:
+    metadata:
+      annotations:
+        eks.amazonaws.com/role-arn: arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9

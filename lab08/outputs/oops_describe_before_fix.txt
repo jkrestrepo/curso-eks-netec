@@ -1,0 +1,42 @@
+Name:             oops-critical-fd8f785d9-vs9xs
+Namespace:        dedicated-pools
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           app=oops-critical
+                  pod-template-hash=fd8f785d9
+Annotations:      <none>
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    ReplicaSet/oops-critical-fd8f785d9
+Containers:
+  app:
+    Image:      public.ecr.aws/eks-distro/kubernetes/pause:3.9
+    Port:       <none>
+    Host Port:  <none>
+    Requests:
+      cpu:        50m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cdwbg (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  kube-api-access-cdwbg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age    From               Message
+  ----     ------            ----   ----               -------
+  Warning  FailedScheduling  2m43s  default-scheduler  0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+  Warning  FailedScheduling  2m41s  karpenter          Failed to schedule pod, did not tolerate taint (taint=dedicated=critical:NoSchedule); did not tolerate taint (taint=dedicated=batch:NoSchedule)

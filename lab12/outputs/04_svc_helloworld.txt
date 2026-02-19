@@ -1,0 +1,2 @@
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE     SELECTOR
+helloworld   ClusterIP   10.100.183.115   <none>        5000/TCP   2m56s   app=helloworld

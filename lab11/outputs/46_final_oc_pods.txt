@@ -1,0 +1,2 @@
+NAME                        READY   STATUS    RESTARTS   AGE   IP              NODE                                          NOMINATED NODE   READINESS GATES
+opencost-6569bbdd49-n7slk   2/2     Running   0          17m   192.168.70.63   ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>

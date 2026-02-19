@@ -1,0 +1,21 @@
+Name:         helloworld
+Namespace:    canary
+Labels:       <none>
+Annotations:  <none>
+API Version:  networking.istio.io/v1
+Kind:         DestinationRule
+Metadata:
+  Creation Timestamp:  2026-02-18T19:39:58Z
+  Generation:          1
+  Resource Version:    14812
+  UID:                 c6517e77-6db8-4037-a0a9-d63ccd1d9289
+Spec:
+  Host:  helloworld
+  Subsets:
+    Labels:
+      Version:  v1
+    Name:       v1
+    Labels:
+      Version:  v2
+    Name:       v2
+Events:         <none>

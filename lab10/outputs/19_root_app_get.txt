@@ -1,0 +1,2 @@
+NAME               SYNC STATUS   HEALTH STATUS   REVISION                                   PROJECT
+whoami-bootstrap   Synced        Healthy         cdbf5aea49a364cde8594fc59c3bfbb30caa1053   default

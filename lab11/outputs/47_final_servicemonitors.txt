@@ -1,0 +1,14 @@
+NAME                                                 AGE
+monitoring-grafana                                   25m
+monitoring-kube-prometheus-apiserver                 25m
+monitoring-kube-prometheus-coredns                   25m
+monitoring-kube-prometheus-kube-controller-manager   25m
+monitoring-kube-prometheus-kube-etcd                 25m
+monitoring-kube-prometheus-kube-proxy                25m
+monitoring-kube-prometheus-kube-scheduler            25m
+monitoring-kube-prometheus-kubelet                   25m
+monitoring-kube-prometheus-operator                  25m
+monitoring-kube-prometheus-prometheus                25m
+monitoring-kube-state-metrics                        25m
+monitoring-prometheus-node-exporter                  25m
+opencost                                             17m

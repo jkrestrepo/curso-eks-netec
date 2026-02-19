@@ -1,0 +1,30 @@
+6m5s        Warning   FailedMount         pod/argocd-repo-server-768b7699b5-ljnjg                  MountVolume.SetUp failed for volume "tls-certs" : failed to sync configmap cache: timed out waiting for the condition
+6m5s        Warning   FailedMount         pod/argocd-applicationset-controller-5f84dbcc4c-jgk9f    MountVolume.SetUp failed for volume "ssh-known-hosts" : failed to sync configmap cache: timed out waiting for the condition
+6m4s        Normal    Pulling             pod/argocd-repo-server-768b7699b5-ljnjg                  Pulling image "quay.io/argoproj/argocd:v3.3.1"
+6m4s        Normal    Pulled              pod/argocd-server-56bc84db64-n4wmw                       Container image "quay.io/argoproj/argocd:v3.3.1" already present on machine
+6m4s        Normal    Pulling             pod/argocd-application-controller-0                      Pulling image "quay.io/argoproj/argocd:v3.3.1"
+6m4s        Normal    Started             pod/argocd-applicationset-controller-5f84dbcc4c-jgk9f    Started container applicationset-controller
+6m4s        Normal    Created             pod/argocd-applicationset-controller-5f84dbcc4c-jgk9f    Created container: applicationset-controller
+6m4s        Normal    Pulled              pod/argocd-applicationset-controller-5f84dbcc4c-jgk9f    Container image "quay.io/argoproj/argocd:v3.3.1" already present on machine
+6m4s        Normal    Started             pod/argocd-server-56bc84db64-n4wmw                       Started container server
+6m4s        Normal    Pulling             pod/argocd-dex-server-7657c8954b-qtfsf                   Pulling image "quay.io/argoproj/argocd:v3.3.1"
+6m4s        Normal    Created             pod/argocd-server-56bc84db64-n4wmw                       Created container: server
+6m4s        Normal    Pulled              pod/argocd-redis-5588f6569b-nfbt6                        Successfully pulled image "ecr-public.aws.com/docker/library/redis:8.2.3-alpine" in 1.88s (1.88s including waiting). Image size: 27510315 bytes.
+6m3s        Normal    Created             pod/argocd-redis-5588f6569b-nfbt6                        Created container: redis
+6m3s        Normal    Started             pod/argocd-redis-5588f6569b-nfbt6                        Started container redis
+5m56s       Normal    Pulled              pod/argocd-repo-server-768b7699b5-ljnjg                  Successfully pulled image "quay.io/argoproj/argocd:v3.3.1" in 7.565s (7.565s including waiting). Image size: 191207405 bytes.
+5m56s       Normal    Created             pod/argocd-repo-server-768b7699b5-ljnjg                  Created container: copyutil
+5m56s       Normal    Started             pod/argocd-repo-server-768b7699b5-ljnjg                  Started container copyutil
+5m56s       Normal    Started             pod/argocd-dex-server-7657c8954b-qtfsf                   Started container copyutil
+5m56s       Normal    Created             pod/argocd-dex-server-7657c8954b-qtfsf                   Created container: copyutil
+5m56s       Normal    Created             pod/argocd-application-controller-0                      Created container: application-controller
+5m56s       Normal    Pulled              pod/argocd-application-controller-0                      Successfully pulled image "quay.io/argoproj/argocd:v3.3.1" in 7.337s (7.337s including waiting). Image size: 191207405 bytes.
+5m56s       Normal    Pulled              pod/argocd-dex-server-7657c8954b-qtfsf                   Successfully pulled image "quay.io/argoproj/argocd:v3.3.1" in 7.571s (7.571s including waiting). Image size: 191207405 bytes.
+5m55s       Normal    Started             pod/argocd-application-controller-0                      Started container application-controller
+5m51s       Normal    Pulling             pod/argocd-dex-server-7657c8954b-qtfsf                   Pulling image "ghcr.io/dexidp/dex:v2.44.0"
+5m51s       Normal    Started             pod/argocd-repo-server-768b7699b5-ljnjg                  Started container repo-server
+5m51s       Normal    Created             pod/argocd-repo-server-768b7699b5-ljnjg                  Created container: repo-server
+5m51s       Normal    Pulled              pod/argocd-repo-server-768b7699b5-ljnjg                  Container image "quay.io/argoproj/argocd:v3.3.1" already present on machine
+5m48s       Normal    Pulled              pod/argocd-dex-server-7657c8954b-qtfsf                   Successfully pulled image "ghcr.io/dexidp/dex:v2.44.0" in 3.269s (3.269s including waiting). Image size: 45872393 bytes.
+5m48s       Normal    Created             pod/argocd-dex-server-7657c8954b-qtfsf                   Created container: dex-server
+5m48s       Normal    Started             pod/argocd-dex-server-7657c8954b-qtfsf                   Started container dex-server

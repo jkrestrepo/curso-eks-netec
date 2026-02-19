@@ -1,0 +1,1 @@
+monitoring-grafana                      ClusterIP   10.100.223.175   <none>        80/TCP              4m24s

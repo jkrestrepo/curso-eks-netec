@@ -1,0 +1,260 @@
+Name:             scale-demo-6575cccc65-42bgc
+Namespace:        karpenter-demo
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-136-44.us-west-2.compute.internal/192.168.136.44
+Start Time:       Tue, 17 Feb 2026 14:10:09 -0500
+Labels:           app=scale-demo
+                  pod-template-hash=6575cccc65
+Annotations:      <none>
+Status:           Running
+IP:               192.168.152.87
+IPs:
+  IP:           192.168.152.87
+Controlled By:  ReplicaSet/scale-demo-6575cccc65
+Containers:
+  pause:
+    Container ID:   containerd://256c287b9c74e8a0c5e7359c3f54dda4cebdd3fc4a219978a15f1440a3ba77bb
+    Image:          public.ecr.aws/eks-distro/kubernetes/pause:3.9
+    Image ID:       public.ecr.aws/eks-distro/kubernetes/pause@sha256:5fcaf7aa0d616bc82b3fe6f68d2df51664d7c04025a19b51706494d52910f349
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 17 Feb 2026 14:10:11 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        900m
+      memory:     512Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dscz7 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-dscz7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             workload=karpenter:NoSchedule
+Events:
+  Type     Reason            Age                    From               Message
+  ----     ------            ----                   ----               -------
+  Warning  FailedScheduling  2m45s                  default-scheduler  0/2 nodes are available: 2 Insufficient cpu. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.
+  Normal   Nominated         2m44s                  karpenter          Pod should schedule on: nodeclaim/default-vf48z
+  Warning  FailedScheduling  2m24s (x2 over 2m24s)  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Normal   Scheduled         2m15s                  default-scheduler  Successfully assigned karpenter-demo/scale-demo-6575cccc65-42bgc to ip-192-168-136-44.us-west-2.compute.internal
+  Normal   Pulled            2m13s                  kubelet            Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+  Normal   Created           2m13s                  kubelet            Created container: pause
+  Normal   Started           2m13s                  kubelet            Started container pause
+
+
+Name:             scale-demo-6575cccc65-46tpj
+Namespace:        karpenter-demo
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-136-44.us-west-2.compute.internal/192.168.136.44
+Start Time:       Tue, 17 Feb 2026 14:10:09 -0500
+Labels:           app=scale-demo
+                  pod-template-hash=6575cccc65
+Annotations:      <none>
+Status:           Running
+IP:               192.168.136.40
+IPs:
+  IP:           192.168.136.40
+Controlled By:  ReplicaSet/scale-demo-6575cccc65
+Containers:
+  pause:
+    Container ID:   containerd://f651c120aaf64dd13b5c002b59002d7371f5fa5bb0c5f9008f9830f054476650
+    Image:          public.ecr.aws/eks-distro/kubernetes/pause:3.9
+    Image ID:       public.ecr.aws/eks-distro/kubernetes/pause@sha256:5fcaf7aa0d616bc82b3fe6f68d2df51664d7c04025a19b51706494d52910f349
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 17 Feb 2026 14:10:11 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        900m
+      memory:     512Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wj4jw (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-wj4jw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             workload=karpenter:NoSchedule
+Events:
+  Type     Reason            Age                    From               Message
+  ----     ------            ----                   ----               -------
+  Warning  FailedScheduling  2m45s                  default-scheduler  0/2 nodes are available: 2 Insufficient cpu. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.
+  Normal   Nominated         2m44s                  karpenter          Pod should schedule on: nodeclaim/default-vf48z
+  Warning  FailedScheduling  2m25s                  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.cloudprovider.kubernetes.io/uninitialized: true}, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Warning  FailedScheduling  2m24s (x2 over 2m24s)  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Normal   Scheduled         2m15s                  default-scheduler  Successfully assigned karpenter-demo/scale-demo-6575cccc65-46tpj to ip-192-168-136-44.us-west-2.compute.internal
+  Normal   Pulled            2m13s                  kubelet            Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+  Normal   Created           2m13s                  kubelet            Created container: pause
+  Normal   Started           2m13s                  kubelet            Started container pause
+
+
+Name:             scale-demo-6575cccc65-7sb2d
+Namespace:        karpenter-demo
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-136-44.us-west-2.compute.internal/192.168.136.44
+Start Time:       Tue, 17 Feb 2026 14:10:09 -0500
+Labels:           app=scale-demo
+                  pod-template-hash=6575cccc65
+Annotations:      <none>
+Status:           Running
+IP:               192.168.156.95
+IPs:
+  IP:           192.168.156.95
+Controlled By:  ReplicaSet/scale-demo-6575cccc65
+Containers:
+  pause:
+    Container ID:   containerd://daa8fd6d0c67517c4c2507d6126bd87d900dc50e114652f7344c76ade452f4d9
+    Image:          public.ecr.aws/eks-distro/kubernetes/pause:3.9
+    Image ID:       public.ecr.aws/eks-distro/kubernetes/pause@sha256:5fcaf7aa0d616bc82b3fe6f68d2df51664d7c04025a19b51706494d52910f349
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 17 Feb 2026 14:10:11 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        900m
+      memory:     512Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-psj4l (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-psj4l:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             workload=karpenter:NoSchedule
+Events:
+  Type     Reason            Age                    From               Message
+  ----     ------            ----                   ----               -------
+  Warning  FailedScheduling  2m45s                  default-scheduler  0/2 nodes are available: 2 Insufficient cpu. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.
+  Normal   Nominated         2m44s                  karpenter          Pod should schedule on: nodeclaim/default-vf48z
+  Warning  FailedScheduling  2m24s                  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.cloudprovider.kubernetes.io/uninitialized: true}, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Warning  FailedScheduling  2m24s (x2 over 2m24s)  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Normal   Scheduled         2m15s                  default-scheduler  Successfully assigned karpenter-demo/scale-demo-6575cccc65-7sb2d to ip-192-168-136-44.us-west-2.compute.internal
+  Normal   Pulled            2m13s                  kubelet            Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+  Normal   Created           2m13s                  kubelet            Created container: pause
+  Normal   Started           2m13s                  kubelet            Started container pause
+
+
+Name:             scale-demo-6575cccc65-b488q
+Namespace:        karpenter-demo
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-136-44.us-west-2.compute.internal/192.168.136.44
+Start Time:       Tue, 17 Feb 2026 14:10:09 -0500
+Labels:           app=scale-demo
+                  pod-template-hash=6575cccc65
+Annotations:      <none>
+Status:           Running
+IP:               192.168.151.247
+IPs:
+  IP:           192.168.151.247
+Controlled By:  ReplicaSet/scale-demo-6575cccc65
+Containers:
+  pause:
+    Container ID:   containerd://18a24394781ccd8f1908e1679085298b9005b7fa1c2dfd442b610da90ab7a165
+    Image:          public.ecr.aws/eks-distro/kubernetes/pause:3.9
+    Image ID:       public.ecr.aws/eks-distro/kubernetes/pause@sha256:5fcaf7aa0d616bc82b3fe6f68d2df51664d7c04025a19b51706494d52910f349
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 17 Feb 2026 14:10:10 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        900m
+      memory:     512Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9dnpj (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9dnpj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             workload=karpenter:NoSchedule
+Events:
+  Type     Reason            Age                    From               Message
+  ----     ------            ----                   ----               -------
+  Warning  FailedScheduling  2m45s                  default-scheduler  0/2 nodes are available: 2 Insufficient cpu. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.
+  Normal   Nominated         2m44s                  karpenter          Pod should schedule on: nodeclaim/default-vf48z
+  Warning  FailedScheduling  2m25s                  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.cloudprovider.kubernetes.io/uninitialized: true}, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Warning  FailedScheduling  2m24s (x2 over 2m24s)  default-scheduler  0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+  Normal   Scheduled         2m15s                  default-scheduler  Successfully assigned karpenter-demo/scale-demo-6575cccc65-b488q to ip-192-168-136-44.us-west-2.compute.internal
+  Normal   Pulling           2m14s                  kubelet            Pulling image "public.ecr.aws/eks-distro/kubernetes/pause:3.9"
+  Normal   Pulled            2m14s                  kubelet            Successfully pulled image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" in 573ms (573ms including waiting). Image size: 318773 bytes.
+  Normal   Created           2m14s                  kubelet            Created container: pause
+  Normal   Started           2m14s                  kubelet            Started container pause
+
+
+Name:             scale-demo-6575cccc65-h6bfc
+Namespace:        karpenter-demo
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-136-44.us-west-2.compute.internal/192.168.136.44
+Start Time:       Tue, 17 Feb 2026 14:10:09 -0500
+Labels:           app=scale-demo
+                  pod-template-hash=6575cccc65

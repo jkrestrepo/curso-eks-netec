@@ -1,0 +1,98 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-critical
+  namespace: dedicated-pools
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: api-critical }
+  template:
+    metadata:
+      labels: { app: api-critical }
+    spec:
+      tolerations:
+        - key: "dedicated"
+          operator: "Equal"
+          value: "critical"
+          effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: dedicated
+                operator: In
+                values: ["critical"]
+      containers:
+      - name: app
+        image: traefik/whoami:v1.10.3
+        ports: [{containerPort: 80}]
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "128Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job-batch
+  namespace: dedicated-pools
+spec:
+  replicas: 3
+  selector:
+    matchLabels: { app: job-batch }
+  template:
+    metadata:
+      labels: { app: job-batch }
+    spec:
+      tolerations:
+        - key: "dedicated"
+          operator: "Equal"
+          value: "batch"
+          effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: dedicated
+                operator: In
+                values: ["batch"]
+      containers:
+      - name: app
+        image: public.ecr.aws/eks-distro/kubernetes/pause:3.9
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "128Mi"
+---
+# ERROR INTENCIONAL: Afinidad a critical, pero NO tolera el taint -> quedará Pending
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oops-critical
+  namespace: dedicated-pools
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: oops-critical }
+  template:
+    metadata:
+      labels: { app: oops-critical }
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: dedicated
+                operator: In
+                values: ["critical"]
+      containers:
+      - name: app
+        image: public.ecr.aws/eks-distro/kubernetes/pause:3.9
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "64Mi"

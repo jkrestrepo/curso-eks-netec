@@ -1,0 +1,126 @@
+Name:             api-b-5fb4bcf665-24cwl
+Namespace:        team-b
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-83-71.us-west-2.compute.internal/192.168.83.71
+Start Time:       Wed, 18 Feb 2026 14:02:25 -0500
+Labels:           app=api-b
+                  env=stage
+                  pod-template-hash=5fb4bcf665
+                  team=b
+Annotations:      <none>
+Status:           Running
+IP:               192.168.86.145
+IPs:
+  IP:           192.168.86.145
+Controlled By:  ReplicaSet/api-b-5fb4bcf665
+Containers:
+  api:
+    Container ID:   containerd://550ea2676801ba11185ede4c06d057e22fb04facc4f1caf6d045e76a16a8c874
+    Image:          ghcr.io/stefanprodan/podinfo:6.7.1
+    Image ID:       ghcr.io/stefanprodan/podinfo@sha256:862ca45e61b32392f7941a1bdfdbe5ff8b6899070135f1bdca1c287d0057fc94
+    Port:           9898/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 18 Feb 2026 14:02:30 -0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:        250m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2szll (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-2szll:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  3m31s  default-scheduler  Successfully assigned team-b/api-b-5fb4bcf665-24cwl to ip-192-168-83-71.us-west-2.compute.internal
+  Normal  Pulling    3m30s  kubelet            Pulling image "ghcr.io/stefanprodan/podinfo:6.7.1"
+  Normal  Pulled     3m26s  kubelet            Successfully pulled image "ghcr.io/stefanprodan/podinfo:6.7.1" in 4.286s (4.286s including waiting). Image size: 31081621 bytes.
+  Normal  Created    3m26s  kubelet            Created container: api
+  Normal  Started    3m26s  kubelet            Started container api
+
+
+Name:             api-b-5fb4bcf665-x2mtj
+Namespace:        team-b
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-37-47.us-west-2.compute.internal/192.168.37.47
+Start Time:       Wed, 18 Feb 2026 14:02:25 -0500
+Labels:           app=api-b
+                  env=stage
+                  pod-template-hash=5fb4bcf665
+                  team=b
+Annotations:      <none>
+Status:           Running
+IP:               192.168.50.112
+IPs:
+  IP:           192.168.50.112
+Controlled By:  ReplicaSet/api-b-5fb4bcf665
+Containers:
+  api:
+    Container ID:   containerd://1141951e9f03511cb4cbbad0f277aafb69ef3906f910b3d29cbc53fdd67e75a6
+    Image:          ghcr.io/stefanprodan/podinfo:6.7.1
+    Image ID:       ghcr.io/stefanprodan/podinfo@sha256:862ca45e61b32392f7941a1bdfdbe5ff8b6899070135f1bdca1c287d0057fc94
+    Port:           9898/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 18 Feb 2026 14:02:29 -0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:        250m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gqt68 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-gqt68:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  3m31s  default-scheduler  Successfully assigned team-b/api-b-5fb4bcf665-x2mtj to ip-192-168-37-47.us-west-2.compute.internal
+  Normal  Pulling    3m30s  kubelet            Pulling image "ghcr.io/stefanprodan/podinfo:6.7.1"
+  Normal  Pulled     3m27s  kubelet            Successfully pulled image "ghcr.io/stefanprodan/podinfo:6.7.1" in 2.705s (2.705s including waiting). Image size: 31081621 bytes.
+  Normal  Created    3m27s  kubelet            Created container: api
+  Normal  Started    3m27s  kubelet            Started container api

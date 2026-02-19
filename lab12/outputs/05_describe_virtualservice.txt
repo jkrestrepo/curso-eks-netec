@@ -1,0 +1,25 @@
+Name:         helloworld
+Namespace:    canary
+Labels:       <none>
+Annotations:  <none>
+API Version:  networking.istio.io/v1
+Kind:         VirtualService
+Metadata:
+  Creation Timestamp:  2026-02-18T19:40:23Z
+  Generation:          4
+  Resource Version:    15103
+  UID:                 13a45403-4b5b-4b74-9a9c-dfa2c83dc4d9
+Spec:
+  Hosts:
+    helloworld
+  Http:
+    Route:
+      Destination:
+        Host:    helloworld
+        Subset:  v1
+      Weight:    0
+      Destination:
+        Host:    helloworld
+        Subset:  v2
+      Weight:    100
+Events:          <none>

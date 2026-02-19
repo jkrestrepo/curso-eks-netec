@@ -1,0 +1,7 @@
+=== Fix SA: provider-aws-s3-96df8f51090d ===
+serviceaccount/provider-aws-s3-96df8f51090d annotated
+arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9  automount=true=== Fix SA: provider-aws-sqs-10431e79c992 ===
+serviceaccount/provider-aws-sqs-10431e79c992 annotated
+arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9  automount=true=== Fix SA: upbound-provider-family-aws-a22fe515ffa9 ===
+serviceaccount/upbound-provider-family-aws-a22fe515ffa9 annotated
+arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9  automount=true

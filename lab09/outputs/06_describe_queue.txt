@@ -1,0 +1,82 @@
+Name:         xp-lab9-queue-521544910957-96f16d
+Namespace:    
+Labels:       <none>
+Annotations:  crossplane.io/external-create-pending: 2026-02-18T16:19:41Z
+              crossplane.io/external-create-succeeded: 2026-02-18T16:19:41Z
+              crossplane.io/external-name: https://sqs.us-west-2.amazonaws.com/521544910957/xp-lab9-queue-521544910957-96f16d
+API Version:  sqs.aws.upbound.io/v1beta1
+Kind:         Queue
+Metadata:
+  Creation Timestamp:  2026-02-18T16:19:40Z
+  Finalizers:
+    finalizer.managedresource.crossplane.io
+  Generation:        3
+  Resource Version:  7196
+  UID:               dcd56688-31e8-4eb9-bab2-d173e61ec292
+Spec:
+  Deletion Policy:  Delete
+  For Provider:
+    Kms Data Key Reuse Period Seconds:  300
+    Max Message Size:                   262144
+    Message Retention Seconds:          345600
+    Name:                               xp-lab9-queue-521544910957-96f16d
+    Region:                             us-west-2
+    Sqs Managed Sse Enabled:            true
+    Tags:
+      Crossplane - Kind:            queue.sqs.aws.upbound.io
+      Crossplane - Name:            xp-lab9-queue-521544910957-96f16d
+      Crossplane - Providerconfig:  default
+    Visibility Timeout Seconds:     30
+  Init Provider:
+  Management Policies:
+    *
+  Provider Config Ref:
+    Name:  default
+Status:
+  At Provider:
+    Arn:                                arn:aws:sqs:us-west-2:521544910957:xp-lab9-queue-521544910957-96f16d
+    Content Based Deduplication:        false
+    Deduplication Scope:                
+    Delay Seconds:                      0
+    Fifo Queue:                         false
+    Fifo Throughput Limit:              
+    Id:                                 https://sqs.us-west-2.amazonaws.com/521544910957/xp-lab9-queue-521544910957-96f16d
+    Kms Data Key Reuse Period Seconds:  300
+    Kms Master Key Id:                  
+    Max Message Size:                   262144
+    Message Retention Seconds:          345600
+    Name:                               xp-lab9-queue-521544910957-96f16d
+    Policy:                             
+    Receive Wait Time Seconds:          0
+    Redrive Allow Policy:               
+    Redrive Policy:                     
+    Region:                             us-west-2
+    Sqs Managed Sse Enabled:            true
+    Tags:
+      Crossplane - Kind:            queue.sqs.aws.upbound.io
+      Crossplane - Name:            xp-lab9-queue-521544910957-96f16d
+      Crossplane - Providerconfig:  default
+    Tags All:
+      Crossplane - Kind:            queue.sqs.aws.upbound.io
+      Crossplane - Name:            xp-lab9-queue-521544910957-96f16d
+      Crossplane - Providerconfig:  default
+    URL:                            https://sqs.us-west-2.amazonaws.com/521544910957/xp-lab9-queue-521544910957-96f16d
+    Visibility Timeout Seconds:     30
+  Conditions:
+    Last Transition Time:  2026-02-18T16:20:06Z
+    Reason:                Available
+    Status:                True
+    Type:                  Ready
+    Last Transition Time:  2026-02-18T16:20:06Z
+    Observed Generation:   3
+    Reason:                ReconcileSuccess
+    Status:                True
+    Type:                  Synced
+    Last Transition Time:  2026-02-18T16:20:06Z
+    Reason:                Success
+    Status:                True
+    Type:                  LastAsyncOperation
+Events:
+  Type    Reason                   Age   From                                            Message
+  ----    ------                   ----  ----                                            -------
+  Normal  CreatedExternalResource  71s   managed/sqs.aws.upbound.io/v1beta1, kind=queue  Successfully requested creation of external resource

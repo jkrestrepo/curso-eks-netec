@@ -1,0 +1,22 @@
+LAST SEEN   TYPE      REASON              OBJECT                               MESSAGE
+2m56s       Normal    SuccessfulCreate    replicaset/job-batch-84fc44b6c6      Created pod: job-batch-84fc44b6c6-vvr6g
+2m56s       Warning   FailedScheduling    pod/job-batch-84fc44b6c6-vvr6g       0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m56s       Warning   FailedScheduling    pod/api-critical-7f45f95b5d-6pfh6    0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m56s       Normal    ScalingReplicaSet   deployment/oops-critical             Scaled up replica set oops-critical-fd8f785d9 from 0 to 1
+2m56s       Normal    SuccessfulCreate    replicaset/api-critical-7f45f95b5d   Created pod: api-critical-7f45f95b5d-6pfh6
+2m56s       Normal    SuccessfulCreate    replicaset/api-critical-7f45f95b5d   Created pod: api-critical-7f45f95b5d-2n7sz
+2m56s       Normal    ScalingReplicaSet   deployment/api-critical              Scaled up replica set api-critical-7f45f95b5d from 0 to 2
+2m56s       Warning   FailedScheduling    pod/job-batch-84fc44b6c6-kcj7m       0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m56s       Normal    SuccessfulCreate    replicaset/oops-critical-fd8f785d9   Created pod: oops-critical-fd8f785d9-vs9xs
+2m56s       Warning   FailedScheduling    pod/job-batch-84fc44b6c6-kmdpc       0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m56s       Warning   FailedScheduling    pod/oops-critical-fd8f785d9-vs9xs    0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m56s       Normal    ScalingReplicaSet   deployment/job-batch                 Scaled up replica set job-batch-84fc44b6c6 from 0 to 3
+2m56s       Warning   FailedScheduling    pod/api-critical-7f45f95b5d-2n7sz    0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m56s       Normal    SuccessfulCreate    replicaset/job-batch-84fc44b6c6      Created pod: job-batch-84fc44b6c6-kmdpc
+2m56s       Normal    SuccessfulCreate    replicaset/job-batch-84fc44b6c6      Created pod: job-batch-84fc44b6c6-kcj7m
+2m54s       Warning   FailedScheduling    pod/oops-critical-fd8f785d9-vs9xs    Failed to schedule pod, did not tolerate taint (taint=dedicated=critical:NoSchedule); did not tolerate taint (taint=dedicated=batch:NoSchedule)
+44s         Normal    Nominated           pod/job-batch-84fc44b6c6-kmdpc       Pod should schedule on: nodeclaim/batch-zr7bf
+44s         Normal    Nominated           pod/job-batch-84fc44b6c6-vvr6g       Pod should schedule on: nodeclaim/batch-zr7bf
+44s         Normal    Nominated           pod/api-critical-7f45f95b5d-2n7sz    Pod should schedule on: nodeclaim/critical-68pdk
+44s         Normal    Nominated           pod/job-batch-84fc44b6c6-kcj7m       Pod should schedule on: nodeclaim/batch-zr7bf
+44s         Normal    Nominated           pod/api-critical-7f45f95b5d-6pfh6    Pod should schedule on: nodeclaim/critical-68pdk

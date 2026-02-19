@@ -1,0 +1,67 @@
+Name:             web-86cb87cb4d-grb58
+Namespace:        anti
+Priority:         0
+Service Account:  app-sa
+Node:             ip-192-168-48-67.us-west-2.compute.internal/192.168.48.67
+Start Time:       Mon, 16 Feb 2026 15:12:39 -0500
+Labels:           app=web
+                  pod-template-hash=86cb87cb4d
+Annotations:      <none>
+Status:           Running
+IP:               192.168.34.63
+IPs:
+  IP:           192.168.34.63
+Controlled By:  ReplicaSet/web-86cb87cb4d
+Containers:
+  web:
+    Container ID:   containerd://ccae0b4909178ea9f085f52f3d45450c3cd6c8608dc0934a2c5b6249404d25a5
+    Image:          nginx:latest
+    Image ID:       docker.io/library/nginx@sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 16 Feb 2026 15:16:28 -0500
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 16 Feb 2026 15:14:41 -0500
+      Finished:     Mon, 16 Feb 2026 15:15:00 -0500
+    Ready:          True
+    Restart Count:  6
+    Liveness:       http-get http://:80/healthz delay=5s timeout=1s period=5s #success=1 #failure=3
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-jcqkp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-jcqkp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  3m56s                  default-scheduler  Successfully assigned anti/web-86cb87cb4d-grb58 to ip-192-168-48-67.us-west-2.compute.internal
+  Normal   Pulled     3m52s                  kubelet            Successfully pulled image "nginx:latest" in 3.942s (3.942s including waiting). Image size: 62939286 bytes.
+  Normal   Pulled     3m35s                  kubelet            Successfully pulled image "nginx:latest" in 502ms (502ms including waiting). Image size: 62939286 bytes.
+  Normal   Pulled     3m16s                  kubelet            Successfully pulled image "nginx:latest" in 416ms (416ms including waiting). Image size: 62939286 bytes.
+  Normal   Pulled     2m56s                  kubelet            Successfully pulled image "nginx:latest" in 431ms (431ms including waiting). Image size: 62939286 bytes.
+  Normal   Pulling    2m15s (x5 over 3m56s)  kubelet            Pulling image "nginx:latest"
+  Normal   Created    2m15s (x5 over 3m52s)  kubelet            Created container: web
+  Normal   Pulled     2m15s                  kubelet            Successfully pulled image "nginx:latest" in 447ms (447ms including waiting). Image size: 62939286 bytes.
+  Normal   Started    2m14s (x5 over 3m52s)  kubelet            Started container web
+  Normal   Killing    116s (x5 over 3m36s)   kubelet            Container web failed liveness probe, will be restarted
+  Warning  Unhealthy  96s (x18 over 3m46s)   kubelet            Liveness probe failed: HTTP probe failed with statuscode: 404
+  Warning  BackOff    71s (x7 over 2m41s)    kubelet            Back-off restarting failed container web in pod web-86cb87cb4d-grb58_anti(f782135d-f878-4a95-af9a-b80fe26c049b)

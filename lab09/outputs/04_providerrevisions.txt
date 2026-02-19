@@ -1,0 +1,4 @@
+NAME                                       HEALTHY   RUNTIME   IMAGE                                                STATE    AGE   REVISION   DEP-FOUND   DEP-INSTALLED
+provider-aws-s3-96df8f51090d               True      True      xpkg.upbound.io/upbound/provider-aws-s3:v2.3.0       Active   51s   1          1           1
+provider-aws-sqs-10431e79c992              True      True      xpkg.upbound.io/upbound/provider-aws-sqs:v2.3.0      Active   43s   1          1           1
+upbound-provider-family-aws-a22fe515ffa9   True      True      xpkg.upbound.io/upbound/provider-family-aws:v2.3.0   Active   47s   1                      

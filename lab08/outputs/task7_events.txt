@@ -1,0 +1,30 @@
+LAST SEEN   TYPE      REASON              OBJECT                                MESSAGE
+7m37s       Normal    ScalingReplicaSet   deployment/api-critical               Scaled up replica set api-critical-7f45f95b5d from 0 to 2
+7m37s       Normal    ScalingReplicaSet   deployment/oops-critical              Scaled up replica set oops-critical-fd8f785d9 from 0 to 1
+7m37s       Normal    SuccessfulCreate    replicaset/oops-critical-fd8f785d9    Created pod: oops-critical-fd8f785d9-vs9xs
+7m37s       Normal    ScalingReplicaSet   deployment/job-batch                  Scaled up replica set job-batch-84fc44b6c6 from 0 to 3
+7m37s       Normal    SuccessfulCreate    replicaset/job-batch-84fc44b6c6       Created pod: job-batch-84fc44b6c6-vvr6g
+7m37s       Normal    SuccessfulCreate    replicaset/job-batch-84fc44b6c6       Created pod: job-batch-84fc44b6c6-kcj7m
+7m37s       Normal    SuccessfulCreate    replicaset/job-batch-84fc44b6c6       Created pod: job-batch-84fc44b6c6-kmdpc
+7m37s       Normal    SuccessfulCreate    replicaset/api-critical-7f45f95b5d    Created pod: api-critical-7f45f95b5d-6pfh6
+7m37s       Normal    SuccessfulCreate    replicaset/api-critical-7f45f95b5d    Created pod: api-critical-7f45f95b5d-2n7sz
+4m21s       Warning   FailedScheduling    pod/oops-critical-7dbccc7866-shf2s    0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+4m21s       Normal    SuccessfulCreate    replicaset/oops-critical-7dbccc7866   Created pod: oops-critical-7dbccc7866-shf2s
+4m21s       Normal    ScalingReplicaSet   deployment/oops-critical              Scaled up replica set oops-critical-7dbccc7866 from 0 to 1
+2m45s       Normal    ScalingReplicaSet   deployment/api-critical               Scaled up replica set api-critical-5b6d46c858 from 0 to 1
+2m45s       Normal    SuccessfulCreate    replicaset/api-critical-5b6d46c858    Created pod: api-critical-5b6d46c858-6bwfl
+2m45s       Warning   FailedScheduling    pod/api-critical-5b6d46c858-6bwfl     0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m34s       Warning   FailedScheduling    pod/oops-critical-fd8f785d9-vs9xs     Failed to schedule pod, did not tolerate taint (taint=dedicated=critical:NoSchedule); did not tolerate taint (taint=dedicated=batch:NoSchedule)
+2m13s       Warning   FailedScheduling    pod/job-batch-84fc44b6c6-kcj7m        0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m13s       Warning   FailedScheduling    pod/job-batch-84fc44b6c6-kmdpc        0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m13s       Warning   FailedScheduling    pod/job-batch-84fc44b6c6-vvr6g        0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m13s       Warning   FailedScheduling    pod/api-critical-7f45f95b5d-6pfh6     0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m13s       Warning   FailedScheduling    pod/oops-critical-fd8f785d9-vs9xs     0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+2m13s       Warning   FailedScheduling    pod/api-critical-7f45f95b5d-2n7sz     0/2 nodes are available: 2 node(s) didn't match Pod's node affinity/selector. preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+75s         Normal    Nominated           pod/job-batch-84fc44b6c6-kmdpc        Pod should schedule on: nodeclaim/batch-zr7bf
+75s         Normal    Nominated           pod/api-critical-7f45f95b5d-2n7sz     Pod should schedule on: nodeclaim/critical-68pdk
+75s         Normal    Nominated           pod/api-critical-7f45f95b5d-6pfh6     Pod should schedule on: nodeclaim/critical-68pdk
+75s         Normal    Nominated           pod/job-batch-84fc44b6c6-vvr6g        Pod should schedule on: nodeclaim/batch-zr7bf
+75s         Normal    Nominated           pod/job-batch-84fc44b6c6-kcj7m        Pod should schedule on: nodeclaim/batch-zr7bf
+40s         Normal    Nominated           pod/api-critical-5b6d46c858-6bwfl     Pod should schedule on: nodeclaim/critical-8xf26
+13s         Normal    Nominated           pod/oops-critical-7dbccc7866-shf2s    Pod should schedule on: nodeclaim/critical-8xf26

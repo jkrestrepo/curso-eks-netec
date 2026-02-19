@@ -1,0 +1,4 @@
+NAME                                      CLUSTER        ISTIOD                      VERSION     SUBSCRIBED TYPES
+curl-66d454fb44-j29w8.canary              Kubernetes     istiod-694d545dfd-75tpc     1.28.2      4 (CDS,LDS,EDS,RDS)
+helloworld-v1-5787f49bd8-xxm5k.canary     Kubernetes     istiod-694d545dfd-75tpc     1.28.2      4 (CDS,LDS,EDS,RDS)
+helloworld-v2-6746879bdd-7dq52.canary     Kubernetes     istiod-694d545dfd-75tpc     1.28.2      4 (CDS,LDS,EDS,RDS)

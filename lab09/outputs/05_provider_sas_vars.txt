@@ -1,0 +1,2 @@
+S3_SA=provider-aws-s3-96df8f51090d
+SQS_SA=provider-aws-sqs-10431e79c992

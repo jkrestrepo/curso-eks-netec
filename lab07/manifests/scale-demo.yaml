@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scale-demo
+  namespace: karpenter-demo
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: scale-demo
+  template:
+    metadata:
+      labels:
+        app: scale-demo
+    spec:
+      # CKAD: toleration requerida por el taint del NodePool
+      tolerations:
+        - key: "workload"
+          operator: "Equal"
+          value: "karpenter"
+          effect: "NoSchedule"
+
+      containers:
+        - name: pause
+          image: public.ecr.aws/eks-distro/kubernetes/pause:3.9
+          resources:
+            requests:
+              cpu: "900m"
+              memory: "512Mi"

@@ -1,0 +1,18 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: whoami-network-delay
+  namespace: chaos-mesh
+spec:
+  action: delay
+  mode: all
+  duration: "60s"
+  selector:
+    namespaces:
+      - chaos-demo
+    labelSelectors:
+      app: whoami
+  delay:
+    latency: "200ms"
+    correlation: "100"
+    jitter: "0ms"

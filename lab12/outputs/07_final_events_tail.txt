@@ -1,0 +1,44 @@
+LAST SEEN   TYPE      REASON                  OBJECT                                MESSAGE
+23m         Normal    Scheduled               pod/curl-66d454fb44-j29w8             Successfully assigned canary/curl-66d454fb44-j29w8 to ip-192-168-83-71.us-west-2.compute.internal
+23m         Normal    Scheduled               pod/helloworld-v1-5787f49bd8-xxm5k    Successfully assigned canary/helloworld-v1-5787f49bd8-xxm5k to ip-192-168-37-47.us-west-2.compute.internal
+23m         Warning   ClusterIPNotAllocated   service/curl                          Cluster IP [IPv4]: 10.100.10.229 is not allocated; repairing
+23m         Normal    Scheduled               pod/helloworld-v2-6746879bdd-7dq52    Successfully assigned canary/helloworld-v2-6746879bdd-7dq52 to ip-192-168-37-47.us-west-2.compute.internal
+23m         Normal    ScalingReplicaSet       deployment/helloworld-v1              Scaled up replica set helloworld-v1-5787f49bd8 from 0 to 1
+23m         Normal    SuccessfulCreate        replicaset/helloworld-v1-5787f49bd8   Created pod: helloworld-v1-5787f49bd8-xxm5k
+23m         Normal    Pulling                 pod/helloworld-v1-5787f49bd8-xxm5k    Pulling image "docker.io/istio/proxyv2:1.28.2"
+23m         Normal    ScalingReplicaSet       deployment/helloworld-v2              Scaled up replica set helloworld-v2-6746879bdd from 0 to 1
+23m         Normal    SuccessfulCreate        replicaset/helloworld-v2-6746879bdd   Created pod: helloworld-v2-6746879bdd-7dq52
+23m         Normal    Pulling                 pod/helloworld-v2-6746879bdd-7dq52    Pulling image "docker.io/istio/proxyv2:1.28.2"
+23m         Normal    Created                 pod/helloworld-v2-6746879bdd-7dq52    Created container: istio-init
+23m         Normal    Started                 pod/helloworld-v1-5787f49bd8-xxm5k    Started container istio-init
+23m         Normal    Created                 pod/helloworld-v1-5787f49bd8-xxm5k    Created container: istio-init
+23m         Normal    Pulled                  pod/helloworld-v2-6746879bdd-7dq52    Successfully pulled image "docker.io/istio/proxyv2:1.28.2" in 2.299s (2.299s including waiting). Image size: 97081871 bytes.
+23m         Normal    Pulled                  pod/helloworld-v1-5787f49bd8-xxm5k    Successfully pulled image "docker.io/istio/proxyv2:1.28.2" in 4.577s (4.577s including waiting). Image size: 97081871 bytes.
+23m         Normal    Started                 pod/helloworld-v2-6746879bdd-7dq52    Started container istio-init
+23m         Normal    Pulled                  pod/helloworld-v1-5787f49bd8-xxm5k    Container image "docker.io/istio/proxyv2:1.28.2" already present on machine
+23m         Normal    Started                 pod/helloworld-v1-5787f49bd8-xxm5k    Started container istio-proxy
+23m         Normal    Started                 pod/helloworld-v2-6746879bdd-7dq52    Started container istio-proxy
+23m         Normal    Created                 pod/helloworld-v2-6746879bdd-7dq52    Created container: istio-proxy
+23m         Normal    Pulled                  pod/helloworld-v2-6746879bdd-7dq52    Container image "docker.io/istio/proxyv2:1.28.2" already present on machine
+23m         Normal    Created                 pod/helloworld-v1-5787f49bd8-xxm5k    Created container: istio-proxy
+23m         Normal    Pulling                 pod/helloworld-v1-5787f49bd8-xxm5k    Pulling image "docker.io/istio/examples-helloworld-v1:1.0"
+23m         Normal    Pulling                 pod/helloworld-v2-6746879bdd-7dq52    Pulling image "docker.io/istio/examples-helloworld-v2:1.0"
+23m         Normal    Pulled                  pod/helloworld-v1-5787f49bd8-xxm5k    Successfully pulled image "docker.io/istio/examples-helloworld-v1:1.0" in 4.246s (4.246s including waiting). Image size: 66140623 bytes.
+23m         Normal    Created                 pod/helloworld-v1-5787f49bd8-xxm5k    Created container: helloworld
+23m         Normal    Started                 pod/helloworld-v1-5787f49bd8-xxm5k    Started container helloworld
+23m         Normal    Started                 pod/helloworld-v2-6746879bdd-7dq52    Started container helloworld
+23m         Normal    Created                 pod/helloworld-v2-6746879bdd-7dq52    Created container: helloworld
+23m         Normal    Pulled                  pod/helloworld-v2-6746879bdd-7dq52    Successfully pulled image "docker.io/istio/examples-helloworld-v2:1.0" in 4.242s (4.242s including waiting). Image size: 66140623 bytes.
+23m         Normal    ScalingReplicaSet       deployment/curl                       Scaled up replica set curl-66d454fb44 from 0 to 1
+23m         Normal    SuccessfulCreate        replicaset/curl-66d454fb44            Created pod: curl-66d454fb44-j29w8
+23m         Normal    Pulling                 pod/curl-66d454fb44-j29w8             Pulling image "docker.io/istio/proxyv2:1.28.2"
+23m         Normal    Created                 pod/curl-66d454fb44-j29w8             Created container: istio-init
+23m         Normal    Started                 pod/curl-66d454fb44-j29w8             Started container istio-init
+23m         Normal    Pulled                  pod/curl-66d454fb44-j29w8             Successfully pulled image "docker.io/istio/proxyv2:1.28.2" in 3.172s (3.172s including waiting). Image size: 97081871 bytes.
+23m         Normal    Pulled                  pod/curl-66d454fb44-j29w8             Container image "docker.io/istio/proxyv2:1.28.2" already present on machine
+23m         Normal    Created                 pod/curl-66d454fb44-j29w8             Created container: istio-proxy
+23m         Normal    Started                 pod/curl-66d454fb44-j29w8             Started container istio-proxy
+23m         Normal    Pulling                 pod/curl-66d454fb44-j29w8             Pulling image "docker.io/curlimages/curl:8.16.0"
+23m         Normal    Created                 pod/curl-66d454fb44-j29w8             Created container: curl
+23m         Normal    Started                 pod/curl-66d454fb44-j29w8             Started container curl
+23m         Normal    Pulled                  pod/curl-66d454fb44-j29w8             Successfully pulled image "docker.io/curlimages/curl:8.16.0" in 1.808s (1.808s including waiting). Image size: 13096250 bytes.

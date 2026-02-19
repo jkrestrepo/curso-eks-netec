@@ -1,0 +1,4 @@
+{"level":"INFO","time":"2026-02-17T20:11:46.788Z","logger":"controller.controller-runtime.metrics","message":"Starting metrics server","commit":"11330aa"}
+{"level":"INFO","time":"2026-02-17T20:11:46.788Z","logger":"controller.controller-runtime.metrics","message":"Serving metrics server","commit":"11330aa","bindAddress":":8080","secure":false}
+{"level":"INFO","time":"2026-02-17T20:11:46.788Z","logger":"controller","message":"starting server","commit":"11330aa","name":"health probe","addr":"[::]:8081"}
+{"level":"INFO","time":"2026-02-17T20:11:46.888Z","logger":"controller","message":"attempting to acquire leader lease karpenter/karpenter-leader-election...","commit":"11330aa"}

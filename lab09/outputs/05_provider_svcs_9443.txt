@@ -1,0 +1,3 @@
+provider-aws-s3               ClusterIP   10.100.37.190    <none>        9443/TCP   11m
+provider-aws-sqs              ClusterIP   10.100.114.57    <none>        9443/TCP   11m
+upbound-provider-family-aws   ClusterIP   10.100.2.233     <none>        9443/TCP   11m

@@ -1,0 +1,2 @@
+NAME       TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE   SELECTOR
+opencost   ClusterIP   10.100.122.24   <none>        9003/TCP,8081/TCP,9090/TCP   59s   app.kubernetes.io/instance=opencost,app.kubernetes.io/name=opencost

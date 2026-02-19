@@ -1,0 +1,7 @@
+NAME                                                   READY   STATUS    RESTARTS   AGE    IP               NODE                                          NOMINATED NODE   READINESS GATES
+monitoring-grafana-7bf67bbdb6-nl7pb                    3/3     Running   0          106s   192.168.84.156   ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>
+monitoring-kube-prometheus-operator-79d9f999b4-5lkmj   1/1     Running   0          106s   192.168.59.9     ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>
+monitoring-kube-state-metrics-68cbbfb567-6bszn         1/1     Running   0          107s   192.168.72.165   ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>
+monitoring-prometheus-node-exporter-chc29              1/1     Running   0          107s   192.168.37.47    ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>
+monitoring-prometheus-node-exporter-tsr9p              1/1     Running   0          107s   192.168.83.71    ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>
+prometheus-monitoring-kube-prometheus-prometheus-0     2/2     Running   0          101s   192.168.35.74    ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>

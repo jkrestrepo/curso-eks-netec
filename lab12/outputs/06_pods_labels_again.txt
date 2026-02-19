@@ -1,0 +1,3 @@
+NAME                             READY   STATUS    RESTARTS   AGE   LABELS
+helloworld-v1-5787f49bd8-xxm5k   2/2     Running   0          16m   app=helloworld,pod-template-hash=5787f49bd8,security.istio.io/tlsMode=istio,service.istio.io/canonical-name=helloworld,service.istio.io/canonical-revision=v1,version=v1
+helloworld-v2-6746879bdd-7dq52   2/2     Running   0          16m   app=helloworld,pod-template-hash=6746879bdd,security.istio.io/tlsMode=istio,service.istio.io/canonical-name=helloworld,service.istio.io/canonical-revision=v2,version=v2

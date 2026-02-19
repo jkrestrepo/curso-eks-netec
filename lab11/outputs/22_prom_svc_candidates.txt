@@ -1,0 +1,4 @@
+monitoring-kube-prometheus-operator     ClusterIP   10.100.14.77     <none>        443/TCP             6m3s
+monitoring-kube-prometheus-prometheus   ClusterIP   10.100.165.21    <none>        9090/TCP,8080/TCP   6m3s
+monitoring-prometheus-node-exporter     ClusterIP   10.100.198.105   <none>        9100/TCP            6m3s
+prometheus-operated                     ClusterIP   None             <none>        9090/TCP            5m57s

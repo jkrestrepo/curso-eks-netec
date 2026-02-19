@@ -1,0 +1,1 @@
+ALB_DNS=k8s-tlslab-whoamial-8abe0720f4-1930683715.us-west-2.elb.amazonaws.com

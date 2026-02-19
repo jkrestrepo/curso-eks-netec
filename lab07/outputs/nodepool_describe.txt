@@ -1,0 +1,98 @@
+Name:         default
+Namespace:    
+Labels:       <none>
+Annotations:  karpenter.sh/nodepool-hash: 11357193002610573414
+              karpenter.sh/nodepool-hash-version: v3
+API Version:  karpenter.sh/v1
+Kind:         NodePool
+Metadata:
+  Creation Timestamp:  2026-02-17T19:06:37Z
+  Generation:          1
+  Resource Version:    7134
+  UID:                 1361c8d5-0fb1-4201-b37b-d98d23a37c93
+Spec:
+  Disruption:
+    Budgets:
+      Nodes:               10%
+    Consolidate After:     1m
+    Consolidation Policy:  WhenEmptyOrUnderutilized
+  Limits:
+    Cpu:  100
+  Template:
+    Metadata:
+      Labels:
+        Workload:  karpenter
+    Spec:
+      Expire After:  720h
+      Node Class Ref:
+        Group:  karpenter.k8s.aws
+        Kind:   EC2NodeClass
+        Name:   default
+      Requirements:
+        Key:       kubernetes.io/arch
+        Operator:  In
+        Values:
+          amd64
+        Key:       kubernetes.io/os
+        Operator:  In
+        Values:
+          linux
+        Key:       karpenter.sh/capacity-type
+        Operator:  In
+        Values:
+          on-demand
+        Key:       karpenter.k8s.aws/instance-category
+        Operator:  In
+        Values:
+          c
+          m
+          r
+        Key:       karpenter.k8s.aws/instance-generation
+        Operator:  Gt
+        Values:
+          2
+      Taints:
+        Effect:  NoSchedule
+        Key:     workload
+        Value:   karpenter
+Status:
+  Conditions:
+    Last Transition Time:          2026-02-17T19:06:37Z
+    Message:                       
+    Observed Generation:           1
+    Reason:                        ValidationSucceeded
+    Status:                        True
+    Type:                          ValidationSucceeded
+    Last Transition Time:          2026-02-17T19:06:37Z
+    Message:                       object is awaiting reconciliation
+    Observed Generation:           1
+    Reason:                        AwaitingReconciliation
+    Status:                        Unknown
+    Type:                          NodeRegistrationHealthy
+    Last Transition Time:          2026-02-17T19:06:52Z
+    Message:                       
+    Observed Generation:           1
+    Reason:                        NodeClassReady
+    Status:                        True
+    Type:                          NodeClassReady
+    Last Transition Time:          2026-02-17T19:06:52Z
+    Message:                       
+    Observed Generation:           1
+    Reason:                        Ready
+    Status:                        True
+    Type:                          Ready
+  Node Class Observed Generation:  1
+  Resources:
+    Cpu:                  0
+    Ephemeral - Storage:  0
+    Memory:               0
+    Nodes:                0
+    Pods:                 0
+Events:
+  Type    Reason               Age   From       Message
+  ----    ------               ----  ----       -------
+  Normal  NodeClassReady       31s   karpenter  Status condition transitioned, Type: NodeClassReady, Status: Unknown -> False, Reason: NodeClassNotFound, Message: NodeClass not found on cluster
+  Normal  Ready                31s   karpenter  Status condition transitioned, Type: Ready, Status: Unknown -> False, Reason: UnhealthyDependents, Message: NodeClassReady=False, ValidationSucceeded=Unknown
+  Normal  ValidationSucceeded  31s   karpenter  Status condition transitioned, Type: ValidationSucceeded, Status: Unknown -> True, Reason: ValidationSucceeded
+  Normal  NodeClassReady       16s   karpenter  Status condition transitioned, Type: NodeClassReady, Status: False -> True, Reason: NodeClassReady
+  Normal  Ready                16s   karpenter  Status condition transitioned, Type: Ready, Status: False -> True, Reason: Ready

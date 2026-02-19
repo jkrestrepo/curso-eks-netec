@@ -1,0 +1,3 @@
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS   IMAGES                                            SELECTOR
+crossplane                1/1     1            1           2m6s   crossplane   xpkg.crossplane.io/crossplane/crossplane:v2.2.0   app=crossplane,release=crossplane
+crossplane-rbac-manager   1/1     1            1           2m6s   crossplane   xpkg.crossplane.io/crossplane/crossplane:v2.2.0   app=crossplane-rbac-manager,release=crossplane

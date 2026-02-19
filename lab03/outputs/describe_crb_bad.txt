@@ -1,0 +1,10 @@
+Name:         anti-app-cluster-admin
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  ClusterRole
+  Name:  cluster-admin
+Subjects:
+  Kind            Name    Namespace
+  ----            ----    ---------
+  ServiceAccount  app-sa  anti

@@ -1,0 +1,2 @@
+NAME     STATUS   AGE   ISTIO-INJECTION
+canary   Active   23s   enabled

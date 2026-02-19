@@ -1,0 +1,3 @@
+NAME                             READY   STATUS    RESTARTS   AGE     IP       NODE     NOMINATED NODE   READINESS GATES
+oops-critical-7dbccc7866-shf2s   0/1     Pending   0          77s     <none>   <none>   <none>           <none>
+oops-critical-fd8f785d9-vs9xs    0/1     Pending   0          4m33s   <none>   <none>   <none>           <none>

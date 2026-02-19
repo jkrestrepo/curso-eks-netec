@@ -1,0 +1,17 @@
+opencost:
+  prometheus:
+    internal:
+      enabled: false
+    external:
+      enabled: true
+      url: "http://monitoring-kube-prometheus-prometheus.monitoring:9090"
+
+  metrics:
+    serviceMonitor:
+      enabled: true
+      namespace: "monitoring"
+      additionalLabels:
+        release: "monitoring"
+
+  ui:
+    enabled: true

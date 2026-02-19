@@ -1,0 +1,70 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: canary-upgrade
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: canary-web
+  namespace: canary-upgrade
+  labels:
+    app: canary-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: canary-web
+  template:
+    metadata:
+      labels:
+        app: canary-web
+    spec:
+      terminationGracePeriodSeconds: 20
+      containers:
+      - name: web
+        image: REPLACE_IMAGE
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 2
+          periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+          limits:
+            cpu: "200m"
+            memory: "128Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: canary-web
+  namespace: canary-upgrade
+spec:
+  selector:
+    app: canary-web
+  ports:
+  - port: 80
+    targetPort: 80
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: canary-web-pdb
+  namespace: canary-upgrade
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: canary-web

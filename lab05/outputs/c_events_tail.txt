@@ -1,0 +1,25 @@
+5m29s       Normal    Started             pod/probe-demo-5dbff9769f-ntqkb    Started container app
+5m29s       Normal    Created             pod/probe-demo-5dbff9769f-ntqkb    Created container: app
+5m29s       Normal    Pulled              pod/probe-demo-5dbff9769f-ntqkb    Container image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1" already present on machine
+5m29s       Normal    Pulling             pod/probe-demo-9f586cbff-dd9sx     Pulling image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1"
+5m26s       Normal    Created             pod/probe-demo-9f586cbff-dd9sx     Created container: app
+5m26s       Normal    Started             pod/probe-demo-9f586cbff-dd9sx     Started container app
+5m26s       Normal    Pulled              pod/probe-demo-9f586cbff-dd9sx     Successfully pulled image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1" in 3.071s (3.071s including waiting). Image size: 48119469 bytes.
+5m25s       Warning   Unhealthy           pod/probe-demo-5dbff9769f-ntqkb    Readiness probe failed: HTTP probe failed with statuscode: 503
+5m25s       Warning   Unhealthy           pod/probe-demo-9f586cbff-dd9sx     Startup probe failed: HTTP probe failed with statuscode: 503
+5m23s       Normal    Started             pod/probe-demo-5dbff9769f-k9h9b    Started container app
+5m23s       Normal    Pulled              pod/probe-demo-5dbff9769f-k9h9b    Container image "521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1" already present on machine
+5m23s       Normal    ScalingReplicaSet   deployment/probe-demo              Scaled up replica set probe-demo-5dbff9769f from 1 to 2
+5m23s       Normal    SuccessfulCreate    replicaset/probe-demo-5dbff9769f   Created pod: probe-demo-5dbff9769f-k9h9b
+5m23s       Normal    Created             pod/probe-demo-5dbff9769f-k9h9b    Created container: app
+5m23s       Normal    SuccessfulDelete    replicaset/probe-demo-9f586cbff    Deleted pod: probe-demo-9f586cbff-dd9sx
+5m23s       Normal    ScalingReplicaSet   deployment/probe-demo              Scaled down replica set probe-demo-9f586cbff from 2 to 1
+5m22s       Normal    Killing             pod/probe-demo-9f586cbff-dd9sx     Stopping container app
+5m17s       Normal    SuccessfulDelete    replicaset/probe-demo-9f586cbff    Deleted pod: probe-demo-9f586cbff-7vxcg
+5m17s       Normal    Killing             pod/probe-demo-9f586cbff-7vxcg     Stopping container app
+5m17s       Normal    ScalingReplicaSet   deployment/probe-demo              Scaled down replica set probe-demo-9f586cbff from 1 to 0
+4m21s       Normal    Pulling             pod/curl                           Pulling image "curlimages/curl:8.10.1"
+4m19s       Normal    Started             pod/curl                           Started container curl
+4m19s       Normal    Created             pod/curl                           Created container: curl
+4m19s       Normal    Pulled              pod/curl                           Successfully pulled image "curlimages/curl:8.10.1" in 1.762s (1.762s including waiting). Image size: 9414401 bytes.
+20s         Warning   Unhealthy           pod/probe-demo-5dbff9769f-k9h9b    Readiness probe failed: HTTP probe failed with statuscode: 503

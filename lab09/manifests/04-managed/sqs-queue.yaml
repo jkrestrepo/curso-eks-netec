@@ -1,0 +1,10 @@
+apiVersion: sqs.aws.upbound.io/v1beta1
+kind: Queue
+metadata:
+  name: xp-lab9-queue-521544910957-96f16d
+spec:
+  forProvider:
+    name: xp-lab9-queue-521544910957-96f16d
+    region: us-west-2
+  providerConfigRef:
+    name: default

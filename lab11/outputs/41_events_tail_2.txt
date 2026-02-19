@@ -1,0 +1,40 @@
+monitoring    18m         Normal    Started                   pod/monitoring-grafana-7bf67bbdb6-nl7pb                        Started container grafana
+monitoring    18m         Warning   Unhealthy                 pod/monitoring-grafana-7bf67bbdb6-nl7pb                        Readiness probe failed: Get "http://192.168.84.156:3000/api/health": dial tcp 192.168.84.156:3000: connect: connection refused
+opencost      10m         Normal    ScalingReplicaSet         deployment/opencost                                            Scaled up replica set opencost-6569bbdd49 from 0 to 1
+opencost      10m         Normal    SuccessfulCreate          replicaset/opencost-6569bbdd49                                 Created pod: opencost-6569bbdd49-n7slk
+opencost      10m         Normal    Pulling                   pod/opencost-6569bbdd49-n7slk                                  Pulling image "ghcr.io/opencost/opencost:1.119.2@sha256:4b8de6e029b9dc1f7e68bdf1cf02fca7649614c23812e51a63820f113ca97b89"
+opencost      10m         Normal    Started                   pod/opencost-6569bbdd49-n7slk                                  Started container opencost
+opencost      10m         Normal    Pulling                   pod/opencost-6569bbdd49-n7slk                                  Pulling image "ghcr.io/opencost/opencost-ui:1.119.2@sha256:0dba1a93db7ae88e956556caf9a9240879d7fcb1d5a7cb9fec0b83970c0ce50c"
+opencost      10m         Normal    Pulled                    pod/opencost-6569bbdd49-n7slk                                  Successfully pulled image "ghcr.io/opencost/opencost:1.119.2@sha256:4b8de6e029b9dc1f7e68bdf1cf02fca7649614c23812e51a63820f113ca97b89" in 3.272s (3.272s including waiting). Image size: 63203980 bytes.
+opencost      10m         Normal    Created                   pod/opencost-6569bbdd49-n7slk                                  Created container: opencost
+opencost      10m         Normal    Started                   pod/opencost-6569bbdd49-n7slk                                  Started container opencost-ui
+opencost      10m         Normal    Pulled                    pod/opencost-6569bbdd49-n7slk                                  Successfully pulled image "ghcr.io/opencost/opencost-ui:1.119.2@sha256:0dba1a93db7ae88e956556caf9a9240879d7fcb1d5a7cb9fec0b83970c0ce50c" in 4.448s (4.448s including waiting). Image size: 34189059 bytes.
+opencost      10m         Normal    Created                   pod/opencost-6569bbdd49-n7slk                                  Created container: opencost-ui
+team-b        3m43s       Normal    SuccessfulCreate          replicaset/api-b-5fb4bcf665                                    Created pod: api-b-5fb4bcf665-24cwl
+team-b        3m43s       Normal    SuccessfulCreate          replicaset/api-b-5fb4bcf665                                    Created pod: api-b-5fb4bcf665-x2mtj
+team-c        3m43s       Normal    ScalingReplicaSet         deployment/batch-c                                             Scaled up replica set batch-c-576c784758 from 0 to 1
+team-b        3m43s       Normal    ScalingReplicaSet         deployment/api-b                                               Scaled up replica set api-b-5fb4bcf665 from 0 to 2
+team-a        3m43s       Normal    ScalingReplicaSet         deployment/web-a                                               Scaled up replica set web-a-fcdbc5fc4 from 0 to 2
+team-a        3m43s       Normal    SuccessfulCreate          replicaset/web-a-fcdbc5fc4                                     Created pod: web-a-fcdbc5fc4-s2l9s
+team-a        3m43s       Normal    SuccessfulCreate          replicaset/web-a-fcdbc5fc4                                     Created pod: web-a-fcdbc5fc4-7mn5k
+team-b        3m42s       Normal    Pulling                   pod/api-b-5fb4bcf665-x2mtj                                     Pulling image "ghcr.io/stefanprodan/podinfo:6.7.1"
+team-c        3m42s       Normal    SuccessfulCreate          replicaset/batch-c-576c784758                                  Created pod: batch-c-576c784758-ffzll
+team-b        3m42s       Normal    Pulling                   pod/api-b-5fb4bcf665-24cwl                                     Pulling image "ghcr.io/stefanprodan/podinfo:6.7.1"
+team-c        3m42s       Normal    Pulling                   pod/batch-c-576c784758-ffzll                                   Pulling image "busybox:1.36"
+team-a        3m42s       Normal    Pulling                   pod/web-a-fcdbc5fc4-7mn5k                                      Pulling image "nginx:1.27"
+team-a        3m42s       Normal    Pulling                   pod/web-a-fcdbc5fc4-s2l9s                                      Pulling image "nginx:1.27"
+team-b        3m39s       Normal    Started                   pod/api-b-5fb4bcf665-x2mtj                                     Started container api
+team-b        3m39s       Normal    Pulled                    pod/api-b-5fb4bcf665-x2mtj                                     Successfully pulled image "ghcr.io/stefanprodan/podinfo:6.7.1" in 2.705s (2.705s including waiting). Image size: 31081621 bytes.
+team-b        3m39s       Normal    Created                   pod/api-b-5fb4bcf665-x2mtj                                     Created container: api
+team-c        3m39s       Normal    Pulled                    pod/batch-c-576c784758-ffzll                                   Successfully pulled image "busybox:1.36" in 3.105s (3.105s including waiting). Image size: 2217150 bytes.
+team-c        3m39s       Normal    Created                   pod/batch-c-576c784758-ffzll                                   Created container: worker
+team-c        3m38s       Normal    Started                   pod/batch-c-576c784758-ffzll                                   Started container worker
+team-b        3m38s       Normal    Started                   pod/api-b-5fb4bcf665-24cwl                                     Started container api
+team-b        3m38s       Normal    Created                   pod/api-b-5fb4bcf665-24cwl                                     Created container: api
+team-b        3m38s       Normal    Pulled                    pod/api-b-5fb4bcf665-24cwl                                     Successfully pulled image "ghcr.io/stefanprodan/podinfo:6.7.1" in 4.286s (4.286s including waiting). Image size: 31081621 bytes.
+team-a        3m37s       Normal    Created                   pod/web-a-fcdbc5fc4-7mn5k                                      Created container: nginx
+team-a        3m37s       Normal    Pulled                    pod/web-a-fcdbc5fc4-7mn5k                                      Successfully pulled image "nginx:1.27" in 4.82s (4.82s including waiting). Image size: 72406859 bytes.
+team-a        3m37s       Normal    Started                   pod/web-a-fcdbc5fc4-7mn5k                                      Started container nginx
+team-a        3m36s       Normal    Started                   pod/web-a-fcdbc5fc4-s2l9s                                      Started container nginx
+team-a        3m36s       Normal    Created                   pod/web-a-fcdbc5fc4-s2l9s                                      Created container: nginx
+team-a        3m36s       Normal    Pulled                    pod/web-a-fcdbc5fc4-s2l9s                                      Successfully pulled image "nginx:1.27" in 5.873s (5.873s including waiting). Image size: 72406859 bytes.

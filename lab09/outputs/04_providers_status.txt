@@ -1,0 +1,4 @@
+NAME                          INSTALLED   HEALTHY   PACKAGE                                              AGE
+provider-aws-s3               True        True      xpkg.upbound.io/upbound/provider-aws-s3:v2.3.0       44s
+provider-aws-sqs              True        True      xpkg.upbound.io/upbound/provider-aws-sqs:v2.3.0      35s
+upbound-provider-family-aws   True        True      xpkg.upbound.io/upbound/provider-family-aws:v2.3.0   38s

@@ -1,0 +1,10 @@
+kube-system   116s        Normal    NoPods                    poddisruptionbudget/metrics-server                  No matching pods found
+kube-system   116s        Normal    SuccessfulCreate          replicaset/metrics-server-7c476fcb4d                Created pod: metrics-server-7c476fcb4d-ppmx9
+kube-system   115s        Normal    Pulling                   pod/metrics-server-7c476fcb4d-b8kx5                 Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1"
+kube-system   115s        Normal    Pulling                   pod/metrics-server-7c476fcb4d-ppmx9                 Pulling image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1"
+kube-system   114s        Normal    Pulled                    pod/metrics-server-7c476fcb4d-ppmx9                 Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1" in 1.524s (1.524s including waiting). Image size: 22446631 bytes.
+kube-system   114s        Normal    Created                   pod/metrics-server-7c476fcb4d-ppmx9                 Created container: metrics-server
+kube-system   114s        Normal    Started                   pod/metrics-server-7c476fcb4d-ppmx9                 Started container metrics-server
+kube-system   114s        Normal    Started                   pod/metrics-server-7c476fcb4d-b8kx5                 Started container metrics-server
+kube-system   114s        Normal    Created                   pod/metrics-server-7c476fcb4d-b8kx5                 Created container: metrics-server
+kube-system   114s        Normal    Pulled                    pod/metrics-server-7c476fcb4d-b8kx5                 Successfully pulled image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1" in 1.454s (1.454s including waiting). Image size: 22446631 bytes.

@@ -1,0 +1,30 @@
+LAST SEEN   TYPE      REASON              OBJECT                                    MESSAGE
+11m         Normal    Scheduled           pod/whoami-6cfb95dd8f-rct8n               Successfully assigned chaos-demo/whoami-6cfb95dd8f-rct8n to ip-192-168-80-214.us-west-2.compute.internal
+17m         Normal    Scheduled           pod/whoami-6cfb95dd8f-694vj               Successfully assigned chaos-demo/whoami-6cfb95dd8f-694vj to ip-192-168-80-214.us-west-2.compute.internal
+17m         Normal    Scheduled           pod/curl                                  Successfully assigned chaos-demo/curl to ip-192-168-42-80.us-west-2.compute.internal
+17m         Normal    Scheduled           pod/whoami-6cfb95dd8f-rhfjj               Successfully assigned chaos-demo/whoami-6cfb95dd8f-rhfjj to ip-192-168-42-80.us-west-2.compute.internal
+17m         Normal    ScalingReplicaSet   deployment/whoami                         Scaled up replica set whoami-6cfb95dd8f from 0 to 2
+17m         Normal    SuccessfulCreate    replicaset/whoami-6cfb95dd8f              Created pod: whoami-6cfb95dd8f-694vj
+17m         Normal    SuccessfulCreate    replicaset/whoami-6cfb95dd8f              Created pod: whoami-6cfb95dd8f-rhfjj
+17m         Normal    Pulling             pod/whoami-6cfb95dd8f-694vj               Pulling image "traefik/whoami:v1.10.3"
+17m         Normal    Pulling             pod/whoami-6cfb95dd8f-rhfjj               Pulling image "traefik/whoami:v1.10.3"
+17m         Normal    Started             pod/whoami-6cfb95dd8f-rhfjj               Started container whoami
+17m         Normal    Pulled              pod/whoami-6cfb95dd8f-694vj               Successfully pulled image "traefik/whoami:v1.10.3" in 1.601s (1.601s including waiting). Image size: 2853860 bytes.
+17m         Normal    Started             pod/whoami-6cfb95dd8f-694vj               Started container whoami
+17m         Normal    Created             pod/whoami-6cfb95dd8f-694vj               Created container: whoami
+17m         Normal    Pulled              pod/whoami-6cfb95dd8f-rhfjj               Successfully pulled image "traefik/whoami:v1.10.3" in 1.536s (1.536s including waiting). Image size: 2853860 bytes.
+17m         Normal    Created             pod/whoami-6cfb95dd8f-rhfjj               Created container: whoami
+17m         Normal    Pulled              pod/curl                                  Container image "curlimages/curl:8.10.1" already present on machine
+17m         Normal    Created             pod/curl                                  Created container: curl
+17m         Normal    Started             pod/curl                                  Started container curl
+11m         Normal    Killing             pod/whoami-6cfb95dd8f-694vj               Stopping container whoami
+11m         Normal    SuccessfulCreate    replicaset/whoami-6cfb95dd8f              Created pod: whoami-6cfb95dd8f-rct8n
+11m         Warning   Unhealthy           pod/whoami-6cfb95dd8f-694vj               Readiness probe failed: Get "http://192.168.79.186:80/": dial tcp 192.168.79.186:80: connect: connection refused
+11m         Normal    Started             pod/whoami-6cfb95dd8f-rct8n               Started container whoami
+11m         Normal    Created             pod/whoami-6cfb95dd8f-rct8n               Created container: whoami
+11m         Normal    Pulled              pod/whoami-6cfb95dd8f-rct8n               Container image "traefik/whoami:v1.10.3" already present on machine
+9m20s       Normal    Updated             podnetworkchaos/whoami-6cfb95dd8f-rhfjj   Successfully update ObservedGeneration and FailedMessage of resource
+9m20s       Normal    Updated             podnetworkchaos/whoami-6cfb95dd8f-rct8n   Successfully update ObservedGeneration and FailedMessage of resource
+8m20s       Normal    Updated             podnetworkchaos/whoami-6cfb95dd8f-rhfjj   Successfully update ObservedGeneration and FailedMessage of resource
+8m20s       Warning   Unhealthy           pod/whoami-6cfb95dd8f-rhfjj               Readiness probe failed: Get "http://192.168.39.42:80/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+8m20s       Normal    Updated             podnetworkchaos/whoami-6cfb95dd8f-rct8n   Successfully update ObservedGeneration and FailedMessage of resource

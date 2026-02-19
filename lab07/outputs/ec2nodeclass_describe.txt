@@ -1,0 +1,156 @@
+Name:         default
+Namespace:    
+Labels:       <none>
+Annotations:  karpenter.k8s.aws/ec2nodeclass-hash: 16011300770215423428
+              karpenter.k8s.aws/ec2nodeclass-hash-version: v4
+API Version:  karpenter.k8s.aws/v1
+Kind:         EC2NodeClass
+Metadata:
+  Creation Timestamp:  2026-02-17T19:06:37Z
+  Finalizers:
+    karpenter.k8s.aws/termination
+  Generation:        1
+  Resource Version:  7132
+  UID:               1a2775d9-c760-45b8-81ca-ec5847c82731
+Spec:
+  Ami Selector Terms:
+    Alias:  al2023@latest
+  Metadata Options:
+    Http Endpoint:                enabled
+    httpProtocolIPv6:             disabled
+    Http Put Response Hop Limit:  1
+    Http Tokens:                  required
+  Role:                           KarpenterNodeRole-eks-karpen-lab
+  Security Group Selector Terms:
+    Tags:
+      karpenter.sh/discovery:  eks-karpen-lab
+  Subnet Selector Terms:
+    Tags:
+      karpenter.sh/discovery:  eks-karpen-lab
+Status:
+  Amis:
+    Id:    ami-097a3f2c7d2165d25
+    Name:  amazon-eks-node-al2023-arm64-nvidia-1.33-v20260209
+    Requirements:
+      Key:       kubernetes.io/arch
+      Operator:  In
+      Values:
+        arm64
+      Key:       karpenter.k8s.aws/instance-gpu-count
+      Operator:  Exists
+    Id:          ami-0fe031c5782d205fc
+    Name:        amazon-eks-node-al2023-x86_64-nvidia-1.33-v20260209
+    Requirements:
+      Key:       kubernetes.io/arch
+      Operator:  In
+      Values:
+        amd64
+      Key:       karpenter.k8s.aws/instance-gpu-count
+      Operator:  Exists
+    Id:          ami-05c188b1d55024608
+    Name:        amazon-eks-node-al2023-x86_64-neuron-1.33-v20260209
+    Requirements:
+      Key:       kubernetes.io/arch
+      Operator:  In
+      Values:
+        amd64
+      Key:       karpenter.k8s.aws/instance-accelerator-count
+      Operator:  Exists
+    Id:          ami-0e958cc4ec75e38df
+    Name:        amazon-eks-node-al2023-arm64-standard-1.33-v20260209
+    Requirements:
+      Key:       kubernetes.io/arch
+      Operator:  In
+      Values:
+        arm64
+      Key:       karpenter.k8s.aws/instance-gpu-count
+      Operator:  DoesNotExist
+      Key:       karpenter.k8s.aws/instance-accelerator-count
+      Operator:  DoesNotExist
+    Id:          ami-086f7f4bb9830978e
+    Name:        amazon-eks-node-al2023-x86_64-standard-1.33-v20260209
+    Requirements:
+      Key:       kubernetes.io/arch
+      Operator:  In
+      Values:
+        amd64
+      Key:       karpenter.k8s.aws/instance-gpu-count
+      Operator:  DoesNotExist
+      Key:       karpenter.k8s.aws/instance-accelerator-count
+      Operator:  DoesNotExist
+  Conditions:
+    Last Transition Time:  2026-02-17T19:06:37Z
+    Message:               
+    Observed Generation:   1
+    Reason:                AMIsReady
+    Status:                True
+    Type:                  AMIsReady
+    Last Transition Time:  2026-02-17T19:06:37Z
+    Message:               
+    Observed Generation:   1
+    Reason:                CapacityReservationsReady
+    Status:                True
+    Type:                  CapacityReservationsReady
+    Last Transition Time:  2026-02-17T19:06:38Z
+    Message:               
+    Observed Generation:   1
+    Reason:                SubnetsReady
+    Status:                True
+    Type:                  SubnetsReady
+    Last Transition Time:  2026-02-17T19:06:38Z
+    Message:               
+    Observed Generation:   1
+    Reason:                SecurityGroupsReady
+    Status:                True
+    Type:                  SecurityGroupsReady
+    Last Transition Time:  2026-02-17T19:06:38Z
+    Message:               
+    Observed Generation:   1
+    Reason:                InstanceProfileReady
+    Status:                True
+    Type:                  InstanceProfileReady
+    Last Transition Time:  2026-02-17T19:06:52Z
+    Message:               
+    Observed Generation:   1
+    Reason:                ValidationSucceeded
+    Status:                True
+    Type:                  ValidationSucceeded
+    Last Transition Time:  2026-02-17T19:06:52Z
+    Message:               
+    Observed Generation:   1
+    Reason:                Ready
+    Status:                True
+    Type:                  Ready
+  Instance Profile:        eks-karpen-lab_1644861561742877732
+  Security Groups:
+    Id:    sg-0e9541cf7c12b25ab
+    Name:  eks-cluster-sg-eks-karpen-lab-798826819
+  Subnets:
+    Id:       subnet-0dad7c800c76dc0e2
+    Zone:     us-west-2a
+    Zone ID:  usw2-az1
+    Id:       subnet-01c922b513b104118
+    Zone:     us-west-2d
+    Zone ID:  usw2-az4
+    Id:       subnet-04135a1ffa277b41e
+    Zone:     us-west-2c
+    Zone ID:  usw2-az3
+    Id:       subnet-0f62a6538e978b25b
+    Zone:     us-west-2a
+    Zone ID:  usw2-az1
+    Id:       subnet-0a8796dab9dc06e5b
+    Zone:     us-west-2d
+    Zone ID:  usw2-az4
+    Id:       subnet-0f0674fc83d514dbf
+    Zone:     us-west-2c
+    Zone ID:  usw2-az3
+Events:
+  Type    Reason                     Age   From       Message
+  ----    ------                     ----  ----       -------
+  Normal  AMIsReady                  16s   karpenter  Status condition transitioned, Type: AMIsReady, Status: Unknown -> True, Reason: AMIsReady
+  Normal  CapacityReservationsReady  16s   karpenter  Status condition transitioned, Type: CapacityReservationsReady, Status: Unknown -> True, Reason: CapacityReservationsReady
+  Normal  SubnetsReady               16s   karpenter  Status condition transitioned, Type: SubnetsReady, Status: Unknown -> True, Reason: SubnetsReady
+  Normal  SecurityGroupsReady        16s   karpenter  Status condition transitioned, Type: SecurityGroupsReady, Status: Unknown -> True, Reason: SecurityGroupsReady
+  Normal  InstanceProfileReady       16s   karpenter  Status condition transitioned, Type: InstanceProfileReady, Status: Unknown -> True, Reason: InstanceProfileReady
+  Normal  ValidationSucceeded        3s    karpenter  Status condition transitioned, Type: ValidationSucceeded, Status: Unknown -> True, Reason: ValidationSucceeded
+  Normal  Ready                      3s    karpenter  Status condition transitioned, Type: Ready, Status: Unknown -> True, Reason: Ready

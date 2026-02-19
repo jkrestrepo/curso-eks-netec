@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: probe-demo
+  namespace: probes-lab
+  labels:
+    app: probe-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: probe-demo
+  template:
+    metadata:
+      labels:
+        app: probe-demo
+    spec:
+      containers:
+      - name: app
+        image: 521544910957.dkr.ecr.us-west-2.amazonaws.com/probes-repo:v1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: STARTUP_DELAY
+          value: "40"
+        startupProbe:
+          httpGet:
+            path: /readyz
+            port: 8080
+          # Ventana total = failureThreshold * periodSeconds = 12 * 5 = 60s
+          failureThreshold: 12
+          periodSeconds: 5
+          timeoutSeconds: 1
+        readinessProbe:
+          httpGet:
+            path: /readyz
+            port: 8080
+          initialDelaySeconds: 1
+          periodSeconds: 3
+          timeoutSeconds: 1
+          failureThreshold: 1
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 3
+          periodSeconds: 5
+          timeoutSeconds: 1
+          failureThreshold: 2

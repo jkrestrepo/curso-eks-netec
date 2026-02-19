@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: app-sa
+  namespace: anti
+automountServiceAccountToken: false
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: app-read-config
+  namespace: anti
+rules:
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get","list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: app-read-config-binding
+  namespace: anti
+subjects:
+- kind: ServiceAccount
+  name: app-sa
+  namespace: anti
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: app-read-config

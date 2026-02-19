@@ -1,0 +1,6 @@
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                               SELECTOR    LABELS
+deployment.apps/api-b   2/2     2            2           2m34s   api          ghcr.io/stefanprodan/podinfo:6.7.1   app=api-b   app=api,env=stage,team=b
+
+NAME                         READY   STATUS    RESTARTS   AGE     IP               NODE                                          NOMINATED NODE   READINESS GATES   LABELS
+pod/api-b-5fb4bcf665-24cwl   1/1     Running   0          2m34s   192.168.86.145   ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>            app=api-b,env=stage,pod-template-hash=5fb4bcf665,team=b
+pod/api-b-5fb4bcf665-x2mtj   1/1     Running   0          2m34s   192.168.50.112   ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>            app=api-b,env=stage,pod-template-hash=5fb4bcf665,team=b

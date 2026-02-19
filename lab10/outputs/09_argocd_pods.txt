@@ -1,0 +1,8 @@
+NAME                                                READY   STATUS    RESTARTS   AGE   IP               NODE                                           NOMINATED NODE   READINESS GATES
+argocd-application-controller-0                     1/1     Running   0          75s   192.168.87.206   ip-192-168-93-22.us-west-2.compute.internal    <none>           <none>
+argocd-applicationset-controller-5f84dbcc4c-jgk9f   1/1     Running   0          75s   192.168.62.17    ip-192-168-34-234.us-west-2.compute.internal   <none>           <none>
+argocd-dex-server-7657c8954b-qtfsf                  1/1     Running   0          75s   192.168.69.15    ip-192-168-93-22.us-west-2.compute.internal    <none>           <none>
+argocd-notifications-controller-6bf647795-sp75m     1/1     Running   0          75s   192.168.58.103   ip-192-168-34-234.us-west-2.compute.internal   <none>           <none>
+argocd-redis-5588f6569b-nfbt6                       1/1     Running   0          75s   192.168.54.41    ip-192-168-34-234.us-west-2.compute.internal   <none>           <none>
+argocd-repo-server-768b7699b5-ljnjg                 1/1     Running   0          75s   192.168.72.102   ip-192-168-93-22.us-west-2.compute.internal    <none>           <none>
+argocd-server-56bc84db64-n4wmw                      1/1     Running   0          75s   192.168.47.145   ip-192-168-34-234.us-west-2.compute.internal   <none>           <none>

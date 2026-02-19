@@ -1,0 +1,27 @@
+22-    State:          Running
+23-      Started:      Tue, 17 Feb 2026 11:20:42 -0500
+24:    Ready:          False
+25-    Restart Count:  0
+26-    Liveness:       http-get http://:8080/healthz delay=10s timeout=1s period=5s #success=1 #failure=3
+27:    Readiness:      http-get http://:8080/readyz delay=1s timeout=1s period=2s #success=1 #failure=1
+28-    Environment:
+29-      STARTUP_DELAY:  5
+--
+32-Conditions:
+33-  Type                        Status
+34:  PodReadyToStartContainers   True 
+35-  Initialized                 True 
+36:  Ready                       False 
+37:  ContainersReady             False 
+38-  PodScheduled                True 
+39-Volumes:
+--
+48-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+49-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+50:Events:
+51-  Type     Reason     Age                   From               Message
+52-  ----     ------     ----                  ----               -------
+--
+55-  Normal   Created    2m59s                 kubelet            Created container: app
+56-  Normal   Started    2m59s                 kubelet            Started container app
+57:  Warning  Unhealthy  11s (x25 over 2m58s)  kubelet            Readiness probe failed: HTTP probe failed with statuscode: 503

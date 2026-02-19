@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: index-html-configmap
+  namespace: reto-eks
+data:
+  index.html: |
+    <html>
+    <h1>NEQUI</h1>
+    </br>
+    <h1>Reto #1: Curso EKS Netec.</h1>
+    </html

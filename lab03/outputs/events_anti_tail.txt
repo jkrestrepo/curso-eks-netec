@@ -1,0 +1,15 @@
+LAST SEEN   TYPE      REASON              OBJECT                      MESSAGE
+4m31s       Normal    Scheduled           pod/web-86cb87cb4d-grb58    Successfully assigned anti/web-86cb87cb4d-grb58 to ip-192-168-48-67.us-west-2.compute.internal
+4m32s       Normal    ScalingReplicaSet   deployment/web              Scaled up replica set web-86cb87cb4d from 0 to 1
+4m32s       Normal    SuccessfulCreate    replicaset/web-86cb87cb4d   Created pod: web-86cb87cb4d-grb58
+4m27s       Normal    Pulled              pod/web-86cb87cb4d-grb58    Successfully pulled image "nginx:latest" in 3.942s (3.942s including waiting). Image size: 62939286 bytes.
+4m10s       Normal    Pulled              pod/web-86cb87cb4d-grb58    Successfully pulled image "nginx:latest" in 502ms (502ms including waiting). Image size: 62939286 bytes.
+3m51s       Normal    Pulled              pod/web-86cb87cb4d-grb58    Successfully pulled image "nginx:latest" in 416ms (416ms including waiting). Image size: 62939286 bytes.
+3m31s       Normal    Pulled              pod/web-86cb87cb4d-grb58    Successfully pulled image "nginx:latest" in 431ms (431ms including waiting). Image size: 62939286 bytes.
+2m50s       Normal    Created             pod/web-86cb87cb4d-grb58    Created container: web
+2m50s       Normal    Pulled              pod/web-86cb87cb4d-grb58    Successfully pulled image "nginx:latest" in 447ms (447ms including waiting). Image size: 62939286 bytes.
+2m50s       Normal    Pulling             pod/web-86cb87cb4d-grb58    Pulling image "nginx:latest"
+2m49s       Normal    Started             pod/web-86cb87cb4d-grb58    Started container web
+2m31s       Normal    Killing             pod/web-86cb87cb4d-grb58    Container web failed liveness probe, will be restarted
+2m11s       Warning   Unhealthy           pod/web-86cb87cb4d-grb58    Liveness probe failed: HTTP probe failed with statuscode: 404
+106s        Warning   BackOff             pod/web-86cb87cb4d-grb58    Back-off restarting failed container web in pod web-86cb87cb4d-grb58_anti(f782135d-f878-4a95-af9a-b80fe26c049b)

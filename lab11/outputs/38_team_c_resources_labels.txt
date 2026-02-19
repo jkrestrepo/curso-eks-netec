@@ -1,0 +1,5 @@
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR      LABELS
+deployment.apps/batch-c   1/1     1            1           2m43s   worker       busybox:1.36   app=batch-c   app=batch,env=prod,team=c
+
+NAME                           READY   STATUS    RESTARTS   AGE     IP               NODE                                          NOMINATED NODE   READINESS GATES   LABELS
+pod/batch-c-576c784758-ffzll   1/1     Running   0          2m42s   192.168.78.249   ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>            app=batch-c,env=prod,pod-template-hash=576c784758,team=c

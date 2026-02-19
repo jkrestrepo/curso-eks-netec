@@ -1,0 +1,16 @@
+2-Namespace:        crossplane-system
+3-Priority:         0
+4:Service Account:  provider-aws-s3-96df8f51090d
+5-Node:             ip-192-168-93-22.us-west-2.compute.internal/192.168.93.22
+6-Start Time:       Wed, 18 Feb 2026 11:16:31 -0500
+--
+39-      AWS_DEFAULT_REGION:           us-west-2
+40-      AWS_REGION:                   us-west-2
+41:      AWS_ROLE_ARN:                 arn:aws:iam::521544910957:role/xp-crossplane-aws-lab9
+42:      AWS_WEB_IDENTITY_TOKEN_FILE:  /var/run/secrets/eks.amazonaws.com/serviceaccount/token
+43-    Mounts:
+44-      /tls/client from tls-client-certs (ro)
+45-      /tls/server from tls-server-certs (ro)
+46:      /var/run/secrets/eks.amazonaws.com/serviceaccount from aws-iam-token (ro)
+47-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dmmwp (ro)
+48-Conditions:

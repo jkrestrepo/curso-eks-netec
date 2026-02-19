@@ -1,0 +1,13 @@
+NAME                            READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                       SELECTOR                    LABELS
+deployment.apps/curl            1/1     1            1           19m   curl         docker.io/curlimages/curl:8.16.0             app=curl                    <none>
+deployment.apps/helloworld-v1   1/1     1            1           19m   helloworld   docker.io/istio/examples-helloworld-v1:1.0   app=helloworld,version=v1   app=helloworld,version=v1
+deployment.apps/helloworld-v2   1/1     1            1           19m   helloworld   docker.io/istio/examples-helloworld-v2:1.0   app=helloworld,version=v2   app=helloworld,version=v2
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE   SELECTOR         LABELS
+service/curl         ClusterIP   10.100.10.229    <none>        80/TCP     19m   app=curl         app=curl,service=curl
+service/helloworld   ClusterIP   10.100.183.115   <none>        5000/TCP   19m   app=helloworld   app=helloworld,service=helloworld
+
+NAME                                 READY   STATUS    RESTARTS   AGE   IP               NODE                                          NOMINATED NODE   READINESS GATES   LABELS
+pod/curl-66d454fb44-j29w8            2/2     Running   0          19m   192.168.95.73    ip-192-168-83-71.us-west-2.compute.internal   <none>           <none>            app=curl,pod-template-hash=66d454fb44,security.istio.io/tlsMode=istio,service.istio.io/canonical-name=curl,service.istio.io/canonical-revision=latest
+pod/helloworld-v1-5787f49bd8-xxm5k   2/2     Running   0          19m   192.168.52.27    ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>            app=helloworld,pod-template-hash=5787f49bd8,security.istio.io/tlsMode=istio,service.istio.io/canonical-name=helloworld,service.istio.io/canonical-revision=v1,version=v1
+pod/helloworld-v2-6746879bdd-7dq52   2/2     Running   0          19m   192.168.50.112   ip-192-168-37-47.us-west-2.compute.internal   <none>           <none>            app=helloworld,pod-template-hash=6746879bdd,security.istio.io/tlsMode=istio,service.istio.io/canonical-name=helloworld,service.istio.io/canonical-revision=v2,version=v2

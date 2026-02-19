@@ -1,0 +1,2 @@
+istio-validator-istio-system      1          2m8s
+istiod-default-validator          1          118s

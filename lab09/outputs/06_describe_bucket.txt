@@ -1,0 +1,83 @@
+Name:         xp-lab9-521544910957-96f16d
+Namespace:    
+Labels:       <none>
+Annotations:  crossplane.io/external-create-pending: 2026-02-18T16:19:38Z
+              crossplane.io/external-create-succeeded: 2026-02-18T16:19:38Z
+              crossplane.io/external-name: xp-lab9-521544910957-96f16d
+API Version:  s3.aws.upbound.io/v1beta2
+Kind:         Bucket
+Metadata:
+  Creation Timestamp:  2026-02-18T16:19:38Z
+  Finalizers:
+    finalizer.managedresource.crossplane.io
+  Generation:        2
+  Resource Version:  7085
+  UID:               a42a6442-91c1-4b68-9eb9-835e6d415419
+Spec:
+  Deletion Policy:  Delete
+  For Provider:
+    Region:  us-west-2
+    Tags:
+      Crossplane - Kind:            bucket.s3.aws.upbound.io
+      Crossplane - Name:            xp-lab9-521544910957-96f16d
+      Crossplane - Providerconfig:  default
+  Init Provider:
+  Management Policies:
+    *
+  Provider Config Ref:
+    Name:  default
+Status:
+  At Provider:
+    Acceleration Status:          
+    Arn:                          arn:aws:s3:::xp-lab9-521544910957-96f16d
+    Bucket Domain Name:           xp-lab9-521544910957-96f16d.s3.amazonaws.com
+    Bucket Region:                us-west-2
+    Bucket Regional Domain Name:  xp-lab9-521544910957-96f16d.s3.us-west-2.amazonaws.com
+    Force Destroy:                false
+    Grant:
+      Id:  0b172c3e7c695ff3c826277dc804eb72e20eb3fc72b20dc72c021994c047978b
+      Permissions:
+        FULL_CONTROL
+      Type:               CanonicalUser
+      Uri:                
+    Hosted Zone Id:       Z3BJ6K6RIION7M
+    Id:                   xp-lab9-521544910957-96f16d
+    Object Lock Enabled:  false
+    Policy:               
+    Region:               us-west-2
+    Request Payer:        BucketOwner
+    Server Side Encryption Configuration:
+      Rule:
+        Apply Server Side Encryption By Default:
+          Kms Master Key Id:  
+          Sse Algorithm:      AES256
+        Bucket Key Enabled:   false
+    Tags:
+      Crossplane - Kind:            bucket.s3.aws.upbound.io
+      Crossplane - Name:            xp-lab9-521544910957-96f16d
+      Crossplane - Providerconfig:  default
+    Tags All:
+      Crossplane - Kind:            bucket.s3.aws.upbound.io
+      Crossplane - Name:            xp-lab9-521544910957-96f16d
+      Crossplane - Providerconfig:  default
+    Versioning:
+      Enabled:     false
+      Mfa Delete:  false
+  Conditions:
+    Last Transition Time:  2026-02-18T16:19:40Z
+    Reason:                Available
+    Status:                True
+    Type:                  Ready
+    Last Transition Time:  2026-02-18T16:19:40Z
+    Observed Generation:   2
+    Reason:                ReconcileSuccess
+    Status:                True
+    Type:                  Synced
+    Last Transition Time:  2026-02-18T16:19:39Z
+    Reason:                Success
+    Status:                True
+    Type:                  LastAsyncOperation
+Events:
+  Type    Reason                   Age   From                                            Message
+  ----    ------                   ----  ----                                            -------
+  Normal  CreatedExternalResource  41s   managed/s3.aws.upbound.io/v1beta1, kind=bucket  Successfully requested creation of external resource

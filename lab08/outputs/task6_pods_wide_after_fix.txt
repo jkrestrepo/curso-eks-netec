@@ -1,0 +1,8 @@
+NAME                             READY   STATUS    RESTARTS   AGE     IP       NODE     NOMINATED NODE   READINESS GATES
+api-critical-7f45f95b5d-2n7sz    0/1     Pending   0          4m41s   <none>   <none>   <none>           <none>
+api-critical-7f45f95b5d-6pfh6    0/1     Pending   0          4m41s   <none>   <none>   <none>           <none>
+job-batch-84fc44b6c6-kcj7m       0/1     Pending   0          4m41s   <none>   <none>   <none>           <none>
+job-batch-84fc44b6c6-kmdpc       0/1     Pending   0          4m41s   <none>   <none>   <none>           <none>
+job-batch-84fc44b6c6-vvr6g       0/1     Pending   0          4m41s   <none>   <none>   <none>           <none>
+oops-critical-7dbccc7866-shf2s   0/1     Pending   0          85s     <none>   <none>   <none>           <none>
+oops-critical-fd8f785d9-vs9xs    0/1     Pending   0          4m41s   <none>   <none>   <none>           <none>

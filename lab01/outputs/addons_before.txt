@@ -1,0 +1,8 @@
+2026-02-16 11:27:22 [ℹ]  Kubernetes version "1.32" in use by cluster "eks-upgrade-lab"
+2026-02-16 11:27:22 [ℹ]  getting all addons
+2026-02-16 11:27:24 [ℹ]  to see issues for an addon run `eksctl get addon --name <addon-name> --cluster <cluster-name>`
+NAME		VERSION			STATUS	ISSUES	IAMROLE	UPDATE AVAILABLE													CONFIGURATION VALUES	NAMESPACE	POD IDENTITY ASSOCIATION ROLES
+coredns		v1.11.4-eksbuild.2	ACTIVE	0		v1.11.4-eksbuild.28,v1.11.4-eksbuild.24,v1.11.4-eksbuild.22,v1.11.4-eksbuild.20,v1.11.4-eksbuild.14,v1.11.4-eksbuild.10				kube-system	
+kube-proxy	v1.32.6-eksbuild.12	ACTIVE	0		v1.32.11-eksbuild.2,v1.32.9-eksbuild.2														kube-system	
+metrics-server	v0.8.1-eksbuild.1	ACTIVE	0																				kube-system	
+vpc-cni		v1.20.4-eksbuild.2	ACTIVE	0		v1.21.1-eksbuild.3,v1.21.1-eksbuild.1,v1.21.0-eksbuild.4,v1.20.5-eksbuild.1,v1.20.4-eksbuild.3							kube-system	

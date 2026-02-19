@@ -1,0 +1,16 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: eks-upgrade-lab
+  region: us-west-2
+
+addons:
+- name: vpc-cni
+  version: latest
+  resolveConflicts: preserve
+- name: coredns
+  version: latest
+  resolveConflicts: preserve
+- name: kube-proxy
+  version: latest
+  resolveConflicts: preserve

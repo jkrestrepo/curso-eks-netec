@@ -1,0 +1,105 @@
+Name:         whoami-bootstrap
+Namespace:    argocd
+Labels:       <none>
+Annotations:  <none>
+API Version:  argoproj.io/v1alpha1
+Kind:         Application
+Metadata:
+  Creation Timestamp:  2026-02-18T16:56:46Z
+  Generation:          12
+  Resource Version:    14566
+  UID:                 a740f42d-3d6f-4736-8acb-af67465cbd95
+Spec:
+  Destination:
+    Namespace:  argocd
+    Server:     https://kubernetes.default.svc
+  Project:      default
+  Source:
+    Path:             argocd
+    Repo URL:         https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git
+    Target Revision:  main
+  Sync Policy:
+    Automated:
+      Prune:      true
+      Self Heal:  true
+    Sync Options:
+      ApplyOutOfSyncOnly=true
+Status:
+  Controller Namespace:  argocd
+  Health:
+    Last Transition Time:  2026-02-18T16:56:48Z
+    Status:                Healthy
+  History:
+    Deploy Started At:  2026-02-18T16:56:48Z
+    Deployed At:        2026-02-18T16:56:49Z
+    Id:                 0
+    Initiated By:
+      Automated:  true
+    Revision:     cdbf5aea49a364cde8594fc59c3bfbb30caa1053
+    Source:
+      Path:             argocd
+      Repo URL:         https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git
+      Target Revision:  main
+  Operation State:
+    Finished At:  2026-02-18T16:56:49Z
+    Message:      successfully synced (no more tasks)
+    Operation:
+      Initiated By:
+        Automated:  true
+      Retry:
+        Limit:  5
+      Sync:
+        Auto Heal Attempts Count:  1
+        Prune:                     true
+        Resources:
+          Group:   argoproj.io
+          Kind:    AppProject
+          Name:    whoami-platform
+        Revision:  cdbf5aea49a364cde8594fc59c3bfbb30caa1053
+        Source:
+          Path:             argocd
+          Repo URL:         https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git
+          Target Revision:  main
+        Sync Options:
+          ApplyOutOfSyncOnly=true
+    Phase:       Succeeded
+    Started At:  2026-02-18T16:56:49Z
+    Sync Result:
+      Revision:  cdbf5aea49a364cde8594fc59c3bfbb30caa1053
+      Source:
+        Path:              argocd
+        Repo URL:          https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git
+        Target Revision:   main
+  Reconciled At:           2026-02-18T16:56:49Z
+  Resource Health Source:  appTree
+  Resources:
+    Group:      argoproj.io
+    Kind:       AppProject
+    Name:       whoami-platform
+    Namespace:  argocd
+    Status:     Synced
+    Version:    v1alpha1
+  Source Hydrator:
+  Source Type:  Directory
+  Summary:
+  Sync:
+    Compared To:
+      Destination:
+        Namespace:  argocd
+        Server:     https://kubernetes.default.svc
+      Source:
+        Path:             argocd
+        Repo URL:         https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git
+        Target Revision:  main
+    Revision:             cdbf5aea49a364cde8594fc59c3bfbb30caa1053
+    Status:               Synced
+Events:
+  Type    Reason              Age   From                           Message
+  ----    ------              ----  ----                           -------
+  Normal  OperationStarted    18s   argocd-application-controller  Initiated automated sync to [cdbf5aea49a364cde8594fc59c3bfbb30caa1053]
+  Normal  ResourceUpdated     18s   argocd-application-controller  Updated sync status:  -> OutOfSync
+  Normal  ResourceUpdated     18s   argocd-application-controller  Updated health status:  -> Healthy
+  Normal  OperationCompleted  17s   argocd-application-controller  Sync operation to cdbf5aea49a364cde8594fc59c3bfbb30caa1053 succeeded
+  Normal  OperationStarted    17s   argocd-application-controller  Initiated automated sync to [cdbf5aea49a364cde8594fc59c3bfbb30caa1053]
+  Normal  ResourceUpdated     17s   argocd-application-controller  Updated sync status: OutOfSync -> Synced
+  Normal  OperationCompleted  17s   argocd-application-controller  Partial sync operation to cdbf5aea49a364cde8594fc59c3bfbb30caa1053 succeeded

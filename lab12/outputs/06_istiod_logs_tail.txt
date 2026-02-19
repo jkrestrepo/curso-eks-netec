@@ -1,0 +1,120 @@
+2026-02-18T19:35:31.319793Z	info	delta	CDS: PUSH request for node:curl-66d454fb44-j29w8.canary resources:22 removed:0 size:20.6kB cached:0/18
+2026-02-18T19:35:31.339724Z	info	delta	EDS: PUSH request for node:curl-66d454fb44-j29w8.canary resources:15 removed:0 size:3.4kB empty:1 cached:0/15 filtered:0
+2026-02-18T19:35:31.435014Z	info	delta	LDS: PUSH request for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:35:31.458788Z	info	delta	RDS: PUSH request for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:6.4kB cached:8/8 filtered:0
+2026-02-18T19:35:35.054164Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:22 removed:0 size:20.6kB cached:0/18
+2026-02-18T19:35:35.056865Z	info	delta	EDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:15 removed:0 size:3.4kB empty:1 cached:0/15
+2026-02-18T19:35:35.058591Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:35:35.059000Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:6.4kB cached:8/8
+2026-02-18T19:35:35.162373Z	info	ads	Push debounce stable[11] 1 for config ServiceEntry/canary/curl.canary.svc.cluster.local: 100.400426ms since last change, 100.400324ms since last push, full=false
+2026-02-18T19:35:35.162489Z	info	ads	XDS: Incremental Pushing ConnectedEndpoints:3 Version:2026-02-18T19:35:30Z/7
+2026-02-18T19:35:36.107851Z	info	ads	Push Status: {
+    "pilot_eds_no_instances": {
+        "outbound|80||curl.canary.svc.cluster.local": {}
+    }
+}
+2026-02-18T19:39:58.527565Z	info	ads	Push debounce stable[12] 1 for config DestinationRule/canary/helloworld: 100.269889ms since last change, 100.269806ms since last push, full=true
+2026-02-18T19:39:58.527821Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:39:58Z/8
+2026-02-18T19:39:58.528281Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:7 removed:0 size:4.6kB cached:3/3
+2026-02-18T19:39:58.528440Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:7 removed:0 size:4.6kB cached:0/3
+2026-02-18T19:39:58.528471Z	info	delta	EDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:15 removed:0 size:3.5kB empty:0 cached:14/15
+2026-02-18T19:39:58.528742Z	info	delta	EDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:15 removed:0 size:3.5kB empty:0 cached:14/15
+2026-02-18T19:39:58.530350Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:39:58.530746Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:39:58.531211Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:6.4kB cached:8/8
+2026-02-18T19:39:58.531244Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:6.4kB cached:7/8
+2026-02-18T19:39:58.528503Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:7 removed:0 size:4.6kB cached:0/3
+2026-02-18T19:39:58.531360Z	info	delta	EDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:15 removed:0 size:3.5kB empty:0 cached:15/15
+2026-02-18T19:39:58.531976Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:39:58.532082Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:6.4kB cached:8/8
+2026-02-18T19:39:58.541125Z	info	delta	EDS: PUSH request for node:curl-66d454fb44-j29w8.canary resources:2 removed:0 size:495B empty:0 cached:0/2 filtered:15
+2026-02-18T19:39:58.545583Z	info	delta	EDS: PUSH request for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:2 removed:0 size:495B empty:0 cached:0/2 filtered:15
+2026-02-18T19:39:58.549230Z	info	delta	EDS: PUSH request for node:helloworld-v2-6746879bdd-7dq52.canary resources:2 removed:0 size:495B empty:0 cached:2/2 filtered:15
+2026-02-18T19:40:23.338666Z	info	ads	Push debounce stable[13] 1 for config VirtualService/canary/helloworld: 100.309048ms since last change, 100.308947ms since last push, full=true
+2026-02-18T19:40:23.338994Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:40:23Z/9
+2026-02-18T19:40:23.339545Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:19/20
+2026-02-18T19:40:23.339759Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:40:23.340788Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:40:23.341210Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:40:23.341753Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.0kB cached:1/8
+2026-02-18T19:40:23.342089Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.0kB cached:7/8
+2026-02-18T19:40:23.342095Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:19/20
+2026-02-18T19:40:23.343413Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:40:23.343794Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.0kB cached:8/8
+2026-02-18T19:40:42.758654Z	info	ads	Push debounce stable[14] 1 for config VirtualService/canary/helloworld: 100.301852ms since last change, 100.301759ms since last push, full=true
+2026-02-18T19:40:42.758964Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:40:42Z/10
+2026-02-18T19:40:42.759375Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:40:42.759807Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:40:42.760285Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:40:42.760612Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:40:42.761514Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:40:42.761775Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:40:42.762043Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:40:42.762221Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:40:42.762297Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.1kB cached:0/8
+2026-02-18T19:41:01.013137Z	info	ads	Push debounce stable[15] 1 for config VirtualService/canary/helloworld: 100.316894ms since last change, 100.316801ms since last push, full=true
+2026-02-18T19:41:01.013529Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:41:01Z/11
+2026-02-18T19:41:01.014179Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:41:01.014799Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:41:01.015647Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:41:01.016127Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:41:01.014186Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:41:01.016734Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.1kB cached:0/8
+2026-02-18T19:41:01.016657Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:41:01.017942Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:41:01.018314Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:41:20.997469Z	info	ads	Push debounce stable[16] 1 for config VirtualService/canary/helloworld: 100.485453ms since last change, 100.485313ms since last push, full=true
+2026-02-18T19:41:20.997957Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:41:20Z/12
+2026-02-18T19:41:20.998415Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:41:20.998513Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:41:20.999527Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:41:20.999847Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:41:21.000316Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.0kB cached:0/8
+2026-02-18T19:41:21.000414Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.0kB cached:8/8
+2026-02-18T19:41:21.000567Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:41:21.014270Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:41:21.014599Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.0kB cached:8/8
+2026-02-18T19:42:52.958573Z	info	ads	Push debounce stable[17] 1 for config VirtualService/canary/helloworld: 100.366767ms since last change, 100.366684ms since last push, full=true
+2026-02-18T19:42:52.958882Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:42:52Z/13
+2026-02-18T19:42:52.959371Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:42:52.959723Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:42:52.960440Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:42:52.961113Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:42:52.961823Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:42:52.961622Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.0kB cached:0/8
+2026-02-18T19:42:52.962534Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.0kB cached:8/8
+2026-02-18T19:42:52.963210Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:42:52.963799Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.0kB cached:8/8
+2026-02-18T19:44:16.355166Z	info	ads	Push debounce stable[18] 1 for config VirtualService/canary/helloworld: 100.293233ms since last change, 100.293143ms since last push, full=true
+2026-02-18T19:44:16.355478Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:44:16Z/14
+2026-02-18T19:44:16.355911Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:44:16.356386Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:44:16.357415Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:44:16.357895Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:44:16.358564Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.1kB cached:3/8
+2026-02-18T19:44:16.358564Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.1kB cached:2/8
+2026-02-18T19:44:16.357918Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:44:16.359794Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:44:16.360276Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:46:51.329992Z	info	ads	Push debounce stable[19] 1 for config VirtualService/canary/helloworld: 100.974305ms since last change, 100.97423ms since last push, full=true
+2026-02-18T19:46:51.330239Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:46:51Z/15
+2026-02-18T19:46:51.330722Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:46:51.330803Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:46:51.332093Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:46:51.332432Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:46:51.332545Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.1kB cached:0/8
+2026-02-18T19:46:51.332611Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:46:51.332922Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:46:51.333524Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:46:51.333761Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.1kB cached:8/8
+2026-02-18T19:48:55.255325Z	info	ads	Push debounce stable[20] 1 for config VirtualService/canary/helloworld: 100.324881ms since last change, 100.324796ms since last push, full=true
+2026-02-18T19:48:55.255588Z	info	ads	XDS: Pushing Services:9 ConnectedEndpoints:3 Version:2026-02-18T19:48:55Z/16
+2026-02-18T19:48:55.255962Z	info	delta	CDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:48:55.256010Z	info	delta	CDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:48:55.256551Z	info	delta	CDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:24 removed:0 size:23.1kB cached:20/20
+2026-02-18T19:48:55.256935Z	info	delta	LDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:48:55.257752Z	info	delta	RDS: PUSH for node:helloworld-v1-5787f49bd8-xxm5k.canary resources:8 removed:0 size:7.0kB cached:0/8
+2026-02-18T19:48:55.258424Z	info	delta	LDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:48:55.258981Z	info	delta	LDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:20 removed:0 size:63.6kB
+2026-02-18T19:48:55.259971Z	info	delta	RDS: PUSH for node:helloworld-v2-6746879bdd-7dq52.canary resources:8 removed:0 size:7.0kB cached:8/8
+2026-02-18T19:48:55.260211Z	info	delta	RDS: PUSH for node:curl-66d454fb44-j29w8.canary resources:8 removed:0 size:7.0kB cached:8/8

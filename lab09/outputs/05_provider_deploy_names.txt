@@ -1,0 +1,3 @@
+deployment.apps/provider-aws-s3-96df8f51090d
+deployment.apps/provider-aws-sqs-10431e79c992
+deployment.apps/upbound-provider-family-aws-a22fe515ffa9

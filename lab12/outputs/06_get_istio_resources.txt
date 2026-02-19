@@ -1,0 +1,5 @@
+NAME                                             HOST         AGE
+destinationrule.networking.istio.io/helloworld   helloworld   11m
+
+NAME                                            GATEWAYS   HOSTS            AGE
+virtualservice.networking.istio.io/helloworld              ["helloworld"]   11m

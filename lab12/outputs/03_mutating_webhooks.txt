@@ -1,0 +1,2 @@
+istio-revision-tag-default      4          108s
+istio-sidecar-injector          4          119s

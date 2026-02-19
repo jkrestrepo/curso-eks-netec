@@ -1,0 +1,1 @@
+deployment "helloworld-v1" successfully rolled out

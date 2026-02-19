@@ -1,0 +1,2 @@
+NAME                         READY   STATUS    RESTARTS   AGE     IP              NODE                                          NOMINATED NODE   READINESS GATES
+probe-demo-9f586cbff-7vxcg   1/1     Running   0          4m30s   192.168.33.14   ip-192-168-42-80.us-west-2.compute.internal   <none>           <none>

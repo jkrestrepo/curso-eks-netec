@@ -1,0 +1,60 @@
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-42bgc    0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-z9ckt    0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-w6g7h    0/3 nodes are available: 1 node(s) had untolerated taint {node.cloudprovider.kubernetes.io/uninitialized: true}, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-7sb2d    0/3 nodes are available: 1 node(s) had untolerated taint {node.cloudprovider.kubernetes.io/uninitialized: true}, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-b488q    0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-qrppj    0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m47s       Warning   FailedScheduling       pod/scale-demo-6575cccc65-46tpj    0/3 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 2 Insufficient cpu. preemption: 0/3 nodes are available: 1 Preemption is not helpful for scheduling, 2 No preemption victims found for incoming pod.
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-w6g7h    Successfully assigned karpenter-demo/scale-demo-6575cccc65-w6g7h to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-qrppj    Successfully assigned karpenter-demo/scale-demo-6575cccc65-qrppj to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-46tpj    Successfully assigned karpenter-demo/scale-demo-6575cccc65-46tpj to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-b488q    Successfully assigned karpenter-demo/scale-demo-6575cccc65-b488q to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-7sb2d    Successfully assigned karpenter-demo/scale-demo-6575cccc65-7sb2d to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-42bgc    Successfully assigned karpenter-demo/scale-demo-6575cccc65-42bgc to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-z5sr5    Successfully assigned karpenter-demo/scale-demo-6575cccc65-z5sr5 to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-h6bfc    Successfully assigned karpenter-demo/scale-demo-6575cccc65-h6bfc to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-z9ckt    Successfully assigned karpenter-demo/scale-demo-6575cccc65-z9ckt to ip-192-168-136-44.us-west-2.compute.internal
+2m38s       Normal    Scheduled              pod/scale-demo-6575cccc65-rzhbh    Successfully assigned karpenter-demo/scale-demo-6575cccc65-rzhbh to ip-192-168-136-44.us-west-2.compute.internal
+2m37s       Normal    Pulling                pod/scale-demo-6575cccc65-qrppj    Pulling image "public.ecr.aws/eks-distro/kubernetes/pause:3.9"
+2m37s       Normal    Pulled                 pod/scale-demo-6575cccc65-w6g7h    Successfully pulled image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" in 270ms (270ms including waiting). Image size: 318773 bytes.
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-42bgc    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-42bgc
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-46tpj    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-46tpj
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-rzhbh    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-rzhbh
+2m37s       Normal    Started                pod/scale-demo-6575cccc65-qrppj    Started container pause
+2m37s       Normal    Created                pod/scale-demo-6575cccc65-qrppj    Created container: pause
+2m37s       Normal    Pulled                 pod/scale-demo-6575cccc65-qrppj    Successfully pulled image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" in 573ms (573ms including waiting). Image size: 318773 bytes.
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-qrppj    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-qrppj
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-w6g7h    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-w6g7h
+2m37s       Normal    Pulling                pod/scale-demo-6575cccc65-w6g7h    Pulling image "public.ecr.aws/eks-distro/kubernetes/pause:3.9"
+2m37s       Normal    Created                pod/scale-demo-6575cccc65-b488q    Created container: pause
+2m37s       Normal    Created                pod/scale-demo-6575cccc65-w6g7h    Created container: pause
+2m37s       Normal    Started                pod/scale-demo-6575cccc65-w6g7h    Started container pause
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-7sb2d    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-7sb2d
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-z9ckt    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-z9ckt
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-b488q    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-b488q
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-h6bfc    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-h6bfc
+2m37s       Normal    Started                pod/scale-demo-6575cccc65-b488q    Started container pause
+2m37s       Normal    TaintManagerEviction   pod/scale-demo-6575cccc65-z5sr5    Cancelling deletion of Pod karpenter-demo/scale-demo-6575cccc65-z5sr5
+2m37s       Normal    Pulling                pod/scale-demo-6575cccc65-b488q    Pulling image "public.ecr.aws/eks-distro/kubernetes/pause:3.9"
+2m37s       Normal    Pulled                 pod/scale-demo-6575cccc65-b488q    Successfully pulled image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" in 573ms (573ms including waiting). Image size: 318773 bytes.
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-z5sr5    Created container: pause
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-z5sr5    Started container pause
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-rzhbh    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-z5sr5    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-h6bfc    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-7sb2d    Started container pause
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-h6bfc    Created container: pause
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-z9ckt    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-z9ckt    Created container: pause
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-z9ckt    Started container pause
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-7sb2d    Created container: pause
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-7sb2d    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-h6bfc    Started container pause
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-46tpj    Started container pause
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-46tpj    Created container: pause
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-46tpj    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-rzhbh    Started container pause
+2m36s       Normal    Started                pod/scale-demo-6575cccc65-42bgc    Started container pause
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-42bgc    Created container: pause
+2m36s       Normal    Pulled                 pod/scale-demo-6575cccc65-42bgc    Container image "public.ecr.aws/eks-distro/kubernetes/pause:3.9" already present on machine
+2m36s       Normal    Created                pod/scale-demo-6575cccc65-rzhbh    Created container: pause
