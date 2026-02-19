@@ -1,0 +1,65 @@
+Name:             awscli-irsa
+Namespace:        irsa-lab
+Priority:         0
+Service Account:  s3-writer
+Node:             ip-192-168-88-172.us-west-2.compute.internal/192.168.88.172
+Start Time:       Thu, 19 Feb 2026 14:31:36 -0500
+Labels:           app=awscli-test
+                  mode=irsa
+Annotations:      <none>
+Status:           Running
+IP:               192.168.73.65
+IPs:
+  IP:  192.168.73.65
+Containers:
+  awscli:
+    Container ID:  containerd://315b1da3774776c37b8271a02014aa3254ed1c9318d8619ca2100971bd335c6e
+    Image:         public.ecr.aws/aws-cli/aws-cli:latest
+    Image ID:      public.ecr.aws/aws-cli/aws-cli@sha256:5b5e45b2dd31d950a08450df8ac276314b8e5104ce86dd415f52ebf40efcf7f0
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+      sleep 3600
+    State:          Running
+      Started:      Thu, 19 Feb 2026 14:31:37 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      AWS_REGION:                   us-west-2
+      AWS_STS_REGIONAL_ENDPOINTS:   regional
+      AWS_ROLE_ARN:                 arn:aws:iam::521544910957:role/irsa-s3-writer-eks-keda-lab-20260219141809
+      AWS_WEB_IDENTITY_TOKEN_FILE:  /var/run/secrets/eks.amazonaws.com/serviceaccount/token
+    Mounts:
+      /var/run/secrets/eks.amazonaws.com/serviceaccount from aws-iam-token (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wxmcp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  aws-iam-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  86400
+  kube-api-access-wxmcp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  4m11s  default-scheduler  Successfully assigned irsa-lab/awscli-irsa to ip-192-168-88-172.us-west-2.compute.internal
+  Normal  Pulling    4m11s  kubelet            Pulling image "public.ecr.aws/aws-cli/aws-cli:latest"
+  Normal  Pulled     4m10s  kubelet            Successfully pulled image "public.ecr.aws/aws-cli/aws-cli:latest" in 167ms (167ms including waiting). Image size: 132617454 bytes.
+  Normal  Created    4m10s  kubelet            Created container: awscli
+  Normal  Started    4m10s  kubelet            Started container awscli

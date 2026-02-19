@@ -1,0 +1,4 @@
+rolebinding.rbac.authorization.k8s.io/rb-ci-deployer created
+rolebinding.rbac.authorization.k8s.io/rb-observer-logs created
+rolebinding.rbac.authorization.k8s.io/rb-debug-logs created
+rolebinding.rbac.authorization.k8s.io/rb-debug-exec created

@@ -1,0 +1,11 @@
+LAST SEEN   TYPE     REASON      OBJECT              MESSAGE
+4m31s       Normal   Scheduled   pod/awscli-noirsa   Successfully assigned irsa-lab/awscli-noirsa to ip-192-168-88-172.us-west-2.compute.internal
+4m30s       Normal   Pulling     pod/awscli-noirsa   Pulling image "public.ecr.aws/aws-cli/aws-cli:latest"
+4m23s       Normal   Pulled      pod/awscli-noirsa   Successfully pulled image "public.ecr.aws/aws-cli/aws-cli:latest" in 7.362s (7.362s including waiting). Image size: 132617454 bytes.
+4m23s       Normal   Created     pod/awscli-noirsa   Created container: awscli
+4m23s       Normal   Started     pod/awscli-noirsa   Started container awscli
+4m1s        Normal   Scheduled   pod/awscli-irsa     Successfully assigned irsa-lab/awscli-irsa to ip-192-168-88-172.us-west-2.compute.internal
+4m1s        Normal   Pulling     pod/awscli-irsa     Pulling image "public.ecr.aws/aws-cli/aws-cli:latest"
+4m          Normal   Pulled      pod/awscli-irsa     Successfully pulled image "public.ecr.aws/aws-cli/aws-cli:latest" in 167ms (167ms including waiting). Image size: 132617454 bytes.
+4m          Normal   Created     pod/awscli-irsa     Created container: awscli
+4m          Normal   Started     pod/awscli-irsa     Started container awscli

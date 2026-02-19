@@ -1,0 +1,17 @@
+NAME                  READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES       SELECTOR
+deployment.apps/web   2/2     2            2           53s   nginx        nginx:1.27   app=web
+
+NAME                       READY   STATUS    RESTARTS   AGE   IP               NODE                                           NOMINATED NODE   READINESS GATES
+pod/web-5c78f69c86-c75pr   1/1     Running   0          53s   192.168.33.110   ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+pod/web-5c78f69c86-hfjgg   1/1     Running   0          53s   192.168.73.65    ip-192-168-88-172.us-west-2.compute.internal   <none>           <none>
+
+NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+service/web   ClusterIP   10.100.199.24   <none>        80/TCP    53s   app=web
+
+NAME                         DATA   AGE
+configmap/app-config         1      2m42s
+configmap/kube-root-ca.crt   1      3m20s
+configmap/other-config       1      2m28s
+
+NAME               TYPE     DATA   AGE
+secret/db-secret   Opaque   1      2m13s

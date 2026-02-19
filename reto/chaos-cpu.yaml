@@ -1,0 +1,17 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: StressChaos
+metadata:
+  name: web-cpu-stress
+  namespace: chaos-mesh
+spec:
+  mode: one
+  duration: "120s"
+  selector:
+    namespaces:
+      - reto-eks
+    labelSelectors:
+      app: web
+  stressors:
+    cpu:
+      workers: 50
+      load: 100

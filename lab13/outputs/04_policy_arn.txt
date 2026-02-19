@@ -1,0 +1,1 @@
+POLICY_ARN=arn:aws:iam::521544910957:policy/keda-sqs-policy-20260219110120

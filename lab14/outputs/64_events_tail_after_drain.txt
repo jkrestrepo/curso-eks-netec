@@ -1,0 +1,50 @@
+6m46s       Normal    Scheduled           pod/web-c96c8b5b6-xg72w     Successfully assigned ha-lab/web-c96c8b5b6-xg72w to ip-192-168-45-199.us-west-2.compute.internal
+6m46s       Normal    Killing             pod/web-d8cb7887-mtnf2      Stopping container web
+6m44s       Normal    SuccessfulDelete    replicaset/web-d8cb7887     Deleted pod: web-d8cb7887-bv9n9
+6m44s       Normal    Killing             pod/web-d8cb7887-bv9n9      Stopping container web
+6m6s        Normal    Scheduled           pod/tester                  Successfully assigned ha-lab/tester to ip-192-168-88-172.us-west-2.compute.internal
+6m5s        Normal    Pulling             pod/tester                  Pulling image "curlimages/curl:8.10.1"
+6m3s        Normal    Created             pod/tester                  Created container: tester
+6m3s        Normal    Pulled              pod/tester                  Successfully pulled image "curlimages/curl:8.10.1" in 1.853s (1.853s including waiting). Image size: 9414401 bytes.
+6m3s        Normal    Started             pod/tester                  Started container tester
+4m18s       Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-5kt2m
+4m18s       Normal    SuccessfulDelete    replicaset/web-c96c8b5b6    Deleted pod: web-c96c8b5b6-tdg8q
+4m18s       Normal    Killing             pod/web-c96c8b5b6-tdg8q     Stopping container web
+4m18s       Normal    Scheduled           pod/web-6cdd4b5ddc-5kt2m    Successfully assigned ha-lab/web-6cdd4b5ddc-5kt2m to ip-192-168-88-172.us-west-2.compute.internal
+4m18s       Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-ldx8s
+4m17s       Normal    Pulling             pod/web-6cdd4b5ddc-5kt2m    Pulling image "ghcr.io/stefanprodan/podinfo:latest"
+4m17s       Normal    Scheduled           pod/web-6cdd4b5ddc-ldx8s    Successfully assigned ha-lab/web-6cdd4b5ddc-ldx8s to ip-192-168-45-199.us-west-2.compute.internal
+4m17s       Normal    Pulling             pod/web-6cdd4b5ddc-ldx8s    Pulling image "ghcr.io/stefanprodan/podinfo:latest"
+4m15s       Normal    Created             pod/web-6cdd4b5ddc-ldx8s    Created container: web
+4m15s       Normal    Pulled              pod/web-6cdd4b5ddc-ldx8s    Successfully pulled image "ghcr.io/stefanprodan/podinfo:latest" in 2.137s (2.137s including waiting). Image size: 33147826 bytes.
+4m15s       Normal    Started             pod/web-6cdd4b5ddc-ldx8s    Started container web
+4m14s       Normal    Pulled              pod/web-6cdd4b5ddc-5kt2m    Successfully pulled image "ghcr.io/stefanprodan/podinfo:latest" in 2.608s (2.608s including waiting). Image size: 33147826 bytes.
+4m14s       Normal    Started             pod/web-6cdd4b5ddc-5kt2m    Started container web
+4m14s       Normal    Created             pod/web-6cdd4b5ddc-5kt2m    Created container: web
+4m12s       Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-vzk7v
+4m12s       Normal    Scheduled           pod/web-6cdd4b5ddc-vzk7v    Successfully assigned ha-lab/web-6cdd4b5ddc-vzk7v to ip-192-168-88-172.us-west-2.compute.internal
+4m12s       Normal    SuccessfulDelete    replicaset/web-c96c8b5b6    Deleted pod: web-c96c8b5b6-c5qlg
+4m12s       Normal    Killing             pod/web-c96c8b5b6-c5qlg     Stopping container web
+4m11s       Normal    Pulled              pod/web-6cdd4b5ddc-vzk7v    Container image "ghcr.io/stefanprodan/podinfo:latest" already present on machine
+4m11s       Normal    Created             pod/web-6cdd4b5ddc-vzk7v    Created container: web
+4m11s       Normal    Started             pod/web-6cdd4b5ddc-vzk7v    Started container web
+4m11s       Warning   Unhealthy           pod/web-c96c8b5b6-tdg8q     Readiness probe failed: HTTP probe failed with statuscode: 503
+4m7s        Normal    Killing             pod/web-c96c8b5b6-xg72w     Stopping container web
+4m7s        Normal    SuccessfulDelete    replicaset/web-c96c8b5b6    Deleted pod: web-c96c8b5b6-xg72w
+4m7s        Normal    ScalingReplicaSet   deployment/web              (combined from similar events): Scaled down replica set web-c96c8b5b6 from 1 to 0
+4m4s        Warning   Unhealthy           pod/web-c96c8b5b6-c5qlg     Readiness probe failed: Get "http://192.168.94.117:9898/readyz": dial tcp 192.168.94.117:9898: connect: connection refused
+3m59s       Warning   Unhealthy           pod/web-c96c8b5b6-xg72w     Readiness probe failed: HTTP probe failed with statuscode: 503
+72s         Normal    Killing             pod/web-6cdd4b5ddc-5kt2m    Stopping container web
+72s         Normal    Killing             pod/tester                  Stopping container tester
+71s         Normal    Pulled              pod/web-6cdd4b5ddc-cwsnk    Container image "ghcr.io/stefanprodan/podinfo:latest" already present on machine
+71s         Normal    Scheduled           pod/web-6cdd4b5ddc-cwsnk    Successfully assigned ha-lab/web-6cdd4b5ddc-cwsnk to ip-192-168-45-199.us-west-2.compute.internal
+71s         Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-cwsnk
+71s         Normal    Created             pod/web-6cdd4b5ddc-cwsnk    Created container: web
+70s         Normal    Started             pod/web-6cdd4b5ddc-cwsnk    Started container web
+61s         Normal    Scheduled           pod/web-6cdd4b5ddc-c25ft    Successfully assigned ha-lab/web-6cdd4b5ddc-c25ft to ip-192-168-45-199.us-west-2.compute.internal
+61s         Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-c25ft
+61s         Normal    Killing             pod/web-6cdd4b5ddc-vzk7v    Stopping container web
+60s         Normal    Started             pod/web-6cdd4b5ddc-c25ft    Started container web
+60s         Normal    Created             pod/web-6cdd4b5ddc-c25ft    Created container: web
+60s         Normal    Pulled              pod/web-6cdd4b5ddc-c25ft    Container image "ghcr.io/stefanprodan/podinfo:latest" already present on machine
+54s         Warning   Unhealthy           pod/web-6cdd4b5ddc-vzk7v    Readiness probe failed: HTTP probe failed with statuscode: 503

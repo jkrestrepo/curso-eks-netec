@@ -1,0 +1,1 @@
+OIDC_ISSUER=https://oidc.eks.us-west-2.amazonaws.com/id/42A96645A4A99A739AAACE3923971964

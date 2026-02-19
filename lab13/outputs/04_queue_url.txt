@@ -1,0 +1,1 @@
+QUEUE_URL=https://sqs.us-west-2.amazonaws.com/521544910957/keda-lab-queue-20260219110120

@@ -1,0 +1,30 @@
+keda          46m         Normal   Pulled               pod/keda-operator-847d4d4696-vskxd                      Successfully pulled image "ghcr.io/kedacore/keda:2.19.0" in 374ms (374ms including waiting). Image size: 88281056 bytes.
+keda          46m         Normal   Created              pod/keda-operator-847d4d4696-vskxd                      Created container: keda-operator
+keda          46m         Normal   Started              pod/keda-operator-847d4d4696-vskxd                      Started container keda-operator
+keda          46m         Normal   Pulling              pod/keda-operator-847d4d4696-vskxd                      Pulling image "ghcr.io/kedacore/keda:2.19.0"
+keda          46m         Normal   SuccessfulDelete     replicaset/keda-operator-bb559658b                      Deleted pod: keda-operator-bb559658b-7djsg
+keda          46m         Normal   ScalingReplicaSet    deployment/keda-operator                                Scaled down replica set keda-operator-bb559658b from 1 to 0
+keda          46m         Normal   Killing              pod/keda-operator-bb559658b-7djsg                       Stopping container keda-operator
+keda          46m         Normal   LeaderElection       lease/operator.keda.sh                                  keda-operator-847d4d4696-vskxd_bc5cae8a-8968-4072-9639-3372be079d09 became leader
+default       14m         Normal   NodeNotSchedulable   node/ip-192-168-88-172.us-west-2.compute.internal       Node ip-192-168-88-172.us-west-2.compute.internal status is now: NodeNotSchedulable
+kube-system   13m         Normal   Killing              pod/metrics-server-7c476fcb4d-d2z95                     Stopping container metrics-server
+kube-system   13m         Normal   Scheduled            pod/metrics-server-7c476fcb4d-qttcl                     Successfully assigned kube-system/metrics-server-7c476fcb4d-qttcl to ip-192-168-45-199.us-west-2.compute.internal
+keda          13m         Normal   Killing              pod/keda-operator-metrics-apiserver-7ff5758fd7-chl55    Stopping container keda-operator-metrics-apiserver
+keda          13m         Normal   Killing              pod/keda-admission-webhooks-5d67c9bcfb-b7czh            Stopping container keda-admission-webhooks
+kube-system   13m         Normal   SuccessfulCreate     replicaset/metrics-server-7c476fcb4d                    Created pod: metrics-server-7c476fcb4d-qttcl
+keda          13m         Normal   Scheduled            pod/keda-operator-metrics-apiserver-7ff5758fd7-p4spr    Successfully assigned keda/keda-operator-metrics-apiserver-7ff5758fd7-p4spr to ip-192-168-45-199.us-west-2.compute.internal
+keda          13m         Normal   Pulling              pod/keda-operator-metrics-apiserver-7ff5758fd7-p4spr    Pulling image "ghcr.io/kedacore/keda-metrics-apiserver:2.19.0"
+kube-system   13m         Normal   Started              pod/metrics-server-7c476fcb4d-qttcl                     Started container metrics-server
+keda          13m         Normal   SuccessfulCreate     replicaset/keda-operator-metrics-apiserver-7ff5758fd7   Created pod: keda-operator-metrics-apiserver-7ff5758fd7-p4spr
+keda          13m         Normal   Scheduled            pod/keda-admission-webhooks-5d67c9bcfb-wk4ts            Successfully assigned keda/keda-admission-webhooks-5d67c9bcfb-wk4ts to ip-192-168-45-199.us-west-2.compute.internal
+kube-system   13m         Normal   Pulled               pod/metrics-server-7c476fcb4d-qttcl                     Container image "602401143452.dkr.ecr.us-west-2.amazonaws.com/eks/metrics-server:v0.8.1-eksbuild.1" already present on machine
+keda          13m         Normal   Pulling              pod/keda-admission-webhooks-5d67c9bcfb-wk4ts            Pulling image "ghcr.io/kedacore/keda-admission-webhooks:2.19.0"
+kube-system   13m         Normal   Created              pod/metrics-server-7c476fcb4d-qttcl                     Created container: metrics-server
+keda          13m         Normal   SuccessfulCreate     replicaset/keda-admission-webhooks-5d67c9bcfb           Created pod: keda-admission-webhooks-5d67c9bcfb-wk4ts
+keda          13m         Normal   Pulled               pod/keda-admission-webhooks-5d67c9bcfb-wk4ts            Successfully pulled image "ghcr.io/kedacore/keda-admission-webhooks:2.19.0" in 2.667s (2.667s including waiting). Image size: 29208797 bytes.
+keda          13m         Normal   Created              pod/keda-admission-webhooks-5d67c9bcfb-wk4ts            Created container: keda-admission-webhooks
+keda          13m         Normal   Started              pod/keda-admission-webhooks-5d67c9bcfb-wk4ts            Started container keda-admission-webhooks
+keda          13m         Normal   Pulled               pod/keda-operator-metrics-apiserver-7ff5758fd7-p4spr    Successfully pulled image "ghcr.io/kedacore/keda-metrics-apiserver:2.19.0" in 3.501s (3.502s including waiting). Image size: 64372621 bytes.
+keda          13m         Normal   Started              pod/keda-operator-metrics-apiserver-7ff5758fd7-p4spr    Started container keda-operator-metrics-apiserver
+keda          13m         Normal   Created              pod/keda-operator-metrics-apiserver-7ff5758fd7-p4spr    Created container: keda-operator-metrics-apiserver
+default       11m         Normal   NodeSchedulable      node/ip-192-168-88-172.us-west-2.compute.internal       Node ip-192-168-88-172.us-west-2.compute.internal status is now: NodeSchedulable

@@ -1,0 +1,2 @@
+2026-02-19 11:17:06 [ℹ]  will create IAM Open ID Connect provider for cluster "eks-keda-lab" in "us-west-2"
+2026-02-19 11:17:06 [✔]  created IAM Open ID Connect provider for cluster "eks-keda-lab" in "us-west-2"

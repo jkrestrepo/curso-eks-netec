@@ -1,0 +1,10 @@
+== STS identity (debe mostrar assumed-role) ==
+[?1h={[m
+    "UserId": "AROAXS3T7ZBW4F7DMSI7Z:botocore-session-1771529590",[m
+    "Account": "521544910957",[m
+    "Arn": "arn:aws:sts::521544910957:assumed-role/irsa-s3-writer-eks-keda-lab-2[m 0260219141809/botocore-session-1771529590"[m
+}[m
+[K[?1l>== S3 PUT (debe OK) ==
+Completed 10 Bytes/10 Bytes (154 Bytes/s) with 1 file(s) remainingupload: ../tmp/hello.txt to s3://irsa-lab-521544910957-20260219141809/test/hello.txt
+== S3 LIST (debe OK) ==
+2026-02-19 19:33:12         10 hello.txt

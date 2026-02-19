@@ -1,0 +1,10 @@
+Name:         rb-debug-exec
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  Role
+  Name:  dev-exec
+Subjects:
+  Kind            Name      Namespace
+  ----            ----      ---------
+  ServiceAccount  sa-debug  rbac-dev

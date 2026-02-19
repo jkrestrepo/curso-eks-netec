@@ -1,0 +1,5 @@
+NAME                                         CREATED AT
+role.rbac.authorization.k8s.io/prod-viewer   2026-02-19T19:51:24Z
+
+NAME                                                 ROLE               AGE
+rolebinding.rbac.authorization.k8s.io/rb-prod-view   Role/prod-viewer   82s

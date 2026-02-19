@@ -1,0 +1,10 @@
+Name:         rb-ci-deployer
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  Role
+  Name:  dev-deployer
+Subjects:
+  Kind            Name   Namespace
+  ----            ----   ---------
+  ServiceAccount  sa-ci  rbac-dev

@@ -1,0 +1,18 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"rbac.authorization.k8s.io/v1","kind":"Role","metadata":{"annotations":{},"name":"dev-exec","namespace":"rbac-dev"},"rules":[{"apiGroups":[""],"resources":["pods/exec"],"verbs":["create"]}]}
+  creationTimestamp: "2026-02-19T19:50:49Z"
+  name: dev-exec
+  namespace: rbac-dev
+  resourceVersion: "45212"
+  uid: 4b103685-2b4f-4104-94a6-28ed2ede44ef
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods/exec
+  verbs:
+  - create

@@ -1,0 +1,2 @@
+role.rbac.authorization.k8s.io/dev-config-updater created
+rolebinding.rbac.authorization.k8s.io/rb-config-updater created

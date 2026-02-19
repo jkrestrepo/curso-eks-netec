@@ -1,0 +1,2 @@
+NAME                               REFERENCE               TARGETS             MINPODS   MAXPODS   REPLICAS   AGE
+keda-hpa-sqs-worker-scaledobject   Deployment/sqs-worker   <unknown>/5 (avg)   1         10        0          103m

@@ -1,0 +1,5 @@
+2026/02/19 19:47:43 [notice] 1#1: OS: Linux 6.12.66-88.122.amzn2023.x86_64
+2026/02/19 19:47:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 65536:1048576
+2026/02/19 19:47:43 [notice] 1#1: start worker processes
+2026/02/19 19:47:43 [notice] 1#1: start worker process 30
+2026/02/19 19:47:43 [notice] 1#1: start worker process 31

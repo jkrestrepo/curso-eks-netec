@@ -1,0 +1,20 @@
+keda        25m         Normal   SuccessfulCreate    replicaset/keda-operator-bb559658b    Created pod: keda-operator-bb559658b-7djsg
+keda        25m         Normal   Started             pod/keda-operator-bb559658b-7djsg     Started container keda-operator
+keda        25m         Normal   Created             pod/keda-operator-bb559658b-7djsg     Created container: keda-operator
+keda        25m         Normal   Pulled              pod/keda-operator-bb559658b-7djsg     Successfully pulled image "ghcr.io/kedacore/keda:2.19.0" in 372ms (372ms including waiting). Image size: 88281056 bytes.
+keda        25m         Normal   Pulling             pod/keda-operator-bb559658b-7djsg     Pulling image "ghcr.io/kedacore/keda:2.19.0"
+keda        25m         Normal   ScalingReplicaSet   deployment/keda-operator              Scaled down replica set keda-operator-7d9457bc46 from 1 to 0
+keda        25m         Normal   Killing             pod/keda-operator-7d9457bc46-nnl2w    Stopping container keda-operator
+keda        25m         Normal   SuccessfulDelete    replicaset/keda-operator-7d9457bc46   Deleted pod: keda-operator-7d9457bc46-nnl2w
+keda        25m         Normal   LeaderElection      lease/operator.keda.sh                keda-operator-bb559658b-7djsg_d22dc2f3-0ff4-4d8b-984f-5ea8045b908c became leader
+keda        21m         Normal   SuccessfulCreate    replicaset/keda-operator-847d4d4696   Created pod: keda-operator-847d4d4696-vskxd
+keda        21m         Normal   ScalingReplicaSet   deployment/keda-operator              Scaled up replica set keda-operator-847d4d4696 from 0 to 1
+keda        21m         Normal   Scheduled           pod/keda-operator-847d4d4696-vskxd    Successfully assigned keda/keda-operator-847d4d4696-vskxd to ip-192-168-45-199.us-west-2.compute.internal
+keda        21m         Normal   Created             pod/keda-operator-847d4d4696-vskxd    Created container: keda-operator
+keda        21m         Normal   Started             pod/keda-operator-847d4d4696-vskxd    Started container keda-operator
+keda        21m         Normal   Pulled              pod/keda-operator-847d4d4696-vskxd    Successfully pulled image "ghcr.io/kedacore/keda:2.19.0" in 374ms (374ms including waiting). Image size: 88281056 bytes.
+keda        21m         Normal   Pulling             pod/keda-operator-847d4d4696-vskxd    Pulling image "ghcr.io/kedacore/keda:2.19.0"
+keda        21m         Normal   SuccessfulDelete    replicaset/keda-operator-bb559658b    Deleted pod: keda-operator-bb559658b-7djsg
+keda        21m         Normal   Killing             pod/keda-operator-bb559658b-7djsg     Stopping container keda-operator
+keda        21m         Normal   ScalingReplicaSet   deployment/keda-operator              Scaled down replica set keda-operator-bb559658b from 1 to 0
+keda        21m         Normal   LeaderElection      lease/operator.keda.sh                keda-operator-847d4d4696-vskxd_bc5cae8a-8968-4072-9639-3372be079d09 became leader

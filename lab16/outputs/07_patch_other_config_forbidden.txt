@@ -1,0 +1,1 @@
+Error from server (Forbidden): configmaps "other-config" is forbidden: User "system:serviceaccount:rbac-dev:sa-config" cannot patch resource "configmaps" in API group "" in the namespace "rbac-dev"

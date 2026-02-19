@@ -1,0 +1,4 @@
+NAME                                               READY   STATUS    RESTARTS       AGE    IP               NODE                                           NOMINATED NODE   READINESS GATES
+keda-admission-webhooks-5d67c9bcfb-b7czh           1/1     Running   0              109s   192.168.83.209   ip-192-168-88-172.us-west-2.compute.internal   <none>           <none>
+keda-operator-85ff5bb446-p6cvq                     1/1     Running   1 (102s ago)   109s   192.168.63.214   ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+keda-operator-metrics-apiserver-7ff5758fd7-chl55   1/1     Running   0              109s   192.168.73.65    ip-192-168-88-172.us-west-2.compute.internal   <none>           <none>

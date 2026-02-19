@@ -1,0 +1,22 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"rbac.authorization.k8s.io/v1","kind":"Role","metadata":{"annotations":{},"name":"dev-logs","namespace":"rbac-dev"},"rules":[{"apiGroups":[""],"resources":["pods","pods/log","events"],"verbs":["get","list","watch"]}]}
+  creationTimestamp: "2026-02-19T19:50:48Z"
+  name: dev-logs
+  namespace: rbac-dev
+  resourceVersion: "45210"
+  uid: 9b0d0901-472b-427c-883f-ddb1784597ec
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - pods/log
+  - events
+  verbs:
+  - get
+  - list
+  - watch

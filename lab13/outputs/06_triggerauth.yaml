@@ -1,0 +1,20 @@
+apiVersion: keda.sh/v1alpha1
+kind: TriggerAuthentication
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"keda.sh/v1alpha1","kind":"TriggerAuthentication","metadata":{"annotations":{},"name":"aws-pod-identity","namespace":"keda-demo"},"spec":{"podIdentity":{"identityOwner":"keda","provider":"aws"}}}
+  creationTimestamp: "2026-02-19T16:51:32Z"
+  finalizers:
+  - finalizer.keda.sh
+  generation: 1
+  name: aws-pod-identity
+  namespace: keda-demo
+  resourceVersion: "12685"
+  uid: 8dd7f8c3-57a5-484a-a5d2-41a256fd50ad
+spec:
+  podIdentity:
+    identityOwner: keda
+    provider: aws
+status:
+  scaledobjects: sqs-worker-scaledobject

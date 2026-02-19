@@ -1,0 +1,3 @@
+role.rbac.authorization.k8s.io/dev-deployer created
+role.rbac.authorization.k8s.io/dev-logs created
+role.rbac.authorization.k8s.io/dev-exec created

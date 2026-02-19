@@ -1,0 +1,10 @@
+Name:             web-pdb
+Namespace:        ha-lab
+Max unavailable:  1
+Selector:         app=web
+Status:
+    Allowed disruptions:  1
+    Current:              3
+    Desired:              2
+    Total:                3
+Events:                   <none>

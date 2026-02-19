@@ -1,0 +1,6 @@
+NAME              STATUS   AGE
+default           Active   3h35m
+keda              Active   3h25m
+kube-node-lease   Active   3h35m
+kube-public       Active   3h35m
+kube-system       Active   3h35m

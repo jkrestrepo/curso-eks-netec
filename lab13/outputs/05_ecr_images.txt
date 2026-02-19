@@ -1,0 +1,40 @@
+---------------------------------------------------------------------------------------------------------
+|                                            DescribeImages                                             |
++-------------------------------------------------------------------------------------------------------+
+||                                            imageDetails                                             ||
+|+-------------------------+---------------------------------------------------------------------------+|
+||  artifactMediaType      |  application/vnd.oci.image.config.v1+json                                 ||
+||  imageDigest            |  sha256:363b632610691553598469f41ebfc8ec702c42e72103e1ddb6b092a2f0b4b040  ||
+||  imageManifestMediaType |  application/vnd.oci.image.manifest.v1+json                               ||
+||  imagePushedAt          |  2026-02-19T11:49:05.338000-05:00                                         ||
+||  imageSizeInBytes       |  1188                                                                     ||
+||  imageStatus            |  ACTIVE                                                                   ||
+||  registryId             |  521544910957                                                             ||
+||  repositoryName         |  keda-sqs-worker                                                          ||
+|+-------------------------+---------------------------------------------------------------------------+|
+||                                            imageDetails                                             ||
+|+-------------------------+---------------------------------------------------------------------------+|
+||  artifactMediaType      |  application/vnd.oci.image.config.v1+json                                 ||
+||  imageDigest            |  sha256:6e26b1bf89462c36c0f4e19f3a82cd5889a2b956de23edcca5bed829b9bb81c9  ||
+||  imageManifestMediaType |  application/vnd.oci.image.manifest.v1+json                               ||
+||  imagePushedAt          |  2026-02-19T11:49:05.322000-05:00                                         ||
+||  imageSizeInBytes       |  64280576                                                                 ||
+||  imageStatus            |  ACTIVE                                                                   ||
+||  registryId             |  521544910957                                                             ||
+||  repositoryName         |  keda-sqs-worker                                                          ||
+|+-------------------------+---------------------------------------------------------------------------+|
+||                                            imageDetails                                             ||
+|+-------------------------+---------------------------------------------------------------------------+|
+||  artifactMediaType      |                                                                           ||
+||  imageDigest            |  sha256:e123814a50bddc8e938a919519c2ee74ef993916f2a1383cc5f0f4b191763eb6  ||
+||  imageManifestMediaType |  application/vnd.oci.image.index.v1+json                                  ||
+||  imagePushedAt          |  2026-02-19T11:49:05.653000-05:00                                         ||
+||  imageSizeInBytes       |  64280576                                                                 ||
+||  imageStatus            |  ACTIVE                                                                   ||
+||  registryId             |  521544910957                                                             ||
+||  repositoryName         |  keda-sqs-worker                                                          ||
+|+-------------------------+---------------------------------------------------------------------------+|
+|||                                             imageTags                                             |||
+||+---------------------------------------------------------------------------------------------------+||
+|||  lab13-20260219110120                                                                             |||
+||+---------------------------------------------------------------------------------------------------+||

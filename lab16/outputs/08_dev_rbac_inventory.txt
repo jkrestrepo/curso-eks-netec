@@ -1,0 +1,19 @@
+NAME                         SECRETS   AGE
+serviceaccount/default       0         14m
+serviceaccount/sa-ci         0         10m
+serviceaccount/sa-config     0         9m39s
+serviceaccount/sa-debug      0         9m50s
+serviceaccount/sa-observer   0         10m
+
+NAME                                                CREATED AT
+role.rbac.authorization.k8s.io/dev-config-updater   2026-02-19T19:55:46Z
+role.rbac.authorization.k8s.io/dev-deployer         2026-02-19T19:50:48Z
+role.rbac.authorization.k8s.io/dev-exec             2026-02-19T19:50:49Z
+role.rbac.authorization.k8s.io/dev-logs             2026-02-19T19:50:48Z
+
+NAME                                                      ROLE                      AGE
+rolebinding.rbac.authorization.k8s.io/rb-ci-deployer      Role/dev-deployer         8m21s
+rolebinding.rbac.authorization.k8s.io/rb-config-updater   Role/dev-config-updater   3m42s
+rolebinding.rbac.authorization.k8s.io/rb-debug-exec       Role/dev-exec             8m21s
+rolebinding.rbac.authorization.k8s.io/rb-debug-logs       Role/dev-logs             8m21s
+rolebinding.rbac.authorization.k8s.io/rb-observer-logs    Role/dev-logs             8m21s

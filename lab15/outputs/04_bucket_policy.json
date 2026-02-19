@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowOnlyAdminAndIRSA",
+      "Effect": "Allow",
+      "Principal": { "AWS": "arn:aws:iam::521544910957:root" },
+      "Action": ["s3:ListBucket","s3:GetObject","s3:PutObject","s3:DeleteObject"],
+      "Resource": [
+        "arn:aws:s3:::irsa-lab-521544910957-20260219141809",
+        "arn:aws:s3:::irsa-lab-521544910957-20260219141809/*"
+      ],
+      "Condition": {
+        "ArnLike": {
+          "aws:PrincipalArn": [
+            "arn:aws:iam::521544910957:user/awsstudent56",
+            "arn:aws:iam::521544910957:role/irsa-s3-writer-eks-keda-lab-20260219141809",
+            "arn:aws:sts::521544910957:assumed-role/irsa-s3-writer-eks-keda-lab-20260219141809/*"
+          ]
+        }
+      }
+    }
+  ]
+}

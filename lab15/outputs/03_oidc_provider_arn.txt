@@ -1,0 +1,1 @@
+arn:aws:iam::521544910957:oidc-provider/oidc.eks.us-west-2.amazonaws.com/id/42A96645A4A99A739AAACE3923971964

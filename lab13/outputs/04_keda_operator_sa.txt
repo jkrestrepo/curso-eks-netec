@@ -1,0 +1,1 @@
+KEDA_OPERATOR_SA=keda-operator

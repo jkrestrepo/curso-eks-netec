@@ -1,0 +1,4 @@
+2026-02-19 13:31:26 [ℹ]  2 existing iamserviceaccount(s) (keda-demo/keda-operator,keda-demo/sqs-worker-sa) will be excluded
+2026-02-19 13:31:26 [ℹ]  1 iamserviceaccount (keda-demo/keda-operator) was excluded (based on the include/exclude rules)
+2026-02-19 13:31:26 [!]  metadata of serviceaccounts that exist in Kubernetes will be updated, as --override-existing-serviceaccounts was set
+2026-02-19 13:31:26 [ℹ]  no tasks

@@ -1,0 +1,1 @@
+IMAGE_URI=521544910957.dkr.ecr.us-west-2.amazonaws.com/keda-sqs-worker:lab13-20260219110120

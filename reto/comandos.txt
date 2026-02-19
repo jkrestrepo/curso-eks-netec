@@ -1,0 +1,194 @@
+kubectl -n $NS exec -it curl -- sh -lc \
+'for i in $(seq 1 8); do curl -s -o /dev/null -w "time=%{time_total}\n" http://web-svc/; done' 
+
+
+eks-crossplane-lab
+
+9UTXTXA0NCTzhHb-
+
+export AWS_REGION="us-west-2"
+export CLUSTER_NAME="eks-oss-cost-lab"
+export ARGOCD_NS="argocd"
+
+export ARGOCD_NS="argocd"
+kubectl -n "$ARGOCD_NS" port-forward svc/argocd-server 8080:443
+
+
+
+git config --global user.name "Juan Restrepo"
+git config --global user.email "jkrestrepo@gmail.com.co"
+git config --global core.autocrlf input
+
+https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git
+export REPO_URL="https://github.com/jkrestrepo/gitops-adv-argocd-07jrr.git"
+
+
+
+cat > .env <<'EOF'
+export AWS_REGION="us-west-2"
+
+# Si ya tienes clúster, pon su nombre aquí.
+# Si no tienes, lo crearás en la Tarea 2.
+export CLUSTER_NAME="eks-oss-cost-lab"
+
+# Namespaces plataforma
+export MON_NS="monitoring"
+export OC_NS="opencost"
+
+# Releases Helm
+export MON_RELEASE="monitoring"
+export OC_RELEASE="opencost"
+EOF
+
+
+kubectl create namespace reto-eks --dry-run=client -o yaml | kubectl apply -f -
+
+
+
+export CLUSTER_NAME="eks-oss-cost-lab"
+export NODEGROUP_NAME="mng-1"
+export K8S_VERSION="1.33"
+sleep 4500
+eksctl create cluster --name "$CLUSTER_NAME" --region "$AWS_REGION" --version "$K8S_VERSION" --managed --nodegroup-name "$NODEGROUP_NAME" --node-type t3.large --nodes 2 --nodes-min 2 --nodes-max 3
+
+
+
+
+###############################################################
+
+mkdir -p k8s helm outputs logs scripts notes
+
+Nx0WBWjGpEvc9WaqMMXvZaR10prTtviEriK9TEJf
+
+
+
+
+
+export AWS_REGION="${AWS_REGION}"
+export CLUSTER_NAME="eks-oss-cost-lab"
+export NODEGROUP_NAME="mng-1"
+export K8S_VERSION="1.33"
+
+
+if [[ "$OS" == mingw* || "$OS" == msys* || "$OS" == cygwin* ]]; then
+  curl --insecure -fsSL -o "istio-${ISTIO_VERSION}-win.zip" "https://github.com/istio/istio/releases/download/${ISTIO_VERSION}/istio-${ISTIO_VERSION}-win.zip"
+
+  if command -v unzip >/dev/null 2>&1; then
+    unzip -q "istio-${ISTIO_VERSION}-win.zip"
+  else
+    powershell.exe -NoProfile -Command "Expand-Archive -Force 'istio-${ISTIO_VERSION}-win.zip' '.'"
+  fi
+else
+  curl --insecure -fsSL https://istio.io/downloadIstio | ISTIO_VERSION="$ISTIO_VERSION" sh -
+fi
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: default
+spec:
+  selector:
+    app: nginx
+  type: NodePort
+  ports:
+    - port: 80
+      nodePort: 32000
+      targetPort: 80
+
+
+kubectl -n reto-eks port-forward svc/nginx-service 80:80
+
+kubectl -n reto-eks rollout restart nginx-deployment
+
+NS="reto-eks"
+
+POD="$(kubectl get pod -n "$NS" -l app=web -o jsonpath='{.items[0].metadata.name}')"
+
+kubectl describe pod "$POD" -n "$NS" | egrep -n "Startup|Readiness|Liveness|Restart|Events" -A2 -B2
+
+eksctl delete cluster --name "$CLUSTER_NAME" --region "$AWS_REGION"
+
+
+
+
+
+
+
+###################################################
+
+eksctl create iamserviceaccount \
+  --cluster "$CLUSTER_NAME" --region "$AWS_REGION" \
+  --namespace "$NS" --name "keda-operator" \
+  --attach-policy-arn "$POLICY_ARN" \
+  --override-existing-serviceaccounts \
+  --approve | tee outputs/04_eksctl_irsa_keda_operator.txt
+
+
+kubectl -n "$NS" get sa "keda-operator" -o yaml | sed -n '1,120p' | tee outputs/04_sqs_worker_sa_yaml.txt
+
+kubectl run awscli -n "$NS" \
+  --image=public.ecr.aws/aws-cli/aws-cli:latest \
+  --restart=Never -it --rm \
+  --overrides='{
+    "apiVersion":"v1",
+    "spec":{"serviceAccountName":"keda-operator"}
+  }' \
+  -- sqs get-queue-attributes \
+    --queue-url "$QUEUE_URL" \
+    --attribute-names ApproximateNumberOfMessages \
+    --region "$AWS_REGION"
+
+
+
+
+export CLUSTER_NAME="eks-keda-lab"
+export NODEGROUP_NAME="mng-1"
+export K8S_VERSION="1.33"
+export ZONES="$(awk '{print $1","$2}' outputs/15_az_list.txt)"
+
+aws eks list-nodegroups --cluster-name "$CLUSTER_NAME" --region "$AWS_REGION" 
+
+
+
+
+
+export AWS_REGION="us-west-2"
+export CLUSTER_NAME="eks-keda-lab"
+export LAB_ID="$(date +%Y%m%d%H%M%S)"
+
+export NAMESPACE="irsa-lab"
+export SA_NAME="s3-writer"
+
+export AWS_ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
+export CALLER_ARN="$(aws sts get-caller-identity --query Arn --output text)"
+
+export ROLE_NAME="irsa-s3-writer-${CLUSTER_NAME}-${LAB_ID}"
+export POLICY_NAME="irsa-s3-writer-policy-${CLUSTER_NAME}-${LAB_ID}"
+
+# Bucket globalmente único (minúsculas, sin guiones bajos)
+export BUCKET_NAME="irsa-lab-${AWS_ACCOUNT_ID}-${LAB_ID}"
+
+
+
+
+
+
+export AWS_REGION="us-west-2"
+export CLUSTER_NAME="eks-keda-lab"
+export K8S_VERSION="1.33"
+
+export NS_DEV="rbac-dev"
+export NS_PROD="rbac-prod"
+
+
+export NS="reto-eks"
+
+kubectl create ns "$NS"   --dry-run=client -o yaml | kubectl apply -f -
+
+
+kubectl apply -f 
+
+kubectl -n "$NS" port-forward svc/web-svc 80:80
+

@@ -1,0 +1,1 @@
+delete: s3://irsa-lab-521544910957-20260219141809/test/hello.txt

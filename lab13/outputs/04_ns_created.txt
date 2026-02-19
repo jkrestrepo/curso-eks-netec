@@ -1,0 +1,2 @@
+NAME        STATUS   AGE
+keda-demo   Active   35s

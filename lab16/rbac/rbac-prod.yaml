@@ -1,0 +1,27 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: prod-viewer
+  namespace: rbac-prod
+rules:
+- apiGroups: ["apps"]
+  resources: ["deployments","replicasets"]
+  verbs: ["get","list","watch"]
+- apiGroups: [""]
+  resources: ["pods","pods/log","services","configmaps","events"]
+  verbs: ["get","list","watch"]
+# NO secrets, NO exec
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rb-prod-view
+  namespace: rbac-prod
+subjects:
+- kind: ServiceAccount
+  name: sa-prod-view
+  namespace: rbac-prod
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: prod-viewer

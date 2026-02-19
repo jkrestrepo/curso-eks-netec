@@ -1,0 +1,1 @@
+Error from server (Forbidden): pods "web-5c78f69c86-c75pr" is forbidden: User "system:serviceaccount:rbac-dev:sa-observer" cannot create resource "pods/exec" in API group "" in the namespace "rbac-dev"

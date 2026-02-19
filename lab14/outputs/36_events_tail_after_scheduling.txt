@@ -1,0 +1,40 @@
+4m23s       Normal    Started             pod/web-55b9774fc8-2vsph    Started container web
+4m23s       Normal    Created             pod/web-55b9774fc8-h5ngw    Created container: web
+4m23s       Normal    Started             pod/web-55b9774fc8-h5ngw    Started container web
+4m23s       Normal    Started             pod/web-55b9774fc8-zq2lh    Started container web
+4m23s       Normal    Created             pod/web-55b9774fc8-2vsph    Created container: web
+4m23s       Normal    Pulled              pod/web-55b9774fc8-2vsph    Successfully pulled image "ghcr.io/stefanprodan/podinfo:6.7.1" in 2.246s (2.246s including waiting). Image size: 31081621 bytes.
+4m23s       Normal    Pulled              pod/web-55b9774fc8-zq2lh    Successfully pulled image "ghcr.io/stefanprodan/podinfo:6.7.1" in 2.223s (2.223s including waiting). Image size: 31081621 bytes.
+3m38s       Normal    Scheduled           pod/curl                    Successfully assigned ha-lab/curl to ip-192-168-45-199.us-west-2.compute.internal
+3m37s       Normal    Pulling             pod/curl                    Pulling image "curlimages/curl:8.10.1"
+3m35s       Normal    Pulled              pod/curl                    Successfully pulled image "curlimages/curl:8.10.1" in 1.779s (1.779s including waiting). Image size: 9414401 bytes.
+3m35s       Normal    Started             pod/curl                    Started container curl
+3m35s       Normal    Created             pod/curl                    Created container: curl
+2m21s       Normal    ScalingReplicaSet   deployment/web              Scaled down replica set web-55b9774fc8 from 3 to 2
+2m21s       Normal    Killing             pod/web-55b9774fc8-zq2lh    Stopping container web
+2m21s       Normal    Scheduled           pod/web-d8cb7887-mtnf2      Successfully assigned ha-lab/web-d8cb7887-mtnf2 to ip-192-168-45-199.us-west-2.compute.internal
+2m21s       Normal    SuccessfulDelete    replicaset/web-55b9774fc8   Deleted pod: web-55b9774fc8-zq2lh
+2m21s       Normal    ScalingReplicaSet   deployment/web              Scaled up replica set web-d8cb7887 from 0 to 1
+2m21s       Normal    ScalingReplicaSet   deployment/web              Scaled up replica set web-d8cb7887 from 1 to 2
+2m21s       Normal    SuccessfulCreate    replicaset/web-d8cb7887     Created pod: web-d8cb7887-ttx2r
+2m21s       Normal    SuccessfulCreate    replicaset/web-d8cb7887     Created pod: web-d8cb7887-mtnf2
+2m21s       Normal    Scheduled           pod/web-d8cb7887-ttx2r      Successfully assigned ha-lab/web-d8cb7887-ttx2r to ip-192-168-88-172.us-west-2.compute.internal
+2m20s       Normal    Started             pod/web-d8cb7887-ttx2r      Started container web
+2m20s       Normal    Pulled              pod/web-d8cb7887-mtnf2      Container image "ghcr.io/stefanprodan/podinfo:6.7.1" already present on machine
+2m20s       Normal    Created             pod/web-d8cb7887-mtnf2      Created container: web
+2m20s       Normal    Started             pod/web-d8cb7887-mtnf2      Started container web
+2m20s       Normal    Pulled              pod/web-d8cb7887-ttx2r      Container image "ghcr.io/stefanprodan/podinfo:6.7.1" already present on machine
+2m20s       Normal    Created             pod/web-d8cb7887-ttx2r      Created container: web
+2m14s       Normal    SuccessfulDelete    replicaset/web-55b9774fc8   Deleted pod: web-55b9774fc8-2vsph
+2m14s       Normal    ScalingReplicaSet   deployment/web              Scaled up replica set web-d8cb7887 from 2 to 3
+2m14s       Normal    Killing             pod/web-55b9774fc8-2vsph    Stopping container web
+2m14s       Normal    ScalingReplicaSet   deployment/web              Scaled down replica set web-55b9774fc8 from 2 to 1
+2m14s       Normal    Scheduled           pod/web-d8cb7887-bv9n9      Successfully assigned ha-lab/web-d8cb7887-bv9n9 to ip-192-168-88-172.us-west-2.compute.internal
+2m14s       Normal    SuccessfulCreate    replicaset/web-d8cb7887     Created pod: web-d8cb7887-bv9n9
+2m13s       Normal    Created             pod/web-d8cb7887-bv9n9      Created container: web
+2m13s       Normal    SuccessfulDelete    replicaset/web-55b9774fc8   Deleted pod: web-55b9774fc8-h5ngw
+2m13s       Normal    Killing             pod/web-55b9774fc8-h5ngw    Stopping container web
+2m13s       Normal    Pulled              pod/web-d8cb7887-bv9n9      Container image "ghcr.io/stefanprodan/podinfo:6.7.1" already present on machine
+2m13s       Normal    Started             pod/web-d8cb7887-bv9n9      Started container web
+2m13s       Normal    ScalingReplicaSet   deployment/web              Scaled down replica set web-55b9774fc8 from 1 to 0
+2m10s       Warning   Unhealthy           pod/web-55b9774fc8-h5ngw    Readiness probe failed: Get "http://192.168.63.214:9898/readyz": dial tcp 192.168.63.214:9898: connect: connection refused

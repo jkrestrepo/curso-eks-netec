@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::521544910957:role/irsa-s3-writer-eks-keda-lab-20260219141809
+  creationTimestamp: "2026-02-19T19:29:20Z"
+  labels:
+    app.kubernetes.io/managed-by: eksctl
+  name: s3-writer
+  namespace: irsa-lab
+  resourceVersion: "40880"
+  uid: 29f8f9d6-ca8e-4960-ba0f-ca7dd71a1afe

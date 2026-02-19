@@ -1,0 +1,6 @@
+NAME          SECRETS   AGE
+default       0         4m58s
+sa-ci         0         74s
+sa-config     0         19s
+sa-debug      0         30s
+sa-observer   0         46s

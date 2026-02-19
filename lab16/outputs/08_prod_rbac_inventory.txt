@@ -1,0 +1,9 @@
+NAME                          SECRETS   AGE
+serviceaccount/default        0         14m
+serviceaccount/sa-prod-view   0         10m
+
+NAME                                         CREATED AT
+role.rbac.authorization.k8s.io/prod-viewer   2026-02-19T19:51:24Z
+
+NAME                                                 ROLE               AGE
+rolebinding.rbac.authorization.k8s.io/rb-prod-view   Role/prod-viewer   8m39s

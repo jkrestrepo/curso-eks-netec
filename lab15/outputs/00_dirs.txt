@@ -1,0 +1,8 @@
+.
+./00-prereqs
+./01-eks
+./02-aws
+./03-k8s
+./04-tests
+./logs
+./outputs

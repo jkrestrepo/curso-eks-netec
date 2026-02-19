@@ -1,0 +1,2 @@
+pod "awscli-noirsa" deleted from irsa-lab namespace
+pod "awscli-irsa" deleted from irsa-lab namespace

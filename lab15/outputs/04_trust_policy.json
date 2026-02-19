@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Federated": "arn:aws:iam::521544910957:oidc-provider/oidc.eks.us-west-2.amazonaws.com/id/42A96645A4A99A739AAACE3923971964"
+            },
+            "Action": "sts:AssumeRoleWithWebIdentity",
+            "Condition": {
+                "StringEquals": {
+                    "oidc.eks.us-west-2.amazonaws.com/id/42A96645A4A99A739AAACE3923971964:sub": "system:serviceaccount:irsa-lab:s3-writer",
+                    "oidc.eks.us-west-2.amazonaws.com/id/42A96645A4A99A739AAACE3923971964:aud": "sts.amazonaws.com"
+                }
+            }
+        }
+    ]
+}

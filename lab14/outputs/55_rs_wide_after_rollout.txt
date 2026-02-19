@@ -1,0 +1,5 @@
+NAME             DESIRED   CURRENT   READY   AGE     CONTAINERS   IMAGES                                SELECTOR
+web-55b9774fc8   0         0         0       8m44s   web          ghcr.io/stefanprodan/podinfo:6.7.1    app=web,pod-template-hash=55b9774fc8
+web-6cdd4b5ddc   3         3         3       53s     web          ghcr.io/stefanprodan/podinfo:latest   app=web,pod-template-hash=6cdd4b5ddc
+web-c96c8b5b6    0         0         0       3m26s   web          ghcr.io/stefanprodan/podinfo:6.7.1    app=web,pod-template-hash=c96c8b5b6
+web-d8cb7887     0         0         0       6m39s   web          ghcr.io/stefanprodan/podinfo:6.7.1    app=web,pod-template-hash=d8cb7887

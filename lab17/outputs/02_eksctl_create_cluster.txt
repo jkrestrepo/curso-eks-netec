@@ -1,0 +1,67 @@
+2026-02-19 15:14:20 [ℹ]  eksctl version 0.223.0
+2026-02-19 15:14:20 [ℹ]  using region us-west-2
+2026-02-19 15:14:20 [ℹ]  setting availability zones to [us-west-2b us-west-2d us-west-2a]
+2026-02-19 15:14:20 [ℹ]  subnets for us-west-2b - public:192.168.0.0/19 private:192.168.96.0/19
+2026-02-19 15:14:20 [ℹ]  subnets for us-west-2d - public:192.168.32.0/19 private:192.168.128.0/19
+2026-02-19 15:14:20 [ℹ]  subnets for us-west-2a - public:192.168.64.0/19 private:192.168.160.0/19
+2026-02-19 15:14:20 [ℹ]  nodegroup "mng-1" will use "" [AmazonLinux2023/1.33]
+2026-02-19 15:14:20 [!]  Auto Mode will be enabled by default in an upcoming release of eksctl. This means managed node groups and managed networking add-ons will no longer be created by default. To maintain current behavior, explicitly set 'autoModeConfig.enabled: false' in your cluster configuration. Learn more: https://eksctl.io/usage/auto-mode/
+2026-02-19 15:14:20 [ℹ]  using Kubernetes version 1.33
+2026-02-19 15:14:20 [ℹ]  creating EKS cluster "eks-hardening-lab17" in "us-west-2" region with managed nodes
+2026-02-19 15:14:20 [ℹ]  will create 2 separate CloudFormation stacks for cluster itself and the initial managed nodegroup
+2026-02-19 15:14:20 [ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=us-west-2 --cluster=eks-hardening-lab17'
+2026-02-19 15:14:20 [ℹ]  Kubernetes API endpoint access will use default of {publicAccess=true, privateAccess=false} for cluster "eks-hardening-lab17" in "us-west-2"
+2026-02-19 15:14:20 [ℹ]  CloudWatch logging will not be enabled for cluster "eks-hardening-lab17" in "us-west-2"
+2026-02-19 15:14:20 [ℹ]  you can enable it with 'eksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=us-west-2 --cluster=eks-hardening-lab17'
+2026-02-19 15:14:20 [ℹ]  default addons metrics-server, vpc-cni, kube-proxy, coredns were not specified, will install them as EKS addons
+2026-02-19 15:14:20 [ℹ]  
+2 sequential tasks: { create cluster control plane "eks-hardening-lab17", 
+    2 sequential sub-tasks: { 
+        2 sequential sub-tasks: { 
+            1 task: { create addons },
+            wait for control plane to become ready,
+        },
+        create managed nodegroup "mng-1",
+    } 
+}
+2026-02-19 15:14:20 [ℹ]  building cluster stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:14:21 [ℹ]  deploying stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:14:51 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:15:21 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:16:21 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:17:22 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:18:22 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:19:22 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:20:22 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:21:23 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:22:23 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:23:23 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-cluster"
+2026-02-19 15:23:25 [!]  recommended policies were found for "vpc-cni" addon, but since OIDC is disabled on the cluster, eksctl cannot configure the requested permissions; the recommended way to provide IAM permissions for "vpc-cni" addon is via pod identity associations; after addon creation is completed, add all recommended policies to the config file, under `addon.PodIdentityAssociations`, and run `eksctl update addon`
+2026-02-19 15:23:25 [ℹ]  creating addon: vpc-cni
+2026-02-19 15:23:26 [ℹ]  successfully created addon: vpc-cni
+2026-02-19 15:23:26 [ℹ]  creating addon: kube-proxy
+2026-02-19 15:23:26 [ℹ]  successfully created addon: kube-proxy
+2026-02-19 15:23:27 [ℹ]  creating addon: coredns
+2026-02-19 15:23:27 [ℹ]  successfully created addon: coredns
+2026-02-19 15:25:28 [ℹ]  building managed nodegroup stack "eksctl-eks-hardening-lab17-nodegroup-mng-1"
+2026-02-19 15:25:29 [ℹ]  deploying stack "eksctl-eks-hardening-lab17-nodegroup-mng-1"
+2026-02-19 15:25:29 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-nodegroup-mng-1"
+2026-02-19 15:25:59 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-nodegroup-mng-1"
+2026-02-19 15:26:48 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-nodegroup-mng-1"
+2026-02-19 15:28:45 [ℹ]  waiting for CloudFormation stack "eksctl-eks-hardening-lab17-nodegroup-mng-1"
+2026-02-19 15:28:45 [ℹ]  waiting for the control plane to become ready
+2026-02-19 15:28:47 [✔]  saved kubeconfig as "C:\\Users\\Netec\\.kube\\config"
+2026-02-19 15:28:47 [ℹ]  no tasks
+2026-02-19 15:28:47 [✔]  all EKS cluster resources for "eks-hardening-lab17" have been created
+2026-02-19 15:28:47 [ℹ]  nodegroup "mng-1" has 2 node(s)
+2026-02-19 15:28:47 [ℹ]  node "ip-192-168-58-225.us-west-2.compute.internal" is ready
+2026-02-19 15:28:47 [ℹ]  node "ip-192-168-67-175.us-west-2.compute.internal" is ready
+2026-02-19 15:28:47 [ℹ]  waiting for at least 2 node(s) to become ready in "mng-1"
+2026-02-19 15:28:47 [ℹ]  nodegroup "mng-1" has 2 node(s)
+2026-02-19 15:28:47 [ℹ]  node "ip-192-168-58-225.us-west-2.compute.internal" is ready
+2026-02-19 15:28:47 [ℹ]  node "ip-192-168-67-175.us-west-2.compute.internal" is ready
+2026-02-19 15:28:47 [✔]  created 1 managed nodegroup(s) in cluster "eks-hardening-lab17"
+2026-02-19 15:28:48 [ℹ]  creating addon: metrics-server
+2026-02-19 15:28:48 [ℹ]  successfully created addon: metrics-server
+2026-02-19 15:28:50 [ℹ]  kubectl command should work with "C:\\Users\\Netec\\.kube\\config", try 'kubectl get nodes'
+2026-02-19 15:28:50 [✔]  EKS cluster "eks-hardening-lab17" in "us-west-2" region is ready

@@ -1,0 +1,11 @@
+== STS identity (puede ser node role) ==
+[?1h={[m
+    "UserId": "AROAXS3T7ZBW2J7GPDEA2:i-0c9579019ee59aa4f",[m
+    "Account": "521544910957",[m
+    "Arn": "arn:aws:sts::521544910957:assumed-role/eksctl-eks-keda-lab-nodegroup[m -mng--NodeInstanceRole-hgxwI8LlFJ6J/i-0c9579019ee59aa4f"[m
+}[m
+[K[?1l>== S3 LIST (debe FALLAR: AccessDenied) ==
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: User: arn:aws:sts::521544910957:assumed-role/eksctl-eks-keda-lab-nodegroup-mng--NodeInstanceRole-hgxwI8LlFJ6J/i-0c9579019ee59aa4f is not authorized to perform: s3:ListBucket on resource: "arn:aws:s3:::irsa-lab-521544910957-20260219141809" because no identity-based policy allows the s3:ListBucket action
+== S3 PUT (debe FALLAR: AccessDenied) ==
+Completed 8 Bytes/8 Bytes (151 Bytes/s) with 1 file(s) remainingupload failed: ../tmp/noirsa.txt to s3://irsa-lab-521544910957-20260219141809/test/noirsa.txt An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:sts::521544910957:assumed-role/eksctl-eks-keda-lab-nodegroup-mng--NodeInstanceRole-hgxwI8LlFJ6J/i-0c9579019ee59aa4f is not authorized to perform: s3:PutObject on resource: "arn:aws:s3:::irsa-lab-521544910957-20260219141809/test/noirsa.txt" because no identity-based policy allows the s3:PutObject action

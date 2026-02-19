@@ -1,0 +1,4 @@
+clustertriggerauthentications.keda.sh           2026-02-19T16:19:20Z
+scaledjobs.keda.sh                              2026-02-19T16:19:20Z
+scaledobjects.keda.sh                           2026-02-19T16:19:20Z
+triggerauthentications.keda.sh                  2026-02-19T16:19:20Z

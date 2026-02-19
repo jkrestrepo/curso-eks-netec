@@ -1,0 +1,11 @@
+NAME                  READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                                SELECTOR
+deployment.apps/web   3/3     3            3           13m   web          ghcr.io/stefanprodan/podinfo:latest   app=web
+
+NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+service/web   ClusterIP   10.100.146.70   <none>        80/TCP    13m   app=web
+
+NAME                       READY   STATUS    RESTARTS   AGE     IP               NODE                                           NOMINATED NODE   READINESS GATES
+pod/curl                   1/1     Running   0          13m     192.168.56.66    ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+pod/web-6cdd4b5ddc-c25ft   1/1     Running   0          2m42s   192.168.57.27    ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+pod/web-6cdd4b5ddc-cwsnk   1/1     Running   0          2m52s   192.168.51.97    ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+pod/web-6cdd4b5ddc-ldx8s   1/1     Running   0          5m59s   192.168.33.110   ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>

@@ -1,0 +1,53 @@
+Name:                   web
+Namespace:              ha-lab
+CreationTimestamp:      Thu, 19 Feb 2026 13:58:25 -0500
+Labels:                 app=web
+Annotations:            deployment.kubernetes.io/revision: 4
+Selector:               app=web
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 1 max surge
+Pod Template:
+  Labels:  app=web
+           tier=frontend
+  Containers:
+   web:
+    Image:      ghcr.io/stefanprodan/podinfo:latest
+    Port:       9898/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     300m
+      memory:  256Mi
+    Requests:
+      cpu:                      100m
+      memory:                   128Mi
+    Liveness:                   http-get http://:9898/healthz delay=10s timeout=2s period=10s #success=1 #failure=3
+    Readiness:                  http-get http://:9898/readyz delay=3s timeout=2s period=5s #success=1 #failure=3
+    Environment:                <none>
+    Mounts:                     <none>
+  Volumes:                      <none>
+  Topology Spread Constraints:  kubernetes.io/hostname:ScheduleAnyway when max skew 1 is exceeded for selector app=web
+                                topology.kubernetes.io/zone:ScheduleAnyway when max skew 1 is exceeded for selector app=web
+  Node-Selectors:               <none>
+  Tolerations:                  <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  web-55b9774fc8 (0/0 replicas created), web-d8cb7887 (0/0 replicas created), web-c96c8b5b6 (0/0 replicas created)
+NewReplicaSet:   web-6cdd4b5ddc (3/3 replicas created)
+Events:
+  Type    Reason             Age                    From                   Message
+  ----    ------             ----                   ----                   -------
+  Normal  ScalingReplicaSet  14m                    deployment-controller  Scaled up replica set web-55b9774fc8 from 0 to 3
+  Normal  ScalingReplicaSet  12m                    deployment-controller  Scaled up replica set web-d8cb7887 from 0 to 1
+  Normal  ScalingReplicaSet  12m                    deployment-controller  Scaled down replica set web-55b9774fc8 from 3 to 2
+  Normal  ScalingReplicaSet  12m                    deployment-controller  Scaled up replica set web-d8cb7887 from 1 to 2
+  Normal  ScalingReplicaSet  12m                    deployment-controller  Scaled down replica set web-55b9774fc8 from 2 to 1
+  Normal  ScalingReplicaSet  12m                    deployment-controller  Scaled up replica set web-d8cb7887 from 2 to 3
+  Normal  ScalingReplicaSet  12m                    deployment-controller  Scaled down replica set web-55b9774fc8 from 1 to 0
+  Normal  ScalingReplicaSet  9m4s                   deployment-controller  Scaled up replica set web-c96c8b5b6 from 0 to 1
+  Normal  ScalingReplicaSet  9m4s                   deployment-controller  Scaled down replica set web-d8cb7887 from 3 to 2
+  Normal  ScalingReplicaSet  6m20s (x10 over 9m4s)  deployment-controller  (combined from similar events): Scaled down replica set web-c96c8b5b6 from 1 to 0

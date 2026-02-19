@@ -1,0 +1,10 @@
+Name:         rb-config-updater
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  Role
+  Name:  dev-config-updater
+Subjects:
+  Kind            Name       Namespace
+  ----            ----       ---------
+  ServiceAccount  sa-config  rbac-dev

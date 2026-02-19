@@ -1,0 +1,4 @@
+NAME                   READY   STATUS    RESTARTS   AGE     IP               NODE                                           NOMINATED NODE   READINESS GATES
+web-6cdd4b5ddc-c25ft   1/1     Running   0          31s     192.168.57.27    ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+web-6cdd4b5ddc-cwsnk   1/1     Running   0          41s     192.168.51.97    ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+web-6cdd4b5ddc-ldx8s   1/1     Running   0          3m48s   192.168.33.110   ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>

@@ -1,0 +1,1 @@
+2026-02-19 14:24:32 [ℹ]  IAM Open ID Connect provider is already associated with cluster "eks-keda-lab" in "us-west-2"

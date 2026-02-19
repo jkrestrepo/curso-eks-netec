@@ -1,0 +1,40 @@
+6m23s       Normal    SuccessfulDelete    replicaset/web-c96c8b5b6    Deleted pod: web-c96c8b5b6-tdg8q
+6m23s       Normal    Killing             pod/web-c96c8b5b6-tdg8q     Stopping container web
+6m23s       Normal    Scheduled           pod/web-6cdd4b5ddc-5kt2m    Successfully assigned ha-lab/web-6cdd4b5ddc-5kt2m to ip-192-168-88-172.us-west-2.compute.internal
+6m23s       Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-ldx8s
+6m22s       Normal    Pulling             pod/web-6cdd4b5ddc-5kt2m    Pulling image "ghcr.io/stefanprodan/podinfo:latest"
+6m22s       Normal    Scheduled           pod/web-6cdd4b5ddc-ldx8s    Successfully assigned ha-lab/web-6cdd4b5ddc-ldx8s to ip-192-168-45-199.us-west-2.compute.internal
+6m22s       Normal    Pulling             pod/web-6cdd4b5ddc-ldx8s    Pulling image "ghcr.io/stefanprodan/podinfo:latest"
+6m20s       Normal    Created             pod/web-6cdd4b5ddc-ldx8s    Created container: web
+6m20s       Normal    Pulled              pod/web-6cdd4b5ddc-ldx8s    Successfully pulled image "ghcr.io/stefanprodan/podinfo:latest" in 2.137s (2.137s including waiting). Image size: 33147826 bytes.
+6m20s       Normal    Started             pod/web-6cdd4b5ddc-ldx8s    Started container web
+6m19s       Normal    Pulled              pod/web-6cdd4b5ddc-5kt2m    Successfully pulled image "ghcr.io/stefanprodan/podinfo:latest" in 2.608s (2.608s including waiting). Image size: 33147826 bytes.
+6m19s       Normal    Started             pod/web-6cdd4b5ddc-5kt2m    Started container web
+6m19s       Normal    Created             pod/web-6cdd4b5ddc-5kt2m    Created container: web
+6m17s       Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-vzk7v
+6m17s       Normal    Scheduled           pod/web-6cdd4b5ddc-vzk7v    Successfully assigned ha-lab/web-6cdd4b5ddc-vzk7v to ip-192-168-88-172.us-west-2.compute.internal
+6m17s       Normal    SuccessfulDelete    replicaset/web-c96c8b5b6    Deleted pod: web-c96c8b5b6-c5qlg
+6m17s       Normal    Killing             pod/web-c96c8b5b6-c5qlg     Stopping container web
+6m16s       Normal    Pulled              pod/web-6cdd4b5ddc-vzk7v    Container image "ghcr.io/stefanprodan/podinfo:latest" already present on machine
+6m16s       Normal    Created             pod/web-6cdd4b5ddc-vzk7v    Created container: web
+6m16s       Normal    Started             pod/web-6cdd4b5ddc-vzk7v    Started container web
+6m16s       Warning   Unhealthy           pod/web-c96c8b5b6-tdg8q     Readiness probe failed: HTTP probe failed with statuscode: 503
+6m12s       Normal    Killing             pod/web-c96c8b5b6-xg72w     Stopping container web
+6m12s       Normal    SuccessfulDelete    replicaset/web-c96c8b5b6    Deleted pod: web-c96c8b5b6-xg72w
+6m12s       Normal    ScalingReplicaSet   deployment/web              (combined from similar events): Scaled down replica set web-c96c8b5b6 from 1 to 0
+6m9s        Warning   Unhealthy           pod/web-c96c8b5b6-c5qlg     Readiness probe failed: Get "http://192.168.94.117:9898/readyz": dial tcp 192.168.94.117:9898: connect: connection refused
+6m4s        Warning   Unhealthy           pod/web-c96c8b5b6-xg72w     Readiness probe failed: HTTP probe failed with statuscode: 503
+3m17s       Normal    Killing             pod/web-6cdd4b5ddc-5kt2m    Stopping container web
+3m17s       Normal    Killing             pod/tester                  Stopping container tester
+3m16s       Normal    Pulled              pod/web-6cdd4b5ddc-cwsnk    Container image "ghcr.io/stefanprodan/podinfo:latest" already present on machine
+3m16s       Normal    Scheduled           pod/web-6cdd4b5ddc-cwsnk    Successfully assigned ha-lab/web-6cdd4b5ddc-cwsnk to ip-192-168-45-199.us-west-2.compute.internal
+3m16s       Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-cwsnk
+3m16s       Normal    Created             pod/web-6cdd4b5ddc-cwsnk    Created container: web
+3m15s       Normal    Started             pod/web-6cdd4b5ddc-cwsnk    Started container web
+3m6s        Normal    Scheduled           pod/web-6cdd4b5ddc-c25ft    Successfully assigned ha-lab/web-6cdd4b5ddc-c25ft to ip-192-168-45-199.us-west-2.compute.internal
+3m6s        Normal    SuccessfulCreate    replicaset/web-6cdd4b5ddc   Created pod: web-6cdd4b5ddc-c25ft
+3m6s        Normal    Killing             pod/web-6cdd4b5ddc-vzk7v    Stopping container web
+3m5s        Normal    Started             pod/web-6cdd4b5ddc-c25ft    Started container web
+3m5s        Normal    Created             pod/web-6cdd4b5ddc-c25ft    Created container: web
+3m5s        Normal    Pulled              pod/web-6cdd4b5ddc-c25ft    Container image "ghcr.io/stefanprodan/podinfo:latest" already present on machine
+2m59s       Warning   Unhealthy           pod/web-6cdd4b5ddc-vzk7v    Readiness probe failed: HTTP probe failed with statuscode: 503

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqs-worker
+  namespace: keda-demo
+  labels:
+    app: sqs-worker
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: sqs-worker
+  template:
+    metadata:
+      labels:
+        app: sqs-worker
+    spec:
+      serviceAccountName: keda-operator
+      containers:
+      - name: worker
+        image: 521544910957.dkr.ecr.us-west-2.amazonaws.com/keda-sqs-worker:lab13-20260219110120
+        env:
+        - name: QUEUE_URL
+          value: "https://sqs.us-west-2.amazonaws.com/521544910957/keda-lab-queue-20260219110120"
+        - name: AWS_REGION
+          value: "us-west-2"
+        - name: PROCESS_SECONDS
+          value: "2"
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"

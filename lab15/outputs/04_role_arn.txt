@@ -1,0 +1,1 @@
+arn:aws:iam::521544910957:role/irsa-s3-writer-eks-keda-lab-20260219141809

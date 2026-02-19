@@ -1,0 +1,10 @@
+Name:         rb-prod-view
+Labels:       <none>
+Annotations:  <none>
+Role:
+  Kind:  Role
+  Name:  prod-viewer
+Subjects:
+  Kind            Name          Namespace
+  ----            ----          ---------
+  ServiceAccount  sa-prod-view  rbac-prod

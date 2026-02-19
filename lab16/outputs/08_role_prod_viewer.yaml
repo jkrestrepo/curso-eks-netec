@@ -1,0 +1,33 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"rbac.authorization.k8s.io/v1","kind":"Role","metadata":{"annotations":{},"name":"prod-viewer","namespace":"rbac-prod"},"rules":[{"apiGroups":["apps"],"resources":["deployments","replicasets"],"verbs":["get","list","watch"]},{"apiGroups":[""],"resources":["pods","pods/log","services","configmaps","events"],"verbs":["get","list","watch"]}]}
+  creationTimestamp: "2026-02-19T19:51:24Z"
+  name: prod-viewer
+  namespace: rbac-prod
+  resourceVersion: "45332"
+  uid: 9ace7202-e58e-453f-b487-5e09beec8348
+rules:
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  - replicasets
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - pods/log
+  - services
+  - configmaps
+  - events
+  verbs:
+  - get
+  - list
+  - watch

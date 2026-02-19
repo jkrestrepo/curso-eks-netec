@@ -1,0 +1,29 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: dev-config-updater
+  namespace: rbac-dev
+rules:
+# Regla 1: leer/listar configmaps (sin resourceNames)
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get","list","watch"]
+# Regla 2: modificar SOLO app-config (con resourceNames)
+- apiGroups: [""]
+  resources: ["configmaps"]
+  resourceNames: ["app-config"]
+  verbs: ["update","patch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: rb-config-updater
+  namespace: rbac-dev
+subjects:
+- kind: ServiceAccount
+  name: sa-config
+  namespace: rbac-dev
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: dev-config-updater

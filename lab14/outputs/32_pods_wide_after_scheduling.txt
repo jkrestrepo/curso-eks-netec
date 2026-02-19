@@ -1,0 +1,4 @@
+NAME                 READY   STATUS    RESTARTS   AGE   IP               NODE                                           NOMINATED NODE   READINESS GATES
+web-d8cb7887-bv9n9   1/1     Running   0          24s   192.168.69.145   ip-192-168-88-172.us-west-2.compute.internal   <none>           <none>
+web-d8cb7887-mtnf2   1/1     Running   0          31s   192.168.51.97    ip-192-168-45-199.us-west-2.compute.internal   <none>           <none>
+web-d8cb7887-ttx2r   1/1     Running   0          31s   192.168.66.139   ip-192-168-88-172.us-west-2.compute.internal   <none>           <none>

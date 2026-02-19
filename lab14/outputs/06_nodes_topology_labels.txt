@@ -1,0 +1,3 @@
+NAME                                           STATUS   ROLES    AGE    VERSION               ZONE         HOSTNAME
+ip-192-168-45-199.us-west-2.compute.internal   Ready    <none>   162m   v1.33.7-eks-70ce843   us-west-2c   ip-192-168-45-199.us-west-2.compute.internal
+ip-192-168-88-172.us-west-2.compute.internal   Ready    <none>   162m   v1.33.7-eks-70ce843   us-west-2b   ip-192-168-88-172.us-west-2.compute.internal

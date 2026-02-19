@@ -1,0 +1,2 @@
+NAME                      SCALETARGETKIND      SCALETARGETNAME   MIN   MAX   READY   ACTIVE   FALLBACK   PAUSED   TRIGGERS        AUTHENTICATIONS    AGE
+sqs-worker-scaledobject   apps/v1.Deployment   sqs-worker        0     10    False   False    False      False    aws-sqs-queue   aws-pod-identity   103m

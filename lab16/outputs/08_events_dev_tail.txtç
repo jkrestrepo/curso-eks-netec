@@ -1,0 +1,14 @@
+LAST SEEN   TYPE     REASON              OBJECT                      MESSAGE
+15m         Normal   SuccessfulCreate    replicaset/web-5c78f69c86   Created pod: web-5c78f69c86-hfjgg
+15m         Normal   Pulling             pod/web-5c78f69c86-c75pr    Pulling image "nginx:1.27"
+15m         Normal   ScalingReplicaSet   deployment/web              Scaled up replica set web-5c78f69c86 from 0 to 2
+15m         Normal   Scheduled           pod/web-5c78f69c86-c75pr    Successfully assigned rbac-dev/web-5c78f69c86-c75pr to ip-192-168-45-199.us-west-2.compute.internal
+15m         Normal   SuccessfulCreate    replicaset/web-5c78f69c86   Created pod: web-5c78f69c86-c75pr
+15m         Normal   Scheduled           pod/web-5c78f69c86-hfjgg    Successfully assigned rbac-dev/web-5c78f69c86-hfjgg to ip-192-168-88-172.us-west-2.compute.internal
+15m         Normal   Pulling             pod/web-5c78f69c86-hfjgg    Pulling image "nginx:1.27"
+15m         Normal   Created             pod/web-5c78f69c86-c75pr    Created container: nginx
+15m         Normal   Created             pod/web-5c78f69c86-hfjgg    Created container: nginx
+15m         Normal   Started             pod/web-5c78f69c86-hfjgg    Started container nginx
+15m         Normal   Pulled              pod/web-5c78f69c86-hfjgg    Successfully pulled image "nginx:1.27" in 4.398s (4.398s including waiting). Image size: 72406859 bytes.
+15m         Normal   Started             pod/web-5c78f69c86-c75pr    Started container nginx
+15m         Normal   Pulled              pod/web-5c78f69c86-c75pr    Successfully pulled image "nginx:1.27" in 4.678s (4.679s including waiting). Image size: 72406859 bytes.

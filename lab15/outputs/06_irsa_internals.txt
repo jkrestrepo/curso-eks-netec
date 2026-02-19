@@ -1,0 +1,13 @@
+== ENV (IRSA) ==
+[01;31m[KAWS_REGION[m[K=us-west-2
+[01;31m[KAWS_ROLE_ARN[m[K=arn:aws:iam::521544910957:role/irsa-s3-writer-eks-keda-lab-20260219141809
+[01;31m[KAWS_WEB_IDENTITY_TOKEN_FILE[m[K=/var/run/secrets/eks.amazonaws.com/serviceaccount/token
+[01;31m[KAWS_STS_REGIONAL_ENDPOINTS[m[K=regional
+== TOKEN DIR ==
+total 0
+lrwxrwxrwx. 1 root root 12 Feb 19 19:31 token -> ..data/token
+== TOKEN FILE ==
+AWS_WEB_IDENTITY_TOKEN_FILE=/var/run/secrets/eks.amazonaws.com/serviceaccount/token
+OK: token presente
+Token bytes:
+1184 /var/run/secrets/eks.amazonaws.com/serviceaccount/token

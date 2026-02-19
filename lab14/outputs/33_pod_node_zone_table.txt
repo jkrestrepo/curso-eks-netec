@@ -1,0 +1,3 @@
+web-d8cb7887-bv9n9  ip-192-168-88-172.us-west-2.compute.internal  us-west-2b
+web-d8cb7887-mtnf2  ip-192-168-45-199.us-west-2.compute.internal  us-west-2c
+web-d8cb7887-ttx2r  ip-192-168-88-172.us-west-2.compute.internal  us-west-2b

@@ -1,0 +1,10 @@
+NAME                                          CREATED AT
+role.rbac.authorization.k8s.io/dev-deployer   2026-02-19T19:50:48Z
+role.rbac.authorization.k8s.io/dev-exec       2026-02-19T19:50:49Z
+role.rbac.authorization.k8s.io/dev-logs       2026-02-19T19:50:48Z
+
+NAME                                                     ROLE                AGE
+rolebinding.rbac.authorization.k8s.io/rb-ci-deployer     Role/dev-deployer   89s
+rolebinding.rbac.authorization.k8s.io/rb-debug-exec      Role/dev-exec       89s
+rolebinding.rbac.authorization.k8s.io/rb-debug-logs      Role/dev-logs       89s
+rolebinding.rbac.authorization.k8s.io/rb-observer-logs   Role/dev-logs       89s

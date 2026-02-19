@@ -1,0 +1,4 @@
+Kubernetes control plane is running at https://42A96645A4A99A739AAACE3923971964.sk1.us-west-2.eks.amazonaws.com
+CoreDNS is running at https://42A96645A4A99A739AAACE3923971964.sk1.us-west-2.eks.amazonaws.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.

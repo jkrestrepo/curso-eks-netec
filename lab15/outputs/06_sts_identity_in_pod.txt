@@ -1,0 +1,7 @@
+== STS identity ==
+[?1h={[m
+    "UserId": "AROAXS3T7ZBW4F7DMSI7Z:botocore-session-1771529590",[m
+    "Account": "521544910957",[m
+    "Arn": "arn:aws:sts::521544910957:assumed-role/irsa-s3-writer-eks-keda-lab-2[m 0260219141809/botocore-session-1771529590"[m
+}[m
+[K[?1l>

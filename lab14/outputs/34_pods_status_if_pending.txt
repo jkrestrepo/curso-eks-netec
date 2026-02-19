@@ -1,0 +1,5 @@
+NAME                 READY   STATUS    RESTARTS   AGE
+curl                 1/1     Running   0          3m9s
+web-d8cb7887-bv9n9   1/1     Running   0          105s
+web-d8cb7887-mtnf2   1/1     Running   0          112s
+web-d8cb7887-ttx2r   1/1     Running   0          112s

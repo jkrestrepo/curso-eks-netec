@@ -1,0 +1,2 @@
+role.rbac.authorization.k8s.io/prod-viewer created
+rolebinding.rbac.authorization.k8s.io/rb-prod-view created

@@ -1,0 +1,12 @@
+LAST SEEN   TYPE     REASON              OBJECT                      MESSAGE
+15m         Normal   Scheduled           pod/web-5c78f69c86-8r2nx    Successfully assigned rbac-prod/web-5c78f69c86-8r2nx to ip-192-168-88-172.us-west-2.compute.internal
+15m         Normal   Pulled              pod/web-5c78f69c86-8r2nx    Container image "nginx:1.27" already present on machine
+15m         Normal   Created             pod/web-5c78f69c86-8r2nx    Created container: nginx
+15m         Normal   Started             pod/web-5c78f69c86-8r2nx    Started container nginx
+15m         Normal   Scheduled           pod/web-5c78f69c86-mb7th    Successfully assigned rbac-prod/web-5c78f69c86-mb7th to ip-192-168-45-199.us-west-2.compute.internal
+15m         Normal   Pulled              pod/web-5c78f69c86-mb7th    Container image "nginx:1.27" already present on machine
+15m         Normal   Created             pod/web-5c78f69c86-mb7th    Created container: nginx
+15m         Normal   Started             pod/web-5c78f69c86-mb7th    Started container nginx
+15m         Normal   SuccessfulCreate    replicaset/web-5c78f69c86   Created pod: web-5c78f69c86-8r2nx
+15m         Normal   SuccessfulCreate    replicaset/web-5c78f69c86   Created pod: web-5c78f69c86-mb7th
+15m         Normal   ScalingReplicaSet   deployment/web              Scaled up replica set web-5c78f69c86 from 0 to 2

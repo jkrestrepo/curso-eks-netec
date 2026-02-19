@@ -1,0 +1,16 @@
+node/ip-192-168-88-172.us-west-2.compute.internal already cordoned
+evicting pod kube-system/metrics-server-7c476fcb4d-d2z95
+evicting pod ha-lab/web-6cdd4b5ddc-vzk7v
+evicting pod ha-lab/tester
+evicting pod ha-lab/web-6cdd4b5ddc-5kt2m
+evicting pod keda/keda-admission-webhooks-5d67c9bcfb-b7czh
+evicting pod keda/keda-operator-metrics-apiserver-7ff5758fd7-chl55
+pod/keda-admission-webhooks-5d67c9bcfb-b7czh evicted
+pod/metrics-server-7c476fcb4d-d2z95 evicted
+pod/keda-operator-metrics-apiserver-7ff5758fd7-chl55 evicted
+evicting pod ha-lab/web-6cdd4b5ddc-vzk7v
+pod/web-6cdd4b5ddc-5kt2m evicted
+evicting pod ha-lab/web-6cdd4b5ddc-vzk7v
+pod/web-6cdd4b5ddc-vzk7v evicted
+pod/tester evicted
+node/ip-192-168-88-172.us-west-2.compute.internal drained
