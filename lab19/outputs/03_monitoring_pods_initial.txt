@@ -1,0 +1,8 @@
+NAME                                                    READY   STATUS    RESTARTS   AGE   IP               NODE                                           NOMINATED NODE   READINESS GATES
+alertmanager-kps-kube-prometheus-stack-alertmanager-0   2/2     Running   0          55s   192.168.56.41    ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>
+kps-grafana-5cd5d5d9c8-wqhpq                            3/3     Running   0          59s   192.168.86.114   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>
+kps-kube-prometheus-stack-operator-7b8f45fb94-msvns     1/1     Running   0          59s   192.168.59.137   ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>
+kps-kube-state-metrics-65b447c999-8j25r                 1/1     Running   0          59s   192.168.57.116   ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>
+kps-prometheus-node-exporter-nlbp7                      1/1     Running   0          60s   192.168.87.235   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>
+kps-prometheus-node-exporter-sgx7h                      1/1     Running   0          60s   192.168.50.182   ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>
+prometheus-kps-kube-prometheus-stack-prometheus-0       2/2     Running   0          55s   192.168.64.173   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>

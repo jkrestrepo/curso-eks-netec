@@ -1,0 +1,1 @@
+ASG_NAME=eks-mng-dev-2ace3deb-5ffd-b723-8039-0b22d7e4df6d

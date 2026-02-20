@@ -1,0 +1,40 @@
+19m         Normal    Started             pod/php-apache-65bb74f74c-hgsl4       Started container php-apache
+15m         Normal    Scheduled           pod/defaults-demo-5bd9fd7fc4-hwkbp    Successfully assigned energy-dev/defaults-demo-5bd9fd7fc4-hwkbp to ip-192-168-57-24.us-west-2.compute.internal
+15m         Normal    SuccessfulCreate    replicaset/defaults-demo-5bd9fd7fc4   Created pod: defaults-demo-5bd9fd7fc4-hwkbp
+15m         Normal    ScalingReplicaSet   deployment/defaults-demo              Scaled up replica set defaults-demo-5bd9fd7fc4 from 0 to 1
+15m         Normal    Pulling             pod/defaults-demo-5bd9fd7fc4-hwkbp    Pulling image "nginx:1.27"
+15m         Normal    Started             pod/defaults-demo-5bd9fd7fc4-hwkbp    Started container nginx
+15m         Normal    Created             pod/defaults-demo-5bd9fd7fc4-hwkbp    Created container: nginx
+15m         Normal    Pulled              pod/defaults-demo-5bd9fd7fc4-hwkbp    Successfully pulled image "nginx:1.27" in 4.268s (4.268s including waiting). Image size: 72406859 bytes.
+9m11s       Normal    Scheduled           pod/load-generator                    Successfully assigned energy-dev/load-generator to ip-192-168-73-0.us-west-2.compute.internal
+9m10s       Normal    Pulling             pod/load-generator                    Pulling image "busybox:1.36"
+9m9s        Normal    Started             pod/load-generator                    Started container load-generator
+9m9s        Normal    Pulled              pod/load-generator                    Successfully pulled image "busybox:1.36" in 1.655s (1.655s including waiting). Image size: 2217150 bytes.
+9m9s        Normal    Created             pod/load-generator                    Created container: load-generator
+8m46s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-2m6gb" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m46s       Normal    ScalingReplicaSet   deployment/php-apache                 Scaled up replica set php-apache-65bb74f74c from 1 to 3
+8m46s       Normal    SuccessfulRescale   horizontalpodautoscaler/php-apache    New size: 3; reason: cpu resource utilization (percentage of request) above target
+8m46s       Normal    Scheduled           pod/php-apache-65bb74f74c-4gqlq       Successfully assigned energy-dev/php-apache-65bb74f74c-4gqlq to ip-192-168-57-24.us-west-2.compute.internal
+8m46s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-dqvqf" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m46s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-4g59v" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m46s       Normal    SuccessfulCreate    replicaset/php-apache-65bb74f74c      Created pod: php-apache-65bb74f74c-4gqlq
+8m46s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-kh2xk" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m46s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-876tk" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m45s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-9bvsg" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m45s       Normal    Pulling             pod/php-apache-65bb74f74c-4gqlq       Pulling image "registry.k8s.io/hpa-example"
+8m45s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-pklpp" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m45s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-7s7xm" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m44s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      Error creating: pods "php-apache-65bb74f74c-w7vs4" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+8m35s       Normal    Started             pod/php-apache-65bb74f74c-4gqlq       Started container php-apache
+8m35s       Normal    Created             pod/php-apache-65bb74f74c-4gqlq       Created container: php-apache
+8m35s       Normal    Pulled              pod/php-apache-65bb74f74c-4gqlq       Successfully pulled image "registry.k8s.io/hpa-example" in 9.681s (9.681s including waiting). Image size: 164030864 bytes.
+8m31s       Normal    SuccessfulRescale   horizontalpodautoscaler/php-apache    New size: 5; reason: cpu resource utilization (percentage of request) above target
+8m31s       Normal    ScalingReplicaSet   deployment/php-apache                 Scaled up replica set php-apache-65bb74f74c from 3 to 5
+7m46s       Normal    SuccessfulRescale   horizontalpodautoscaler/php-apache    New size: 6; reason: cpu resource utilization (percentage of request) above target
+7m46s       Normal    ScalingReplicaSet   deployment/php-apache                 Scaled up replica set php-apache-65bb74f74c from 5 to 6
+7m45s       Warning   FailedCreate        replicaset/php-apache-65bb74f74c      (combined from similar events): Error creating: pods "php-apache-65bb74f74c-7jhmt" is forbidden: exceeded quota: energy-quota, requested: limits.cpu=500m, used: limits.cpu=1600m, limited: limits.cpu=2
+3m49s       Normal    SuccessfulDelete    replicaset/php-apache-65bb74f74c      Deleted pod: php-apache-65bb74f74c-4gqlq
+3m49s       Normal    Killing             pod/php-apache-65bb74f74c-4gqlq       Stopping container php-apache
+3m49s       Normal    SuccessfulDelete    replicaset/php-apache-65bb74f74c      Deleted pod: php-apache-65bb74f74c-hgsl4
+3m49s       Normal    Killing             pod/php-apache-65bb74f74c-hgsl4       Stopping container php-apache
+3m49s       Normal    ScalingReplicaSet   deployment/php-apache                 Scaled down replica set php-apache-65bb74f74c from 6 to 0

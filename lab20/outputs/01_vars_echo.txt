@@ -1,0 +1,10 @@
+AWS_REGION=us-west-2
+CLUSTER_NAME=eks-energy-policies-lab
+NODEGROUP_NAME=mng-dev
+NS=energy-dev
+TIME_ZONE=America/Mexico_City
+K8S_VERSION=1.33
+NODE_TYPE=t3.medium
+NODES=2
+LAB_ID=20260220110518
+AWS_ACCOUNT_ID=521544910957

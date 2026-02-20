@@ -1,0 +1,2 @@
+kps-kube-prometheus-stack-prometheus
+prometheus-operated

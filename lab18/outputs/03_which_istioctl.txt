@@ -1,0 +1,1 @@
+/c/Users/Netec/Desktop/labs-eks-ckad/lab18/02-istio/istio-1.28.2/bin/istioctl

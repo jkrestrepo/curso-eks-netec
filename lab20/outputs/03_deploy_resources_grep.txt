@@ -1,0 +1,10 @@
+16-   php-apache:
+17:    Image:      registry.k8s.io/hpa-example
+18-    Port:       80/TCP
+19-    Host Port:  0/TCP
+20:    Limits:
+21-      cpu:     500m
+22-      memory:  256Mi
+23:    Requests:
+24-      cpu:         200m
+25-      memory:      128Mi

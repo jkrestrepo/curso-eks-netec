@@ -1,0 +1,7 @@
+Release "kepler" does not exist. Installing it now.
+NAME: kepler
+LAST DEPLOYED: Fri Feb 20 10:47:34 2026
+NAMESPACE: kepler
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None

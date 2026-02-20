@@ -1,0 +1,11 @@
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: require-mtls
+  namespace: mtls-demo
+spec:
+  action: DENY
+  rules:
+  - from:
+    - source:
+        notPrincipals: ["*"]

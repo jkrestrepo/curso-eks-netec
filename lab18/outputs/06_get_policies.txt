@@ -1,0 +1,5 @@
+NAME                                           MODE     AGE
+peerauthentication.security.istio.io/default   STRICT   2m21s
+
+NAME                                                 ACTION   AGE
+authorizationpolicy.security.istio.io/require-mtls   DENY     104s

@@ -1,0 +1,8 @@
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                        SELECTOR
+deployment.apps/php-apache   1/1     1            1           22s   php-apache   registry.k8s.io/hpa-example   app=php-apache
+
+NAME                              READY   STATUS    RESTARTS   AGE   IP               NODE                                         NOMINATED NODE   READINESS GATES
+pod/php-apache-65bb74f74c-hgsl4   1/1     Running   0          22s   192.168.85.105   ip-192-168-73-0.us-west-2.compute.internal   <none>           <none>
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+service/php-apache   ClusterIP   10.100.252.245   <none>        80/TCP    22s   app=php-apache

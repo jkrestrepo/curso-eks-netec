@@ -1,0 +1,8 @@
+prometheus:
+  prometheusSpec:
+    # Descubrir ServiceMonitors/PodMonitors sin exigir labels del release del chart
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+
+grafana:
+  adminPassword: "admin"   # SOLO lab

@@ -1,0 +1,3 @@
+NAME                                           STATUS   ROLES    AGE   VERSION               INTERNAL-IP      EXTERNAL-IP     OS-IMAGE                        KERNEL-VERSION                   CONTAINER-RUNTIME
+ip-192-168-50-182.us-west-2.compute.internal   Ready    <none>   30m   v1.33.7-eks-70ce843   192.168.50.182   44.248.49.238   Amazon Linux 2023.10.20260202   6.12.66-88.122.amzn2023.x86_64   containerd://2.1.5
+ip-192-168-87-235.us-west-2.compute.internal   Ready    <none>   30m   v1.33.7-eks-70ce843   192.168.87.235   35.91.250.13    Amazon Linux 2023.10.20260202   6.12.66-88.122.amzn2023.x86_64   containerd://2.1.5

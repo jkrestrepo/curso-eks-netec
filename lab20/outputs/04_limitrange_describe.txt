@@ -1,0 +1,6 @@
+Name:       energy-defaults
+Namespace:  energy-dev
+Type        Resource  Min   Max    Default Request  Default Limit  Max Limit/Request Ratio
+----        --------  ---   ---    ---------------  -------------  -----------------------
+Container   memory    64Mi  512Mi  128Mi            256Mi          -
+Container   cpu       50m   600m   150m             300m           -

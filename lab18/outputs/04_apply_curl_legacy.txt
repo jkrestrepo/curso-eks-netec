@@ -1,0 +1,3 @@
+serviceaccount/curl created
+service/curl created
+deployment.apps/curl created

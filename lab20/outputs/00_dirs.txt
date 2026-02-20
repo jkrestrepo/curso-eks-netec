@@ -1,0 +1,10 @@
+.
+./00-prereqs
+./01-eks
+./02-k8s
+./03-policies
+./04-hpa
+./05-kubegreen
+./06-asg
+./logs
+./outputs

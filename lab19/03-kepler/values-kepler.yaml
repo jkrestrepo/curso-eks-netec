@@ -1,0 +1,15 @@
+daemonset:
+  hostPID: true
+  securityContext:
+    privileged: true
+
+serviceMonitor:
+  enabled: true
+  interval: 30s
+  scrapeTimeout: 10s
+
+tolerations:
+  - operator: Exists
+
+nodeSelector:
+  kubernetes.io/os: linux

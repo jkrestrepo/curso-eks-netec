@@ -1,0 +1,5 @@
+NAME                         CREATED AT
+limitrange/energy-defaults   2026-02-20T16:26:34Z
+
+NAME                         REQUEST                                                        LIMIT                                          AGE
+resourcequota/energy-quota   pods: 2/10, requests.cpu: 350m/1, requests.memory: 256Mi/1Gi   limits.cpu: 800m/2, limits.memory: 512Mi/2Gi   2m9s

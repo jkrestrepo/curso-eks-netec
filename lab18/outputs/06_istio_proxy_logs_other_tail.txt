@@ -1,0 +1,62 @@
+2026-02-20T14:48:21.927316Z	info	FLAG: --concurrency="0"
+2026-02-20T14:48:21.927358Z	info	FLAG: --domain="other-demo.svc.cluster.local"
+2026-02-20T14:48:21.927364Z	info	FLAG: --help="false"
+2026-02-20T14:48:21.927371Z	info	FLAG: --log_as_json="false"
+2026-02-20T14:48:21.927374Z	info	FLAG: --log_caller=""
+2026-02-20T14:48:21.927376Z	info	FLAG: --log_output_level="default:info"
+2026-02-20T14:48:21.927379Z	info	FLAG: --log_stacktrace_level="default:none"
+2026-02-20T14:48:21.927389Z	info	FLAG: --log_target="[stdout]"
+2026-02-20T14:48:21.927392Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2026-02-20T14:48:21.927394Z	info	FLAG: --outlierLogPath=""
+2026-02-20T14:48:21.927399Z	info	FLAG: --profiling="true"
+2026-02-20T14:48:21.927401Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2026-02-20T14:48:21.927406Z	info	FLAG: --proxyLogLevel="warning"
+2026-02-20T14:48:21.927408Z	info	FLAG: --serviceCluster="istio-proxy"
+2026-02-20T14:48:21.927411Z	info	FLAG: --stsPort="0"
+2026-02-20T14:48:21.927413Z	info	FLAG: --templateFile=""
+2026-02-20T14:48:21.927417Z	info	FLAG: --tokenManagerPlugin=""
+2026-02-20T14:48:21.927421Z	info	FLAG: --vklog="0"
+2026-02-20T14:48:21.927424Z	info	Version 1.28.2-ab413ac6c1f40b2f7c69d97e0db4e712e4ef1ecc-Clean
+2026-02-20T14:48:21.927942Z	info	Proxy role	ips=[192.168.92.196] type=sidecar id=curl-66d454fb44-p8dnf.other-demo domain=other-demo.svc.cluster.local
+2026-02-20T14:48:21.928001Z	info	Apply proxy config from env {}
+
+2026-02-20T14:48:21.930321Z	info	cpu limit detected as 2, setting concurrency
+2026-02-20T14:48:21.930565Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: ./etc/istio/proxy
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istiod.istio-system.svc:15012
+drainDuration: 45s
+proxyAdminPort: 15000
+serviceCluster: istio-proxy
+statNameLength: 189
+statusPort: 15020
+terminationDrainDuration: 5s
+
+2026-02-20T14:48:21.930581Z	info	JWT policy is third-party-jwt
+2026-02-20T14:48:21.930585Z	info	using credential fetcher of JWT type in cluster.local trust domain
+2026-02-20T14:48:21.933659Z	info	platform detected is AWS
+2026-02-20T14:48:21.937668Z	info	Starting default Istio SDS Server
+2026-02-20T14:48:21.937692Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2026-02-20T14:48:21.937709Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2026-02-20T14:48:21.937783Z	info	Opening status port 15020
+2026-02-20T14:48:21.938852Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2026-02-20T14:48:21.940543Z	info	Pilot SAN: [istiod.istio-system.svc]
+2026-02-20T14:48:21.940887Z	info	sds	Starting SDS grpc server
+2026-02-20T14:48:21.941002Z	info	sds	Starting SDS server for workload certificates, will listen on "var/run/secrets/workload-spiffe-uds/socket"
+2026-02-20T14:48:21.942507Z	info	Starting proxy agent
+2026-02-20T14:48:21.942546Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --allow-unknown-static-fields -l warning --component-log-level misc:error --skip-deprecated-logs --concurrency 2]
+2026-02-20T14:48:22.055922Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=1
+2026-02-20T14:48:22.101708Z	info	ads	ADS: new connection for node:1
+2026-02-20T14:48:22.102931Z	info	ads	ADS: new connection for node:2
+2026-02-20T14:48:22.128858Z	info	cache	generated new workload certificate	resourceName=default latency=189.5981ms ttl=23h59m59.871148184s
+2026-02-20T14:48:22.129000Z	info	cache	Root cert has changed, start rotating root cert
+2026-02-20T14:48:22.129067Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.870935556s
+2026-02-20T14:48:22.129082Z	info	cache	returned workload certificate from cache	ttl=23h59m59.870918215s
+2026-02-20T14:48:22.129254Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.870750291s
+2026-02-20T14:48:22.129636Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.870365007s
+2026-02-20T14:48:23.491065Z	info	Readiness succeeded in 1.566978212s
+2026-02-20T14:48:23.491354Z	info	Envoy proxy is ready
+[2026-02-20T14:52:36.012Z] "GET /ip HTTP/1.1" 200 - via_upstream - "-" 0 34 7 7 "-" "curl/8.16.0" "eccd0b55-8510-423e-a18f-41f2d5ef2089" "httpbin.mtls-demo:8000" "192.168.89.174:8080" outbound|8000||httpbin.mtls-demo.svc.cluster.local 192.168.92.196:58558 10.100.14.205:8000 192.168.92.196:42180 - default
+[2026-02-20T14:54:45.805Z] "GET /ip HTTP/1.1" 200 - via_upstream - "-" 0 34 1 1 "-" "curl/8.16.0" "ff4e5dc6-335c-43e1-b018-9c95c1fdb61d" "httpbin.mtls-demo:8000" "192.168.89.174:8080" outbound|8000||httpbin.mtls-demo.svc.cluster.local 192.168.92.196:58558 10.100.14.205:8000 192.168.92.196:46292 - default
+[2026-02-20T14:55:35.846Z] "GET /ip HTTP/1.1" 200 - via_upstream - "-" 0 34 4 4 "-" "curl/8.16.0" "f08a4ec6-fa86-41d5-99c3-7bbf567e4ca5" "httpbin.mtls-demo:8000" "192.168.89.174:8080" outbound|8000||httpbin.mtls-demo.svc.cluster.local 192.168.92.196:51658 10.100.14.205:8000 192.168.92.196:39362 - default

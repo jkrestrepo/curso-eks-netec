@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: defaults-demo
+  namespace: energy-dev
+  labels:
+    app: defaults-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: defaults-demo
+  template:
+    metadata:
+      labels:
+        app: defaults-demo
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.27
+        ports:
+        - containerPort: 80

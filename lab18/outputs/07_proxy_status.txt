@@ -1,0 +1,4 @@
+NAME                                   CLUSTER        ISTIOD                      VERSION     SUBSCRIBED TYPES
+curl-66d454fb44-g27b7.mtls-demo        Kubernetes     istiod-694d545dfd-tpq88     1.28.2      4 (CDS,LDS,EDS,RDS)
+curl-66d454fb44-p8dnf.other-demo       Kubernetes     istiod-694d545dfd-tpq88     1.28.2      4 (CDS,LDS,EDS,RDS)
+httpbin-686d6fc899-hvgxz.mtls-demo     Kubernetes     istiod-694d545dfd-tpq88     1.28.2      4 (CDS,LDS,EDS,RDS)

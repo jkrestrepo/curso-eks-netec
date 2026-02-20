@@ -1,0 +1,2 @@
+NAME                                             READY   STATUS    RESTARTS   AGE   IP               NODE                                         NOMINATED NODE   READINESS GATES
+kube-green-controller-manager-67c9cddc87-x72d4   1/1     Running   0          21s   192.168.90.139   ip-192-168-73-0.us-west-2.compute.internal   <none>           <none>

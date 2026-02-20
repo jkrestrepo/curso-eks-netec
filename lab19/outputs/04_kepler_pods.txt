@@ -1,0 +1,3 @@
+NAME           READY   STATUS    RESTARTS   AGE   IP               NODE                                           NOMINATED NODE   READINESS GATES
+kepler-dnp5g   0/1     Running   0          17s   192.168.87.235   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>
+kepler-lbm4g   0/1     Running   0          16s   192.168.50.182   ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>

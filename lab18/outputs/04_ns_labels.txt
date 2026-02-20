@@ -1,0 +1,3 @@
+legacy-demo       Active   23s     kubernetes.io/metadata.name=legacy-demo
+mtls-demo         Active   29s     istio-injection=enabled,kubernetes.io/metadata.name=mtls-demo
+other-demo        Active   26s     istio-injection=enabled,kubernetes.io/metadata.name=other-demo

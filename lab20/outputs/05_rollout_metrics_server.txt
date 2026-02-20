@@ -1,0 +1,1 @@
+deployment "metrics-server" successfully rolled out

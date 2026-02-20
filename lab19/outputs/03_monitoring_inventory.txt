@@ -1,0 +1,18 @@
+NAME                                                 READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/kps-grafana                          1/1     1            1           80s
+deployment.apps/kps-kube-prometheus-stack-operator   1/1     1            1           80s
+deployment.apps/kps-kube-state-metrics               1/1     1            1           80s
+
+NAME                                                                   READY   AGE
+statefulset.apps/alertmanager-kps-kube-prometheus-stack-alertmanager   1/1     75s
+statefulset.apps/prometheus-kps-kube-prometheus-stack-prometheus       1/1     75s
+
+NAME                                             TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+service/alertmanager-operated                    ClusterIP   None             <none>        9093/TCP,9094/TCP,9094/UDP   75s
+service/kps-grafana                              ClusterIP   10.100.37.71     <none>        80/TCP                       80s
+service/kps-kube-prometheus-stack-alertmanager   ClusterIP   10.100.158.178   <none>        9093/TCP,8080/TCP            80s
+service/kps-kube-prometheus-stack-operator       ClusterIP   10.100.242.234   <none>        443/TCP                      80s
+service/kps-kube-prometheus-stack-prometheus     ClusterIP   10.100.59.224    <none>        9090/TCP,8080/TCP            80s
+service/kps-kube-state-metrics                   ClusterIP   10.100.255.23    <none>        8080/TCP                     80s
+service/kps-prometheus-node-exporter             ClusterIP   10.100.84.166    <none>        9100/TCP                     80s
+service/prometheus-operated                      ClusterIP   None             <none>        9090/TCP                     75s

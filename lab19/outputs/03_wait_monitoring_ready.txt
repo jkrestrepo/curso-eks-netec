@@ -1,0 +1,7 @@
+pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0 condition met
+pod/kps-grafana-5cd5d5d9c8-wqhpq condition met
+pod/kps-kube-prometheus-stack-operator-7b8f45fb94-msvns condition met
+pod/kps-kube-state-metrics-65b447c999-8j25r condition met
+pod/kps-prometheus-node-exporter-nlbp7 condition met
+pod/kps-prometheus-node-exporter-sgx7h condition met
+pod/prometheus-kps-kube-prometheus-stack-prometheus-0 condition met

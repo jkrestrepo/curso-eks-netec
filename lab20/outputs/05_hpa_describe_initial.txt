@@ -1,0 +1,29 @@
+Name:                                                  php-apache
+Namespace:                                             energy-dev
+Labels:                                                <none>
+Annotations:                                           <none>
+CreationTimestamp:                                     Fri, 20 Feb 2026 11:33:56 -0500
+Reference:                                             Deployment/php-apache
+Metrics:                                               ( current / target )
+  resource cpu on pods  (as a percentage of request):  0% (1m) / 50%
+Min replicas:                                          1
+Max replicas:                                          6
+Behavior:
+  Scale Up:
+    Stabilization Window: 0 seconds
+    Select Policy: Max
+    Policies:
+      - Type: Pods  Value: 2  Period: 15 seconds
+  Scale Down:
+    Stabilization Window: 60 seconds
+    Select Policy: Min
+    Policies:
+      - Type: Percent  Value: 50  Period: 60 seconds
+Deployment pods:       1 current / 1 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:           <none>

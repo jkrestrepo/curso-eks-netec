@@ -1,0 +1,2 @@
+NAME                    READY   STATUS    RESTARTS   AGE     IP              NODE                                           NOMINATED NODE   READINESS GATES
+curl-66d454fb44-l85xl   1/1     Running   0          3m30s   192.168.75.20   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>

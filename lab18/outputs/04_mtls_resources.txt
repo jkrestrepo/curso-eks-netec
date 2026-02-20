@@ -1,0 +1,11 @@
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                                   SELECTOR
+deployment.apps/curl      1/1     1            1           4m22s   curl         docker.io/curlimages/curl:8.16.0         app=curl
+deployment.apps/httpbin   1/1     1            1           4m39s   httpbin      docker.io/mccutchen/go-httpbin:v2.15.0   app=httpbin,version=v1
+
+NAME              TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE     SELECTOR
+service/curl      ClusterIP   10.100.177.205   <none>        80/TCP     4m23s   app=curl
+service/httpbin   ClusterIP   10.100.14.205    <none>        8000/TCP   4m39s   app=httpbin
+
+NAME                           READY   STATUS    RESTARTS   AGE     IP               NODE                                           NOMINATED NODE   READINESS GATES
+pod/curl-66d454fb44-g27b7      2/2     Running   0          4m22s   192.168.64.173   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>
+pod/httpbin-686d6fc899-hvgxz   2/2     Running   0          4m38s   192.168.89.174   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>

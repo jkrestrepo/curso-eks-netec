@@ -1,0 +1,11 @@
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: mtls-demo-isolation
+  namespace: mtls-demo
+spec:
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        namespaces: ["mtls-demo"]

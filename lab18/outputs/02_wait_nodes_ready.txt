@@ -1,0 +1,2 @@
+node/ip-192-168-50-182.us-west-2.compute.internal condition met
+node/ip-192-168-87-235.us-west-2.compute.internal condition met

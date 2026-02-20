@@ -1,0 +1,2 @@
+Desired Number of Nodes Scheduled: 2
+Current Number of Nodes Scheduled: 2

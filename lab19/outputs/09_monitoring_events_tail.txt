@@ -1,0 +1,30 @@
+15m         Normal    Created             pod/kps-kube-prometheus-stack-admission-patch-bscsw               Created container: patch
+15m         Normal    Pulled              pod/kps-kube-prometheus-stack-admission-patch-bscsw               Container image "ghcr.io/jkroepke/kube-webhook-certgen:1.7.7" already present on machine
+15m         Normal    SuccessfulCreate    statefulset/alertmanager-kps-kube-prometheus-stack-alertmanager   create Pod alertmanager-kps-kube-prometheus-stack-alertmanager-0 in StatefulSet alertmanager-kps-kube-prometheus-stack-alertmanager successful
+15m         Normal    Pulling             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Pulling image "quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0"
+15m         Normal    Pulling             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Pulling image "quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0"
+15m         Normal    Pulling             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Pulling image "quay.io/prometheus/alertmanager:v0.31.1"
+15m         Normal    Pulled              pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Successfully pulled image "quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0" in 1.297s (1.297s including waiting). Image size: 15134211 bytes.
+15m         Normal    Created             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Created container: init-config-reloader
+15m         Normal    Started             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Started container init-config-reloader
+15m         Normal    Completed           job/kps-kube-prometheus-stack-admission-patch                     Job completed
+15m         Normal    Started             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Started container config-reloader
+15m         Normal    Created             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Created container: alertmanager
+15m         Normal    Pulled              pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Successfully pulled image "quay.io/prometheus/alertmanager:v0.31.1" in 1.952s (1.952s including waiting). Image size: 39120596 bytes.
+15m         Normal    Started             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Started container alertmanager
+15m         Normal    Pulled              pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Container image "quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0" already present on machine
+15m         Normal    Created             pod/alertmanager-kps-kube-prometheus-stack-alertmanager-0         Created container: config-reloader
+15m         Normal    Pulled              pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Successfully pulled image "quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0" in 3.615s (3.615s including waiting). Image size: 15134211 bytes.
+15m         Normal    Created             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Created container: init-config-reloader
+15m         Normal    Started             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Started container init-config-reloader
+15m         Normal    Pulling             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Pulling image "quay.io/prometheus/prometheus:v3.9.1"
+15m         Normal    Pulled              pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Successfully pulled image "quay.io/prometheus/prometheus:v3.9.1" in 10.188s (10.188s including waiting). Image size: 134365275 bytes.
+15m         Normal    Created             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Created container: prometheus
+15m         Normal    Started             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Started container prometheus
+15m         Normal    Pulled              pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Container image "quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0" already present on machine
+15m         Normal    Created             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Created container: config-reloader
+15m         Normal    Started             pod/prometheus-kps-kube-prometheus-stack-prometheus-0             Started container config-reloader
+15m         Normal    Pulled              pod/kps-grafana-5cd5d5d9c8-wqhpq                                  Successfully pulled image "docker.io/grafana/grafana:12.3.3" in 21.03s (21.03s including waiting). Image size: 209887954 bytes.
+15m         Normal    Created             pod/kps-grafana-5cd5d5d9c8-wqhpq                                  Created container: grafana
+15m         Normal    Started             pod/kps-grafana-5cd5d5d9c8-wqhpq                                  Started container grafana
+14m         Warning   Unhealthy           pod/kps-grafana-5cd5d5d9c8-wqhpq                                  Readiness probe failed: Get "http://192.168.86.114:3000/api/health": dial tcp 192.168.86.114:3000: connect: connection refused

@@ -1,0 +1,5 @@
+NAME                    DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE   CONTAINERS        IMAGES                                                  SELECTOR
+daemonset.apps/kepler   2         2         0       2            0           kubernetes.io/os=linux   10s   kepler-exporter   quay.io/sustainable_computing_io/kepler:release-0.8.0   app.kubernetes.io/component=exporter,app.kubernetes.io/name=kepler
+
+NAME             TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/kepler   ClusterIP   10.100.239.154   <none>        9102/TCP   10s   app.kubernetes.io/component=exporter,app.kubernetes.io/name=kepler

@@ -1,0 +1,3 @@
+2026-02-20T14:43:35.035546Z	error	kube	translation function for core/v1alpha1/MeshConfig not found	controller=analysis-controller
+2026-02-20T14:43:35.036691Z	error	kube	translation function for core/v1alpha1/MeshNetworks not found	controller=analysis-controller
+Info [IST0102] (Namespace default) The namespace is not enabled for Istio injection. Run 'kubectl label namespace default istio-injection=enabled' to enable it, or 'kubectl label namespace default istio-injection=disabled' to explicitly mark it as not needing injection.

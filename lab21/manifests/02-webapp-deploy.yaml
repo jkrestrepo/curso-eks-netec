@@ -1,0 +1,78 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+  namespace: ckad-reto
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: webapp
+  replicas: 3
+  revisionHistoryLimit: 5 
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+      - name: webapp
+        image: 521544910957.dkr.ecr.us-west-2.amazonaws.com/ckad-reto:v2
+        ports:
+        - containerPort: 80
+        env:
+          - name: APP_COLOR
+            valueFrom:
+              configMapKeyRef:
+                name: app-config
+                key: APP_COLOR
+          - name: APP_TITLE
+            valueFrom:
+              configMapKeyRef:
+                name: app-config
+                key: APP_TITLE
+          - name: API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: app-secret
+                key: API_KEY
+        startupProbe:
+          httpGet:
+            path: /
+            port: 80
+          failureThreshold: 12
+          periodSeconds: 5
+          timeoutSeconds: 1
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 4
+          periodSeconds: 3
+          timeoutSeconds: 1
+          failureThreshold: 2
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 7
+          periodSeconds: 5
+          timeoutSeconds: 1
+          failureThreshold: 2
+        volumeMounts:
+          - name: config-volume
+            mountPath: /etc/config
+          - name: secret-volume
+            mountPath: /etc/secret
+            readOnly: true
+      volumes:
+      - name: config-volume
+        configMap:
+          name: app-config
+      - name: secret-volume
+        secret:
+          secretName: app-secret

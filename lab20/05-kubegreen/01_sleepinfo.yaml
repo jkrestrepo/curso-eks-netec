@@ -1,0 +1,14 @@
+apiVersion: kube-green.com/v1alpha1
+kind: SleepInfo
+metadata:
+  name: dev-working-hours
+  namespace: energy-dev
+spec:
+  weekdays: "*"
+  sleepAt: "11:41"
+  wakeUpAt: "11:45"
+  timeZone: "America/Bogota"
+  suspendCronJobs: true
+  includeRef:
+    - matchLabels:
+        kube-green.dev/include: "true"

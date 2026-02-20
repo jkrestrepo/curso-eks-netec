@@ -1,0 +1,30 @@
+2026-02-20 10:40:49 [ℹ]  eksctl version 0.223.0
+2026-02-20 10:40:49 [ℹ]  using region us-west-2
+2026-02-20 10:40:49 [ℹ]  setting availability zones to [us-west-2d us-west-2b us-west-2a]
+2026-02-20 10:40:49 [ℹ]  subnets for us-west-2d - public:192.168.0.0/19 private:192.168.96.0/19
+2026-02-20 10:40:49 [ℹ]  subnets for us-west-2b - public:192.168.32.0/19 private:192.168.128.0/19
+2026-02-20 10:40:49 [ℹ]  subnets for us-west-2a - public:192.168.64.0/19 private:192.168.160.0/19
+2026-02-20 10:40:49 [ℹ]  nodegroup "mng-istio" will use "" [AmazonLinux2023/1.33]
+2026-02-20 10:40:49 [!]  Auto Mode will be enabled by default in an upcoming release of eksctl. This means managed node groups and managed networking add-ons will no longer be created by default. To maintain current behavior, explicitly set 'autoModeConfig.enabled: false' in your cluster configuration. Learn more: https://eksctl.io/usage/auto-mode/
+2026-02-20 10:40:49 [ℹ]  using Kubernetes version 1.33
+2026-02-20 10:40:49 [ℹ]  creating EKS cluster "eks-istio-mtls-lab" in "us-west-2" region with managed nodes
+2026-02-20 10:40:49 [ℹ]  will create 2 separate CloudFormation stacks for cluster itself and the initial managed nodegroup
+2026-02-20 10:40:49 [ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=us-west-2 --cluster=eks-istio-mtls-lab'
+2026-02-20 10:40:49 [ℹ]  Kubernetes API endpoint access will use default of {publicAccess=true, privateAccess=false} for cluster "eks-istio-mtls-lab" in "us-west-2"
+2026-02-20 10:40:49 [ℹ]  CloudWatch logging will not be enabled for cluster "eks-istio-mtls-lab" in "us-west-2"
+2026-02-20 10:40:49 [ℹ]  you can enable it with 'eksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=us-west-2 --cluster=eks-istio-mtls-lab'
+2026-02-20 10:40:49 [ℹ]  default addons metrics-server, vpc-cni, kube-proxy, coredns were not specified, will install them as EKS addons
+2026-02-20 10:40:49 [ℹ]  
+2 sequential tasks: { create cluster control plane "eks-istio-mtls-lab", 
+    2 sequential sub-tasks: { 
+        2 sequential sub-tasks: { 
+            1 task: { create addons },
+            wait for control plane to become ready,
+        },
+        create managed nodegroup "mng-istio",
+    } 
+}
+2026-02-20 10:40:49 [ℹ]  building cluster stack "eksctl-eks-istio-mtls-lab-cluster"
+2026-02-20 10:40:50 [!]  1 error(s) occurred and cluster hasn't been created properly, you may wish to check CloudFormation console
+2026-02-20 10:40:50 [ℹ]  to cleanup resources, run 'eksctl delete cluster --region=us-west-2 --name=eks-istio-mtls-lab'
+2026-02-20 10:40:50 [✖]  creating CloudFormation stack "eksctl-eks-istio-mtls-lab-cluster": operation error CloudFormation: CreateStack, https response error StatusCode: 400, RequestID: c441a795-4e03-4727-b2cf-974c74abf185, AlreadyExistsException: Stack [eksctl-eks-istio-mtls-lab-cluster] already exists

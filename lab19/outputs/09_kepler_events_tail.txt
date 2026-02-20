@@ -1,0 +1,13 @@
+LAST SEEN   TYPE     REASON             OBJECT             MESSAGE
+11m         Normal   Scheduled          pod/kepler-dnp5g   Successfully assigned kepler/kepler-dnp5g to ip-192-168-87-235.us-west-2.compute.internal
+11m         Normal   Scheduled          pod/kepler-lbm4g   Successfully assigned kepler/kepler-lbm4g to ip-192-168-50-182.us-west-2.compute.internal
+11m         Normal   SuccessfulCreate   daemonset/kepler   Created pod: kepler-dnp5g
+11m         Normal   Pulling            pod/kepler-dnp5g   Pulling image "quay.io/sustainable_computing_io/kepler:release-0.8.0"
+11m         Normal   Pulling            pod/kepler-lbm4g   Pulling image "quay.io/sustainable_computing_io/kepler:release-0.8.0"
+11m         Normal   SuccessfulCreate   daemonset/kepler   Created pod: kepler-lbm4g
+11m         Normal   Pulled             pod/kepler-lbm4g   Successfully pulled image "quay.io/sustainable_computing_io/kepler:release-0.8.0" in 3.54s (3.54s including waiting). Image size: 79705251 bytes.
+11m         Normal   Created            pod/kepler-lbm4g   Created container: kepler-exporter
+11m         Normal   Started            pod/kepler-lbm4g   Started container kepler-exporter
+11m         Normal   Pulled             pod/kepler-dnp5g   Successfully pulled image "quay.io/sustainable_computing_io/kepler:release-0.8.0" in 5.961s (5.961s including waiting). Image size: 79705251 bytes.
+11m         Normal   Created            pod/kepler-dnp5g   Created container: kepler-exporter
+11m         Normal   Started            pod/kepler-dnp5g   Started container kepler-exporter

@@ -1,0 +1,2 @@
+NAME                      READY   STATUS    RESTARTS   AGE   IP               NODE                                           NOMINATED NODE   READINESS GATES
+istiod-694d545dfd-tpq88   1/1     Running   0          33s   192.168.59.137   ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>

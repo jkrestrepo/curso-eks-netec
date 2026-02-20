@@ -1,0 +1,3 @@
+serviceaccount/curl unchanged
+service/curl unchanged
+deployment.apps/curl unchanged

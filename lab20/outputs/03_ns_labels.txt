@@ -1,0 +1,2 @@
+NAME         STATUS   AGE   LABELS
+energy-dev   Active   13s   env=dev,kubernetes.io/metadata.name=energy-dev,sustainability=enabled

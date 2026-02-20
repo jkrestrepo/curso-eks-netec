@@ -1,0 +1,16 @@
+NAME                                 READY   STATUS    RESTARTS   AGE   IP               NODE                                          NOMINATED NODE   READINESS GATES
+pod/defaults-demo-5bd9fd7fc4-hwkbp   1/1     Running   0          17m   192.168.55.20    ip-192-168-57-24.us-west-2.compute.internal   <none>           <none>
+pod/load-generator                   1/1     Running   0          10m   192.168.64.245   ip-192-168-73-0.us-west-2.compute.internal    <none>           <none>
+pod/php-apache-65bb74f74c-h9jph      1/1     Running   0          32s   192.168.71.35    ip-192-168-73-0.us-west-2.compute.internal    <none>           <none>
+pod/php-apache-65bb74f74c-mcdtr      1/1     Running   0          32s   192.168.39.202   ip-192-168-57-24.us-west-2.compute.internal   <none>           <none>
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+service/php-apache   ClusterIP   10.100.252.245   <none>        80/TCP    20m   app=php-apache
+
+NAME                            READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES                        SELECTOR
+deployment.apps/defaults-demo   1/1     1            1           17m   nginx        nginx:1.27                    app=defaults-demo
+deployment.apps/php-apache      2/6     2            2           20m   php-apache   registry.k8s.io/hpa-example   app=php-apache
+
+NAME                                       DESIRED   CURRENT   READY   AGE   CONTAINERS   IMAGES                        SELECTOR
+replicaset.apps/defaults-demo-5bd9fd7fc4   1         1         1       17m   nginx        nginx:1.27                    app=defaults-demo,pod-template-hash=5bd9fd7fc4
+replicaset.apps/php-apache-65bb74f74c      6         2         2       20m   php-apache   registry.k8s.io/hpa-example   app=php-apache,pod-template-hash=65bb74f74c

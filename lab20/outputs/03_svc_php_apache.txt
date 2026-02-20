@@ -1,0 +1,2 @@
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
+php-apache   ClusterIP   10.100.252.245   <none>        80/TCP    70s

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: ckad-reto
+data:
+  APP_COLOR: "blue"
+  APP_TITLE: "CKAD-Reto"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secret
+  namespace: ckad-reto
+type: opaque
+data:
+  API_KEY: c3VwZXJzZWNyZXQ=

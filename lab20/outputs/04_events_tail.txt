@@ -1,0 +1,8 @@
+LAST SEEN   TYPE     REASON              OBJECT                             MESSAGE
+3m4s        Normal   Scheduled           pod/php-apache-65bb74f74c-hgsl4    Successfully assigned energy-dev/php-apache-65bb74f74c-hgsl4 to ip-192-168-73-0.us-west-2.compute.internal
+3m4s        Normal   SuccessfulCreate    replicaset/php-apache-65bb74f74c   Created pod: php-apache-65bb74f74c-hgsl4
+3m4s        Normal   ScalingReplicaSet   deployment/php-apache              Scaled up replica set php-apache-65bb74f74c from 0 to 1
+3m3s        Normal   Pulling             pod/php-apache-65bb74f74c-hgsl4    Pulling image "registry.k8s.io/hpa-example"
+2m54s       Normal   Pulled              pod/php-apache-65bb74f74c-hgsl4    Successfully pulled image "registry.k8s.io/hpa-example" in 9.426s (9.426s including waiting). Image size: 164030864 bytes.
+2m54s       Normal   Created             pod/php-apache-65bb74f74c-hgsl4    Created container: php-apache
+2m54s       Normal   Started             pod/php-apache-65bb74f74c-hgsl4    Started container php-apache

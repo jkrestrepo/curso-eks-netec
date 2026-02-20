@@ -1,0 +1,3 @@
+POD_MTLS=curl-66d454fb44-g27b7
+POD_OTHER=curl-66d454fb44-p8dnf
+POD_LEGACY=curl-66d454fb44-l85xl

@@ -1,0 +1,1 @@
+KEPLER_SAMPLE_METRIC=kepler_container_bpf_block_irq_total{container_id="2000f90fe2f1deb9fde00a73a6d17c5eb852da88242771761508f371e6b3c501",container_name="metrics-server",container_namespace="kube-system",pod_name="metrics-server-7c476fcb4d-jp2n5",source="bpf"}

@@ -1,0 +1,10 @@
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "kepler" chart repository
+...Successfully got an update from the "kedacore" chart repository
+...Successfully got an update from the "opencost-charts" chart repository
+...Successfully got an update from the "crossplane-stable" chart repository
+...Successfully got an update from the "chaos-mesh" chart repository
+...Successfully got an update from the "eks" chart repository
+...Successfully got an update from the "argo" chart repository
+...Successfully got an update from the "prometheus-community" chart repository
+Update Complete. ⎈Happy Helming!⎈

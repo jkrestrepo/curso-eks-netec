@@ -1,0 +1,1 @@
+authorizationpolicy.security.istio.io/mtls-demo-isolation created

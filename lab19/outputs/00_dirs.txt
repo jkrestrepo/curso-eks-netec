@@ -1,0 +1,9 @@
+.
+./00-prereqs
+./01-eks
+./02-monitoring
+./03-kepler
+./04-workload
+./05-queries
+./logs
+./outputs

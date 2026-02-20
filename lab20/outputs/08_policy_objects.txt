@@ -1,0 +1,8 @@
+NAME                         CREATED AT
+limitrange/energy-defaults   2026-02-20T16:26:34Z
+
+NAME                         REQUEST                                                        LIMIT                                         AGE
+resourcequota/energy-quota   pods: 4/10, requests.cpu: 700m/1, requests.memory: 512Mi/1Gi   limits.cpu: 1600m/2, limits.memory: 1Gi/2Gi   18m
+
+NAME                                         AGE
+sleepinfo.kube-green.com/dev-working-hours   5m4s

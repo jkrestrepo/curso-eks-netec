@@ -1,0 +1,9 @@
+Name:            energy-quota
+Namespace:       energy-dev
+Resource         Used   Hard
+--------         ----   ----
+limits.cpu       500m   2
+limits.memory    256Mi  2Gi
+pods             1      10
+requests.cpu     200m   1
+requests.memory  128Mi  1Gi

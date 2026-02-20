@@ -1,0 +1,16 @@
+{
+  "job": "kepler",
+  "instance": "ip-192-168-50-182.us-west-2.compute.internal",
+  "health": "up",
+  "scrapeUrl": "http://192.168.50.182:9102/metrics",
+  "lastScrape": "2026-02-20T15:51:52.386405352Z",
+  "lastError": ""
+}
+{
+  "job": "kepler",
+  "instance": "ip-192-168-87-235.us-west-2.compute.internal",
+  "health": "up",
+  "scrapeUrl": "http://192.168.87.235:9102/metrics",
+  "lastScrape": "2026-02-20T15:51:32.958413126Z",
+  "lastError": ""
+}

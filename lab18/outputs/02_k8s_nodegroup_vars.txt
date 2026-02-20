@@ -1,0 +1,2 @@
+K8S_VERSION=1.33
+NODEGROUP_NAME=mng-istio

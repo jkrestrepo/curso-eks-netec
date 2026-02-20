@@ -1,0 +1,6 @@
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES         SELECTOR
+deployment.apps/cpu-burn   2/2     2            2           6m11s   burner       busybox:1.36   app=cpu-burn
+
+NAME                            READY   STATUS    RESTARTS   AGE     IP              NODE                                           NOMINATED NODE   READINESS GATES
+pod/cpu-burn-7b649df97b-7t2p9   1/1     Running   0          6m11s   192.168.57.33   ip-192-168-50-182.us-west-2.compute.internal   <none>           <none>
+pod/cpu-burn-7b649df97b-lszvk   1/1     Running   0          6m11s   192.168.75.20   ip-192-168-87-235.us-west-2.compute.internal   <none>           <none>

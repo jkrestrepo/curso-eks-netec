@@ -1,0 +1,3 @@
+serviceaccount/httpbin unchanged
+service/httpbin unchanged
+deployment.apps/httpbin unchanged

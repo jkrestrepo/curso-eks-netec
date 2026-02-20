@@ -1,0 +1,12 @@
+24-    Ready:          True
+25-    Restart Count:  0
+26:    Limits:
+27-      cpu:     300m
+28-      memory:  256Mi
+29:    Requests:
+30-      cpu:        150m
+31-      memory:     128Mi
+32-    Environment:  <none>
+33-    Mounts:
+34-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-j8r7q (ro)
+35-Conditions:

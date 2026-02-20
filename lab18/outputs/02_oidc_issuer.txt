@@ -1,0 +1,1 @@
+https://oidc.eks.us-west-2.amazonaws.com/id/7A3CFDABEC5403F3A52B924565CA655D

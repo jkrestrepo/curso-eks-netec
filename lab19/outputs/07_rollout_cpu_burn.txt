@@ -1,0 +1,1 @@
+deployment "cpu-burn" successfully rolled out

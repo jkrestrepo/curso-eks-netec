@@ -1,0 +1,3 @@
+NAME                             CPU(cores)   MEMORY(bytes)   
+defaults-demo-5bd9fd7fc4-hwkbp   0m           2Mi             
+php-apache-65bb74f74c-hgsl4      1m           9Mi             

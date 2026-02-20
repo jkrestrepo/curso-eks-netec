@@ -1,0 +1,40 @@
+I0220 15:47:43.022452       1 process_energy.go:130] Using the Ratio Power Model to estimate PROCESS_TOTAL Power
+I0220 15:47:43.022480       1 process_energy.go:131] Feature names: [bpf_cpu_time_ms]
+I0220 15:47:43.024010       1 process_energy.go:130] Using the Ratio Power Model to estimate PROCESS_COMPONENTS Power
+I0220 15:47:43.024027       1 process_energy.go:131] Feature names: [bpf_cpu_time_ms bpf_cpu_time_ms bpf_cpu_time_ms   gpu_compute_util]
+I0220 15:47:43.026795       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:43.026815       1 model.go:124] Requesting for Machine Spec: &{genuineintel intel_xeon_platinum_8259cl 2 1 3 2500 2}
+I0220 15:47:43.026830       1 node_platform_energy.go:53] Using the Regressor/AbsPower Power Model to estimate Node Platform Power
+I0220 15:47:43.029114       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:43.029133       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:43.029137       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:43.029140       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:43.029145       1 model.go:124] Requesting for Machine Spec: &{genuineintel intel_xeon_platinum_8259cl 2 1 3 2500 2}
+I0220 15:47:43.029157       1 node_component_energy.go:57] Using the Regressor/AbsPower Power Model to estimate Node Component Power
+I0220 15:47:43.029220       1 prometheus_collector.go:95] Registered Container Prometheus metrics
+I0220 15:47:43.029276       1 prometheus_collector.go:100] Registered VM Prometheus metrics
+I0220 15:47:43.029286       1 prometheus_collector.go:104] Registered Node Prometheus metrics
+I0220 15:47:43.029935       1 exporter.go:238] starting to listen on 0.0.0.0:9102
+I0220 15:47:43.030216       1 exporter.go:262] Started Kepler in 471.215672ms
+I0220 15:47:43.030234       1 exporter.go:254] Starting server without TLS
+E0220 15:47:43.172542       1 watcher.go:189] parsing pod kepler-dnp5g kepler ContainerStatuses issue : container kepler-exporter did not start yet status, InitContainerStatuses issue :<nil>, EphemeralContainerStatuses issue :<nil>
+I0220 15:47:40.593481       1 process_energy.go:130] Using the Ratio Power Model to estimate PROCESS_TOTAL Power
+I0220 15:47:40.593502       1 process_energy.go:131] Feature names: [bpf_cpu_time_ms]
+I0220 15:47:40.594908       1 process_energy.go:130] Using the Ratio Power Model to estimate PROCESS_COMPONENTS Power
+I0220 15:47:40.594923       1 process_energy.go:131] Feature names: [bpf_cpu_time_ms bpf_cpu_time_ms bpf_cpu_time_ms   gpu_compute_util]
+I0220 15:47:40.597542       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:40.597562       1 model.go:124] Requesting for Machine Spec: &{genuineintel intel_xeon_platinum_8259cl 2 1 3 2500 2}
+I0220 15:47:40.597576       1 node_platform_energy.go:53] Using the Regressor/AbsPower Power Model to estimate Node Platform Power
+I0220 15:47:40.601466       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:40.601482       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:40.601486       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:40.601490       1 regressor.go:276] Created predictor linear for trainer: "SGDRegressorTrainer"
+I0220 15:47:40.601495       1 model.go:124] Requesting for Machine Spec: &{genuineintel intel_xeon_platinum_8259cl 2 1 3 2500 2}
+I0220 15:47:40.601508       1 node_component_energy.go:57] Using the Regressor/AbsPower Power Model to estimate Node Component Power
+I0220 15:47:40.601692       1 prometheus_collector.go:95] Registered Container Prometheus metrics
+I0220 15:47:40.601733       1 prometheus_collector.go:100] Registered VM Prometheus metrics
+I0220 15:47:40.601744       1 prometheus_collector.go:104] Registered Node Prometheus metrics
+I0220 15:47:40.603421       1 exporter.go:238] starting to listen on 0.0.0.0:9102
+I0220 15:47:40.603559       1 exporter.go:262] Started Kepler in 376.20199ms
+I0220 15:47:40.603575       1 exporter.go:254] Starting server without TLS
+E0220 15:47:40.745464       1 watcher.go:189] parsing pod kepler-lbm4g kepler ContainerStatuses issue : container kepler-exporter did not start yet status, InitContainerStatuses issue :<nil>, EphemeralContainerStatuses issue :<nil>

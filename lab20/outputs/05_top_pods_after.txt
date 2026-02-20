@@ -1,0 +1,5 @@
+NAME                             CPU(cores)   MEMORY(bytes)   
+defaults-demo-5bd9fd7fc4-hwkbp   0m           2Mi             
+load-generator                   13m          0Mi             
+php-apache-65bb74f74c-4gqlq      240m         12Mi            
+php-apache-65bb74f74c-hgsl4      356m         12Mi            

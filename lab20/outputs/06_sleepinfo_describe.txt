@@ -1,0 +1,24 @@
+Name:         dev-working-hours
+Namespace:    energy-dev
+Labels:       <none>
+Annotations:  <none>
+API Version:  kube-green.com/v1alpha1
+Kind:         SleepInfo
+Metadata:
+  Creation Timestamp:  2026-02-20T16:40:38Z
+  Generation:          1
+  Resource Version:    5832
+  UID:                 d92b56fb-00e1-4a0a-927c-bb973ed35441
+Spec:
+  Include Ref:
+    Match Labels:
+      kube-green.dev/include:  true
+  Sleep At:                    11:41
+  Suspend Cron Jobs:           true
+  Time Zone:                   America/Bogota
+  Wake Up At:                  11:45
+  Weekdays:                    *
+Status:
+  Last Schedule Time:  2026-02-20T16:40:38Z
+  Operation:           SLEEP
+Events:                <none>

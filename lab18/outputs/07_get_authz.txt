@@ -1,0 +1,3 @@
+NAME                  ACTION   AGE
+mtls-demo-isolation   ALLOW    44s
+require-mtls          DENY     2m55s

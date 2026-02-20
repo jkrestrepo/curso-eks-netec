@@ -1,0 +1,20 @@
+mtls-demo      4m48s       Normal    Pulling                        pod/curl-66d454fb44-g27b7                           Pulling image "docker.io/curlimages/curl:8.16.0"
+mtls-demo      4m46s       Normal    Started                        pod/curl-66d454fb44-g27b7                           Started container curl
+mtls-demo      4m46s       Normal    Created                        pod/curl-66d454fb44-g27b7                           Created container: curl
+mtls-demo      4m46s       Normal    Pulled                         pod/curl-66d454fb44-g27b7                           Successfully pulled image "docker.io/curlimages/curl:8.16.0" in 1.865s (1.865s including waiting). Image size: 13096250 bytes.
+other-demo     3m48s       Normal    Pulled                         pod/curl-66d454fb44-p8dnf                           Container image "docker.io/istio/proxyv2:1.28.2" already present on machine
+other-demo     3m48s       Normal    ScalingReplicaSet              deployment/curl                                     Scaled up replica set curl-66d454fb44 from 0 to 1
+other-demo     3m48s       Normal    SuccessfulCreate               replicaset/curl-66d454fb44                          Created pod: curl-66d454fb44-p8dnf
+other-demo     3m48s       Normal    Started                        pod/curl-66d454fb44-p8dnf                           Started container istio-init
+other-demo     3m48s       Normal    Created                        pod/curl-66d454fb44-p8dnf                           Created container: istio-init
+other-demo     3m47s       Normal    Created                        pod/curl-66d454fb44-p8dnf                           Created container: istio-proxy
+other-demo     3m47s       Normal    Pulled                         pod/curl-66d454fb44-p8dnf                           Container image "docker.io/istio/proxyv2:1.28.2" already present on machine
+other-demo     3m47s       Normal    Started                        pod/curl-66d454fb44-p8dnf                           Started container istio-proxy
+other-demo     3m45s       Normal    Pulled                         pod/curl-66d454fb44-p8dnf                           Container image "docker.io/curlimages/curl:8.16.0" already present on machine
+other-demo     3m45s       Normal    Created                        pod/curl-66d454fb44-p8dnf                           Created container: curl
+other-demo     3m45s       Normal    Started                        pod/curl-66d454fb44-p8dnf                           Started container curl
+legacy-demo    3m40s       Normal    ScalingReplicaSet              deployment/curl                                     Scaled up replica set curl-66d454fb44 from 0 to 1
+legacy-demo    3m40s       Normal    SuccessfulCreate               replicaset/curl-66d454fb44                          Created pod: curl-66d454fb44-l85xl
+legacy-demo    3m39s       Normal    Pulled                         pod/curl-66d454fb44-l85xl                           Container image "docker.io/curlimages/curl:8.16.0" already present on machine
+legacy-demo    3m39s       Normal    Created                        pod/curl-66d454fb44-l85xl                           Created container: curl
+legacy-demo    3m39s       Normal    Started                        pod/curl-66d454fb44-l85xl                           Started container curl

@@ -1,0 +1,1 @@
+deployment "defaults-demo" successfully rolled out

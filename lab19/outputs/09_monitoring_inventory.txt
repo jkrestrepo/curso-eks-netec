@@ -1,0 +1,18 @@
+NAME                                                 READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS                                            IMAGES                                                                                                   SELECTOR
+deployment.apps/kps-grafana                          1/1     1            1           13m   grafana-sc-dashboard,grafana-sc-datasources,grafana   quay.io/kiwigrid/k8s-sidecar:2.5.0,quay.io/kiwigrid/k8s-sidecar:2.5.0,docker.io/grafana/grafana:12.3.3   app.kubernetes.io/instance=kps,app.kubernetes.io/name=grafana
+deployment.apps/kps-kube-prometheus-stack-operator   1/1     1            1           13m   kube-prometheus-stack                                 quay.io/prometheus-operator/prometheus-operator:v0.89.0                                                  app=kube-prometheus-stack-operator,release=kps
+deployment.apps/kps-kube-state-metrics               1/1     1            1           13m   kube-state-metrics                                    registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.18.0                                            app.kubernetes.io/instance=kps,app.kubernetes.io/name=kube-state-metrics
+
+NAME                                                                   READY   AGE   CONTAINERS                     IMAGES
+statefulset.apps/alertmanager-kps-kube-prometheus-stack-alertmanager   1/1     13m   alertmanager,config-reloader   quay.io/prometheus/alertmanager:v0.31.1,quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0
+statefulset.apps/prometheus-kps-kube-prometheus-stack-prometheus       1/1     13m   prometheus,config-reloader     quay.io/prometheus/prometheus:v3.9.1,quay.io/prometheus-operator/prometheus-config-reloader:v0.89.0
+
+NAME                                             TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE   SELECTOR
+service/alertmanager-operated                    ClusterIP   None             <none>        9093/TCP,9094/TCP,9094/UDP   13m   app.kubernetes.io/name=alertmanager
+service/kps-grafana                              ClusterIP   10.100.37.71     <none>        80/TCP                       13m   app.kubernetes.io/instance=kps,app.kubernetes.io/name=grafana
+service/kps-kube-prometheus-stack-alertmanager   ClusterIP   10.100.158.178   <none>        9093/TCP,8080/TCP            13m   alertmanager=kps-kube-prometheus-stack-alertmanager,app.kubernetes.io/name=alertmanager
+service/kps-kube-prometheus-stack-operator       ClusterIP   10.100.242.234   <none>        443/TCP                      13m   app=kube-prometheus-stack-operator,release=kps
+service/kps-kube-prometheus-stack-prometheus     ClusterIP   10.100.59.224    <none>        9090/TCP,8080/TCP            13m   app.kubernetes.io/name=prometheus,operator.prometheus.io/name=kps-kube-prometheus-stack-prometheus
+service/kps-kube-state-metrics                   ClusterIP   10.100.255.23    <none>        8080/TCP                     13m   app.kubernetes.io/instance=kps,app.kubernetes.io/name=kube-state-metrics
+service/kps-prometheus-node-exporter             ClusterIP   10.100.84.166    <none>        9100/TCP                     13m   app.kubernetes.io/instance=kps,app.kubernetes.io/name=prometheus-node-exporter
+service/prometheus-operated                      ClusterIP   None             <none>        9090/TCP                     13m   app.kubernetes.io/name=prometheus

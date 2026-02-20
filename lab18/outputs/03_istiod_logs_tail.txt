@@ -1,0 +1,120 @@
+2026-02-20T14:41:07.852909Z	info	sync complete	name=gateway/informer/ConfigMaps attempt=9 time=333.187359ms
+2026-02-20T14:41:07.852918Z	info	krt	gateway/informer/ConfigMaps synced	owner=gateway/informer/ConfigMaps
+2026-02-20T14:41:07.852920Z	info	sync complete	name=gateway/informer/HTTPRoutes handler attempt=1 time=171ns
+2026-02-20T14:41:07.852936Z	info	krt	gateway/HTTPRoute synced (uid 117)	owner=gateway/HTTPRoute
+2026-02-20T14:41:07.852926Z	info	sync complete	name=crdclient/informer/GatewayClass attempt=9 time=333.317494ms
+2026-02-20T14:41:07.852954Z	info	krt	crdclient/informer/GatewayClass synced	owner=crdclient/informer/GatewayClass
+2026-02-20T14:41:07.852959Z	info	sync complete	name=crdclient/informer/HTTPRoute attempt=9 time=333.346148ms
+2026-02-20T14:41:07.852957Z	info	sync complete	name=gateway/informer/HTTPRoutes handler attempt=1 time=105ns
+2026-02-20T14:41:07.852974Z	info	krt	gateway/HTTPAncestors synced (uid 115)	owner=gateway/HTTPAncestors
+2026-02-20T14:41:07.852972Z	info	sync complete	name=crdclient/informer/Gateway attempt=9 time=333.354954ms
+2026-02-20T14:41:07.852992Z	info	krt	crdclient/informer/Gateway synced	owner=crdclient/informer/Gateway
+2026-02-20T14:41:07.853003Z	info	krt	gateway/RouteAttachments synced
+2026-02-20T14:41:07.853026Z	info	sync complete	name=gateway/informer/GRPCRoutes handler attempt=1 time=292ns
+2026-02-20T14:41:07.853037Z	info	krt	gateway/HTTPRouteMerged synced (uid 120)	owner=gateway/HTTPRouteMerged
+2026-02-20T14:41:07.853042Z	info	krt	gateway/GRPCRoute synced (uid 124)	owner=gateway/GRPCRoute
+2026-02-20T14:41:07.852968Z	info	krt	crdclient/informer/HTTPRoute synced	owner=crdclient/informer/HTTPRoute
+2026-02-20T14:41:07.853110Z	info	krt	gateway/GRPCRouteMerged synced (uid 127)	owner=gateway/GRPCRouteMerged
+2026-02-20T14:41:07.853127Z	info	krt	gateway/DerivedVirtualServices synced
+2026-02-20T14:41:07.853158Z	info	sync complete	name=gateway/informer/GRPCRoutes handler attempt=1 time=401ns
+2026-02-20T14:41:07.853231Z	info	krt	gateway/GRPCAncestors synced (uid 122)	owner=gateway/GRPCAncestors
+2026-02-20T14:41:07.853282Z	info	krt	gateway/Ancestors synced
+2026-02-20T14:41:07.859536Z	info	kube	controller "networking.istio.io/v1/Gateway" is syncing...	controller=crd-controller
+2026-02-20T14:41:07.867923Z	info	validationController	Not ready to switch validation to fail-closed: dummy invalid config not rejected
+2026-02-20T14:41:07.883725Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8940
+2026-02-20T14:41:07.883780Z	error	controllers	error handling istio-validator-istio-system, retrying (retry count: 1): webhook is not ready, retry	controller=validation
+2026-02-20T14:41:07.897642Z	info	ads	Push debounce stable[1] 18 for config ConfigMap/istio-system/kube-root-ca.crt and 10 more configs: 100.249748ms since last change, 147.622214ms since last push, full=true
+2026-02-20T14:41:07.898186Z	info	ads	XDS: Pushing Services:5 ConnectedEndpoints:0 Version:2026-02-20T14:41:07Z/1
+2026-02-20T14:41:07.904148Z	info	validationController	Not ready to switch validation to fail-closed: dummy invalid config not rejected
+2026-02-20T14:41:07.946135Z	info	model	Full push, new service istio-system/istiod.istio-system.svc.cluster.local
+2026-02-20T14:41:07.947351Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8940
+2026-02-20T14:41:07.947384Z	error	controllers	error handling istio-validator-istio-system, retrying (retry count: 2): webhook is not ready, retry	controller=validation
+2026-02-20T14:41:07.959704Z	info	kube	controller "extensions.istio.io/v1alpha1/WasmPlugin" is syncing...	controller=crd-controller
+2026-02-20T14:41:07.998944Z	info	validationController	Not ready to switch validation to fail-closed: dummy invalid config not rejected
+2026-02-20T14:41:08.009971Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8940
+2026-02-20T14:41:08.010018Z	error	controllers	error handling istio-validator-istio-system, retrying (retry count: 3): webhook is not ready, retry	controller=validation
+2026-02-20T14:41:08.047148Z	info	ads	Push debounce stable[2] 1 for config ServiceEntry/istio-system/istiod.istio-system.svc.cluster.local: 100.959725ms since last change, 100.959577ms since last push, full=true
+2026-02-20T14:41:08.047350Z	info	ads	XDS: Pushing Services:5 ConnectedEndpoints:0 Version:2026-02-20T14:41:08Z/2
+2026-02-20T14:41:08.060840Z	info	kube	controller "networking.istio.io/v1/WorkloadEntry" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.161969Z	info	kube	controller "networking.istio.io/v1/WorkloadGroup" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.256469Z	info	sync complete	name=crdclient/informer/DestinationRule attempt=13 time=737.083567ms
+2026-02-20T14:41:08.256524Z	info	krt	crdclient/informer/DestinationRule synced	owner=crdclient/informer/DestinationRule
+2026-02-20T14:41:08.262491Z	info	kube	controller "networking.istio.io/v1beta1/ProxyConfig" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.356996Z	info	sync complete	name=crdclient/informer/WorkloadGroup attempt=14 time=837.303432ms
+2026-02-20T14:41:08.357063Z	info	krt	crdclient/informer/WorkloadGroup synced	owner=crdclient/informer/WorkloadGroup
+2026-02-20T14:41:08.357025Z	info	sync complete	name=crdclient/informer/AuthorizationPolicy attempt=14 time=837.496216ms
+2026-02-20T14:41:08.357075Z	info	krt	crdclient/informer/AuthorizationPolicy synced	owner=crdclient/informer/AuthorizationPolicy
+2026-02-20T14:41:08.363355Z	info	kube	controller "networking.istio.io/v1beta1/ProxyConfig" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.420653Z	info	validationController	Not ready to switch validation to fail-closed: dummy invalid config not rejected
+2026-02-20T14:41:08.435190Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8940
+2026-02-20T14:41:08.435234Z	error	controllers	error handling istio-validator-istio-system, retrying (retry count: 4): webhook is not ready, retry	controller=validation
+2026-02-20T14:41:08.457230Z	info	sync complete	name=crdclient/informer/EnvoyFilter attempt=15 time=937.678711ms
+2026-02-20T14:41:08.457283Z	info	krt	crdclient/informer/EnvoyFilter synced	owner=crdclient/informer/EnvoyFilter
+2026-02-20T14:41:08.464122Z	info	kube	controller "security.istio.io/v1/RequestAuthentication" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.558179Z	info	sync complete	name=crdclient/informer/WasmPlugin attempt=16 time=1.038496176s
+2026-02-20T14:41:08.558193Z	info	sync complete	name=crdclient/informer/VirtualService attempt=16 time=1.038556183s
+2026-02-20T14:41:08.558244Z	info	krt	crdclient/informer/VirtualService synced	owner=crdclient/informer/VirtualService
+2026-02-20T14:41:08.558234Z	info	krt	crdclient/informer/WasmPlugin synced	owner=crdclient/informer/WasmPlugin
+2026-02-20T14:41:08.564484Z	info	kube	controller "security.istio.io/v1/PeerAuthentication" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.657821Z	info	sync complete	name=gateway/informer/ServiceEntries attempt=17 time=1.137660904s
+2026-02-20T14:41:08.657966Z	info	krt	gateway/informer/ServiceEntries synced	owner=gateway/informer/ServiceEntries
+2026-02-20T14:41:08.658944Z	info	sync complete	name=crdclient/informer/WorkloadEntry attempt=17 time=1.139252803s
+2026-02-20T14:41:08.659015Z	info	krt	crdclient/informer/WorkloadEntry synced	owner=crdclient/informer/WorkloadEntry
+2026-02-20T14:41:08.658967Z	info	sync complete	name=crdclient/informer/ServiceEntry attempt=17 time=1.139323327s
+2026-02-20T14:41:08.659029Z	info	krt	crdclient/informer/ServiceEntry synced	owner=crdclient/informer/ServiceEntry
+2026-02-20T14:41:08.659037Z	info	sync complete	name=crdclient/informer/Gateway attempt=17 time=1.139474056s
+2026-02-20T14:41:08.659049Z	info	krt	crdclient/informer/Gateway synced	owner=crdclient/informer/Gateway
+2026-02-20T14:41:08.665272Z	info	kube	controller "security.istio.io/v1/PeerAuthentication" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.692481Z	info	sync complete	name=IP Autoallocator attempt=15 time=932.271357ms
+2026-02-20T14:41:08.692522Z	info	controllers	starting	controller=IP Autoallocator
+2026-02-20T14:41:08.759847Z	info	sync complete	name=crdclient/informer/ProxyConfig attempt=18 time=1.240215994s
+2026-02-20T14:41:08.759904Z	info	krt	crdclient/informer/ProxyConfig synced	owner=crdclient/informer/ProxyConfig
+2026-02-20T14:41:08.759860Z	info	sync complete	name=crdclient/informer/PeerAuthentication attempt=18 time=1.240234472s
+2026-02-20T14:41:08.759920Z	info	krt	crdclient/informer/PeerAuthentication synced	owner=crdclient/informer/PeerAuthentication
+2026-02-20T14:41:08.766130Z	info	kube	controller "telemetry.istio.io/v1/Telemetry" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.866809Z	info	kube	controller "security.istio.io/v1/RequestAuthentication" is syncing...	controller=crd-controller
+2026-02-20T14:41:08.902001Z	warn	discovery is not ready
+2026-02-20T14:41:08.967469Z	info	kube	controller "telemetry.istio.io/v1/Telemetry" is syncing...	controller=crd-controller
+2026-02-20T14:41:09.060838Z	info	sync complete	name=crdclient/informer/Sidecar attempt=21 time=1.541185156s
+2026-02-20T14:41:09.060914Z	info	krt	crdclient/informer/Sidecar synced	owner=crdclient/informer/Sidecar
+2026-02-20T14:41:09.061985Z	info	sync complete	name=crdclient/informer/RequestAuthentication attempt=21 time=1.54233447s
+2026-02-20T14:41:09.062029Z	info	krt	crdclient/informer/RequestAuthentication synced	owner=crdclient/informer/RequestAuthentication
+2026-02-20T14:41:09.068224Z	info	kube	controller "telemetry.istio.io/v1/Telemetry" is syncing...	controller=crd-controller
+2026-02-20T14:41:09.161642Z	info	sync complete	name=crdclient/informer/Telemetry attempt=22 time=1.641983428s
+2026-02-20T14:41:09.161720Z	info	krt	crdclient/informer/Telemetry synced	owner=crdclient/informer/Telemetry
+2026-02-20T14:41:09.168866Z	info	sync complete	name=crdclient attempt=20 time=1.43788781s
+2026-02-20T14:41:09.168903Z	info	kube	Pilot K8S CRD controller synced in 1.437958573s	controller=crd-controller
+2026-02-20T14:41:09.200071Z	warn	slow startup task	name=kube client runtime=1.468911765s
+2026-02-20T14:41:09.200141Z	info	Waiting for caches to be synced
+2026-02-20T14:41:09.200176Z	info	kube	joining leader-election for istio-namespace-controller-election in istio-system on cluster Kubernetes
+2026-02-20T14:41:09.200268Z	info	sync complete	name=server attempt=1 time=111.338µs
+2026-02-20T14:41:09.200279Z	info	All controller caches have been synced up in 138.857µs
+2026-02-20T14:41:09.200279Z	info	klog	attempting to acquire leader lease istio-system/istio-namespace-controller-election...
+2026-02-20T14:41:09.200283Z	info	sync complete	name=push context attempt=1 time=139ns
+2026-02-20T14:41:09.200288Z	info	ads	All caches have been synced up in 1.875542794s, marking server ready
+2026-02-20T14:41:09.200490Z	info	sync complete	name=default revision attempt=1 time=1.737µs
+2026-02-20T14:41:09.200509Z	info	controllers	starting	controller=default revision
+2026-02-20T14:41:09.200530Z	info	starting secure gRPC discovery service at [::]:15012
+2026-02-20T14:41:09.200733Z	info	starting webhook service at [::]:15017
+2026-02-20T14:41:09.200656Z	info	starting gRPC discovery service at [::]:15010
+2026-02-20T14:41:09.214700Z	info	klog	successfully acquired lease istio-system/istio-namespace-controller-election
+2026-02-20T14:41:09.214923Z	info	leader election lock obtained: istio-namespace-controller-election
+2026-02-20T14:41:09.215025Z	info	kube	starting namespace controller for cluster Kubernetes
+2026-02-20T14:41:09.215362Z	info	sync complete	name=crd watcher attempt=1 time=1.221µs
+2026-02-20T14:41:09.245009Z	info	validationController	Not ready to switch validation to fail-closed: dummy invalid config not rejected
+2026-02-20T14:41:09.253435Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8940
+2026-02-20T14:41:09.253486Z	error	controllers	error handling istio-validator-istio-system, retrying (retry count: 5): webhook is not ready, retry	controller=validation
+2026-02-20T14:41:09.315532Z	info	sync complete	name=namespace controller attempt=1 time=3.991µs
+2026-02-20T14:41:09.315624Z	info	controllers	starting	controller=namespace controller
+2026-02-20T14:41:10.862594Z	info	validationController	Not ready to switch validation to fail-closed: dummy invalid config not rejected
+2026-02-20T14:41:10.883355Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8940
+2026-02-20T14:41:10.883395Z	error	controllers	error handling istio-validator-istio-system, retrying (retry count: 6): webhook is not ready, retry	controller=validation
+2026-02-20T14:41:12.030849Z	info	ads	Push debounce stable[3] 1 for config ServiceEntry/istio-system/istiod.istio-system.svc.cluster.local: 100.300913ms since last change, 100.300846ms since last push, full=false
+2026-02-20T14:41:12.030907Z	info	ads	XDS: Incremental Pushing ConnectedEndpoints:0 Version:2026-02-20T14:41:08Z/2
+2026-02-20T14:41:14.094778Z	info	validationController	Endpoint successfully rejected invalid config. Switching to fail-close.
+2026-02-20T14:41:14.102354Z	info	validationController	successfully updated	name=istio-validator-istio-system resource version=8977
+2026-02-20T14:41:14.111240Z	info	validationController	successfully updated	name=istiod-default-validator resource version=8978
+2026-02-20T14:41:14.175218Z	info	model	Full push, new service istio-system/istiod-revision-tag-default.istio-system.svc.cluster.local
+2026-02-20T14:41:14.276335Z	info	ads	Push debounce stable[4] 6 for config ServiceEntry/istio-system/istiod-revision-tag-default.istio-system.svc.cluster.local: 101.054133ms since last change, 260.332736ms since last push, full=true
+2026-02-20T14:41:14.276618Z	info	ads	XDS: Pushing Services:6 ConnectedEndpoints:0 Version:2026-02-20T14:41:14Z/3
+2026-02-20T14:43:17.520545Z	info	rootcertrotator	Jitter complete, start rotator.
